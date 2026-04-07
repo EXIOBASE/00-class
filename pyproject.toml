@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exiobase-meta"
+version = "0.1.0"
+description = "Excel-first EXIOBASE classification readers and country conversion utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [{name = "EXIOBASE Team"}]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "xlrd==1.2.0",
+  "country_converter>=1.2"
+]
+
+[project.scripts]
+exiobase-meta = "exiobase_meta.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+exiobase_meta = ["data/class/exio3class.xlsx"]
