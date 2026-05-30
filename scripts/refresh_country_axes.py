@@ -39,26 +39,34 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import country_converter as coco
 import pandas as pd
+from io_utils.config import get_path, load_config
 
-ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_MACRO_DB = ROOT.parent / "macro_db"
-DEFAULT_LEGACY_R12 = Path(
-    "D:/indecol/Projects/MRIOs/Concordances/EXIO3r12r.csv"
+ROOT = Path(__file__).resolve().parents[1]
+# Make the in-tree package importable when run as a plain script so the
+# region12 classification has exactly one reader, shared with the library.
+sys.path.insert(0, str(ROOT / "src"))
+from exiobase_meta.country_axes import (  # noqa: E402
+    read_region12,
+    region12_codes,
+    remind_to_r12,
 )
+
+DEFAULT_MACRO_DB = ROOT.parent / "macro_db"
+# Absolute path comes from config.yaml at the repo root (config.local.yaml
+# overrides per machine); the --check-legacy CLI flag still overrides it.
+_CFG = load_config(repo_root=ROOT)
+DEFAULT_LEGACY_R12 = get_path(_CFG, "paths.legacy_r12_csv")
 OUT_XLSX = ROOT / "src" / "exiobase_meta" / "data" / "class" / "exio_country_axes.xlsx"
 PRO_XLSX = ROOT / "src" / "exiobase_meta" / "data" / "exio_mr_meta.xlsx"
 
-R12_REGIONS = ("CAU", "CHA", "EUR", "IND", "JPN", "LAM",
-               "MEA", "NEU", "OAS", "RUS", "SSA", "USA")
-
-# coco.REMIND -> our r12 codes. REMIND uses CAZ for Canada/Australia/NZ
-# (we keep EXIOBASE's CAU label) and REF for Reforming Economies =
-# Russia + CIS (we keep EXIOBASE's RUS label, now expanded to all CIS).
-REMIND_TO_R12 = {"CAZ": "CAU", "REF": "RUS"}
+# The 12 region codes and the coco.REMIND -> region12 relabels are NOT
+# hard-coded here. They are read from the single source of truth,
+# data/class/region12.csv, via region12_codes() and remind_to_r12().
 
 ROW_NAMES = {
     "WA": "RoW Asia and Pacific",
@@ -103,13 +111,18 @@ _LEGACY_CSV_NAME_SYNONYMS = {
 
 
 def coco_remind_lookup() -> dict[str, str]:
-    """ISO3 -> EXIOBASE r12 code derived from coco.REMIND."""
+    """ISO3 -> EXIOBASE r12 code derived from coco.REMIND.
+
+    The REMIND -> region12 relabels (CAZ -> CAU, REF -> RUS) come from
+    data/class/region12.csv, not a hard-coded dict.
+    """
     cc = coco.CountryConverter()
+    relabel = remind_to_r12()
     out: dict[str, str] = {}
     for iso3, remind in zip(cc.data["ISO3"], cc.data["REMIND"]):
         if not isinstance(remind, str) or pd.isna(remind):
             continue
-        out[iso3] = REMIND_TO_R12.get(remind, remind)
+        out[iso3] = relabel.get(remind, remind)
     return out
 
 
@@ -209,12 +222,13 @@ def build_r12_matrix(*frames: pd.DataFrame) -> pd.DataFrame:
     if not frames:
         raise ValueError("no axis frame provided")
     axis = frames[0]
+    regions = region12_codes()
     mat = pd.DataFrame(
-        0, index=axis["name"].tolist(), columns=list(R12_REGIONS), dtype=int,
+        0, index=axis["name"].tolist(), columns=list(regions), dtype=int,
     )
     for _, row in axis.iterrows():
         r12 = row.get("region12", "")
-        if r12 in R12_REGIONS:
+        if r12 in regions:
             mat.at[row["name"], r12] = 1
     mat.index.name = "name"
     return mat
@@ -262,9 +276,15 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    region12 = read_region12()
+    print(f"Region12 classification: {len(region12)} regions from region12.csv "
+          f"({', '.join(region12['region12'])})")
+
     print("Loading coco.REMIND -> EXIOBASE r12 mapping")
     coco_r12 = coco_remind_lookup()
-    print(f"  {len(coco_r12)} ISO3 -> r12 entries (CAZ->CAU, REF->RUS relabels applied)")
+    relabels = {k: v for k, v in remind_to_r12().items() if k != v}
+    print(f"  {len(coco_r12)} ISO3 -> r12 entries "
+          f"(relabels from region12.csv: {relabels})")
 
     print(f"Reading macro_db comparison CSVs from {args.macro_db}")
     rx1 = add_region12_to_macro_db_axis(

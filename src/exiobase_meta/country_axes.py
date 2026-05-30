@@ -49,8 +49,62 @@ from .io import DATA_ROOT, read_excel
 
 AXIS_NAMES = ("exiobase3", "rx1", "rx2")
 
-R12_REGIONS = ("CAU", "CHA", "EUR", "IND", "JPN", "LAM",
-               "MEA", "NEU", "OAS", "RUS", "SSA", "USA")
+# The 12-region grouping is NOT hard-coded here. It lives in the bundled
+# CSV ``data/class/region12.csv`` (the single source of truth) and the
+# country -> region links are made by ``country_converter`` via that
+# file's ``remind_source`` column. Use ``region12_codes()`` /
+# ``read_region12()`` / ``remind_to_r12()`` below. ``R12_REGIONS`` is kept
+# as a lazily-derived module attribute for backward compatibility (see
+# ``__getattr__``).
+
+
+@lru_cache(maxsize=2)
+def _read_region12_cached(path: str) -> pd.DataFrame:
+    return pd.read_csv(path, keep_default_na=False)
+
+
+def read_region12(data_root: Path | None = None) -> pd.DataFrame:
+    """Read the fixed 12-region classification CSV.
+
+    Columns
+    -------
+    region12 : str
+        The EXIOBASE r12 region code (e.g. ``CAU``, ``CHA``).
+    name : str
+        Human-readable region name.
+    remind_source : str
+        The ``country_converter`` ``REMIND`` code that maps onto this
+        region. Encodes the two EXIOBASE relabels (``CAZ`` -> ``CAU``,
+        ``REF`` -> ``RUS``); the other ten map to themselves.
+
+    This CSV is the single source of truth for the grouping; the actual
+    country -> region assignment is performed by ``country_converter``
+    joined on ``remind_source`` (see ``remind_to_r12``).
+    """
+    data_root = data_root or DATA_ROOT
+    path = data_root / "class" / "region12.csv"
+    if not path.exists():
+        raise FileNotFoundError(f"region12 classification CSV not found: {path}")
+    return _read_region12_cached(str(path)).copy()
+
+
+def region12_codes(data_root: Path | None = None) -> tuple[str, ...]:
+    """The 12 EXIOBASE region codes, in the CSV's (canonical) order."""
+    return tuple(read_region12(data_root)["region12"].astype(str))
+
+
+def remind_to_r12(data_root: Path | None = None) -> dict[str, str]:
+    """``country_converter`` ``REMIND`` code -> EXIOBASE ``region12`` code."""
+    df = read_region12(data_root)
+    return {str(r): str(c) for r, c in zip(df["remind_source"], df["region12"])}
+
+
+def __getattr__(name: str):
+    # PEP 562: keep ``R12_REGIONS`` importable without reading the CSV at
+    # import time. It is derived from the CSV, never hard-coded.
+    if name == "R12_REGIONS":
+        return region12_codes()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 # Supported axis orderings. ``canonical`` (default) returns rows in the
 # ``order`` column's sequence (alphabetical by name for exiobase3).
@@ -121,7 +175,7 @@ class CountryAxis:
     def region12_groups(self) -> dict[str, list[str]]:
         """Map each r12 region code to the list of axis codes assigned to it."""
         s = self.region12()
-        return {r: s.index[s == r].tolist() for r in R12_REGIONS if (s == r).any()}
+        return {r: s.index[s == r].tolist() for r in region12_codes() if (s == r).any()}
 
 
 @lru_cache(maxsize=8)

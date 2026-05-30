@@ -20,6 +20,9 @@ env/
 .pytest_cache/
 .mypy_cache/
 
+# Per-machine config override
+config.local.yaml
+
 # IDE / OS
 .vscode/
 .idea/

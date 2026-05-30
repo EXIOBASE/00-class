@@ -1,0 +1,16 @@
+# exiobase_meta path configuration.
+#
+# Absolute filesystem paths consulted by the refresh scripts live here,
+# not in .py source. Override per machine by either editing this file or
+# copying it to config.local.yaml (which the loader prefers if present).
+# Values may reference other keys via ${...} interpolation.
+#
+# Point `drive` somewhere else and the rest of the layout follows.
+
+drive: D:/
+
+paths:
+  # Legacy 49x12 region matrix, consulted only as a sanity check at
+  # country-axis refresh time (scripts/refresh_country_axes.py
+  # --check-legacy). Override on the CLI to point elsewhere.
+  legacy_r12_csv: ${drive}indecol/Projects/MRIOs/Concordances/EXIO3r12r.csv

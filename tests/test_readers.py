@@ -1,4 +1,30 @@
-from exiobase_meta import convert_country, read_exio3_classification
+import exiobase_meta as em
+from exiobase_meta import (
+    convert_country,
+    read_exio3_classification,
+    read_region12,
+    region12_codes,
+    remind_to_r12,
+)
+
+
+def test_region12_is_csv_driven():
+    df = read_region12()
+    # The 12-region grouping comes from data/class/region12.csv, not code.
+    assert list(df.columns) == ["region12", "name", "remind_source"]
+    assert len(df) == 12
+    # The backward-compat constant is derived from the CSV, in file order.
+    assert em.R12_REGIONS == region12_codes() == tuple(df["region12"])
+
+
+def test_region12_relabels_from_csv():
+    # The EXIOBASE relabels of country_converter's REMIND codes live in the
+    # CSV's remind_source column, not a hard-coded dict.
+    relabel = remind_to_r12()
+    assert relabel["CAZ"] == "CAU"
+    assert relabel["REF"] == "RUS"
+    # The other ten REMIND codes map to themselves.
+    assert sum(1 for k, v in relabel.items() if k != v) == 2
 
 
 def test_read_exio3_classification():

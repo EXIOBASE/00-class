@@ -60,11 +60,23 @@ SSA  Sub-Saharan Africa
 USA  USA
 ```
 
-The `region12` column is derived directly from `country_converter`'s
-`REMIND` column with two relabels:
+The 12-region grouping is not hard-coded anywhere. It lives in one
+bundled CSV, `data/class/region12.csv` (columns `region12`, `name`,
+`remind_source`), which is the single source of truth read by both the
+library and `scripts/refresh_country_axes.py`. The actual country to
+region links are made by `country_converter`: the `region12` column is
+derived directly from cc's `REMIND` column, joined on `remind_source`,
+with two relabels encoded in the CSV:
 - `CAZ -> CAU` (preserve EXIOBASE label)
 - `REF -> RUS` (preserve EXIOBASE label; this expands the legacy
   Russia-only RUS region to all REF countries when rx1 / rx2 adds them)
+
+```python
+from exiobase_meta import read_region12, region12_codes, remind_to_r12
+read_region12()        # the 12-region classification table
+region12_codes()       # ('CAU', 'CHA', ..., 'USA') derived from the CSV
+remind_to_r12()        # {'CAZ': 'CAU', 'REF': 'RUS', 'EUR': 'EUR', ...}
+```
 
 Manual overrides are kept to a minimum (only Kosovo, which cc does
 not yet ship). The legacy MATLAB CSV

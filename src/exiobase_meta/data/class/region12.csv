@@ -1,0 +1,13 @@
+region12,name,remind_source
+CAU,Canada + Australia + New Zealand,CAZ
+CHA,China + Taiwan + Hong Kong + Macau,CHA
+EUR,EU27 + UK,EUR
+IND,India,IND
+JPN,Japan,JPN
+LAM,Latin America + Caribbean,LAM
+MEA,Middle East + North Africa,MEA
+NEU,Non-EU Europe,NEU
+OAS,Other Asia + Pacific,OAS
+RUS,Russia + CIS / ex-Soviet states,REF
+SSA,Sub-Saharan Africa,SSA
+USA,USA,USA

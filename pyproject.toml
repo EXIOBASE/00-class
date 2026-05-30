@@ -15,7 +15,8 @@ dependencies = [
   "pandas>=2.0",
   "openpyxl>=3.1",
   "xlrd==1.2.0",
-  "country_converter>=1.2"
+  "country_converter>=1.2",
+  "io_utils"
 ]
 
 [project.scripts]
@@ -28,4 +29,9 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-exiobase_meta = ["data/class/exio3class.xlsx"]
+exiobase_meta = [
+  "data/class/*.csv",
+  "data/class/*.xlsx",
+  "data/*.xlsx",
+  "data/*.xls",
+]
