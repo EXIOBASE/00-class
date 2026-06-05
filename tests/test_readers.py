@@ -2,10 +2,23 @@ import exiobase_meta as em
 from exiobase_meta import (
     convert_country,
     read_exio3_classification,
+    read_pi_concordance,
     read_region12,
     region12_codes,
     remind_to_r12,
 )
+
+
+def test_pi_concordance_shape_and_binary():
+    # Product-to-industry concordance is shipped as package data and read
+    # here, not from a hardcoded class/ path. 200 products x 163 industries,
+    # binary, each product maps to exactly one industry (row sums to 1).
+    df = read_pi_concordance()
+    assert df.shape == (200, 163)
+    assert df.index.name == "product"
+    assert df.columns.name == "industry"
+    assert set(df.to_numpy().ravel().tolist()) <= {0.0, 1.0}
+    assert (df.sum(axis=1) == 1).all()
 
 
 def test_region12_is_csv_driven():

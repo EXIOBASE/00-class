@@ -1,4 +1,5 @@
 from .classifications import ClassificationBundle, read_exio3_classification
+from .concordances import read_pi_concordance
 from .country_axes import (
 	AXIS_NAMES,
 	CountryAxis,
@@ -21,6 +22,7 @@ __all__ = [
 	"read_all_country_axes",
 	"read_country_axis",
 	"read_exio3_classification",
+	"read_pi_concordance",
 	"read_r12_matrix",
 	"read_region12",
 	"region12_codes",

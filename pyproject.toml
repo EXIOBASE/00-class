@@ -32,6 +32,7 @@ where = ["src"]
 exiobase_meta = [
   "data/class/*.csv",
   "data/class/*.xlsx",
+  "data/concordances/*.txt",
   "data/*.xlsx",
   "data/*.xls",
 ]
