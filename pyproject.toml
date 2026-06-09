@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "exiobase-meta"
 version = "0.1.0"
-description = "Excel-first EXIOBASE classification readers and country conversion utilities"
+description = "EXIOBASE classification readers and country conversion utilities"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "Proprietary"}
@@ -28,11 +28,9 @@ package-dir = {"" = "src"}
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools.package-data]
-exiobase_meta = [
-  "data/class/*.csv",
-  "data/class/*.xlsx",
-  "data/concordances/*.txt",
-  "data/*.xlsx",
-  "data/*.xls",
-]
+# Classifications and concordances are NOT bundled inside the package. They
+# live at the top level of the repo (``class/``)
+# so they are easy for a human to find, and the readers resolve them via
+# ``DATA_ROOT`` (see ``exiobase_meta/io.py``). This assumes the editable
+# (``pip install -e .``) layout used across the EXIOBASE monorepo; building a
+# standalone wheel would need a step to vendor these files back in.

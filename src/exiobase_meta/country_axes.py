@@ -8,9 +8,9 @@ table identifies a country (or RoW aggregate) with at minimum an
 Three axes are bundled:
 
 - **exiobase3** (49 entries): the legacy EXIOBASE3 axis - 44 individual
-  countries + 5 RoW buckets (WA/WL/WE/WF/WM). Sourced from the existing
-  ``exio_mr_meta.xlsx`` `pro` sheet and harmonised against
-  ``country_converter`` for names / ISO codes.
+  countries + 5 RoW buckets (WA/WL/WE/WF/WM). The ``desire_order`` column is
+  the single source of truth for the legacy DESIRE country order; names / ISO
+  codes are harmonised against ``country_converter``.
 
 - **rx1** (152 entries): extended axis built from the largest data-coverage
   intersection across macro_db (UN SNA Main Aggregates >=15y), IEA Energy
@@ -49,8 +49,8 @@ from .io import DATA_ROOT, read_excel
 
 AXIS_NAMES = ("exiobase3", "rx1", "rx2")
 
-# The 12-region grouping is NOT hard-coded here. It lives in the bundled
-# CSV ``data/class/region12.csv`` (the single source of truth) and the
+# The 12-region grouping is NOT hard-coded here. It lives in the top-level
+# CSV ``class/region12.csv`` (the single source of truth) and the
 # country -> region links are made by ``country_converter`` via that
 # file's ``remind_source`` column. Use ``region12_codes()`` /
 # ``read_region12()`` / ``remind_to_r12()`` below. ``R12_REGIONS`` is kept
@@ -128,7 +128,9 @@ class CountryAxis:
     table : pandas.DataFrame
         One row per axis entry. Columns include ``order``, ``code``,
         ``name``, ``type`` (``country`` or ``RoW``), ``iso3``, ``iso2``,
-        ``continent``, ``members`` (comma-separated ISO3s for RoW rows).
+        ``region12``, ``members`` (comma-separated ISO3s for RoW rows).
+        Derived attributes such as continent are intentionally not stored;
+        derive them on demand from ``code`` via ``country_converter``.
         rx1 / rx2 carry additional flag columns inherited from the
         candidate matrix (``in_macro_db_historic``, ``in_IEA``, ...).
     """

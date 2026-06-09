@@ -1,11 +1,44 @@
 # exiobase-meta
 
-Excel-first EXIOBASE metadata readers with country conversion via `country_converter`.
+EXIOBASE metadata readers with country conversion via `country_converter`.
 
 ## Design
 
-- Only Excel source files are bundled under `src/exiobase_meta/data/` (`.xlsx` and `.xls`).
+- This repo is the central, human-discoverable home of the EXIOBASE
+  **classifications**. The source files live at the **top level**, not buried
+  in the Python package:
+  - `class/` - classifications and structural metadata
+    - `exio3class.xlsx` - product / industry / extension classifications
+    - `exio_country_axes.xlsx` - country axes (`exiobase3` / `rx1` / `rx2`);
+      the `exiobase3` sheet's `desire_order` column is the single source of
+      truth for the legacy EXIOBASE3 country order. This file is also the
+      **canonical** home of the `rx1` / `rx2` classifications: their selection
+      is computed by `02-macro_db`'s analysis and published here by
+      `refresh_country_axes.py`; consumers (including macro_db's own runtime)
+      read them back from here via `read_country_axis`
+    - `region12.csv` - the 12-region grouping (single source of truth)
+    - `EXIOBASE20p_EXIOBASE20i_codes.txt` - authoritative product-industry
+      structure (the binary 200 x 163 matrix; which industry produces each
+      product)
+- Each file is the single source of truth for the order it defines (country
+  order, sector order, region grouping). Names and other derived columns are
+  computed at refresh time (via `country_converter`) rather than stored, so the
+  same fact is never held in two places.
+- The `exiobase_meta` reader functions resolve these via `DATA_ROOT` (the repo
+  root), so consuming repos read them through the package API rather than from
+  hardcoded paths.
 - Country conversion uses `country_converter` (CoCo)
+
+### Scope: classifications, not concordances
+
+This repo owns the **classifications** (the vocabularies: product/industry/
+country/region lists) and the authoritative product-industry structure.
+**Concordances** (mappings between classifications: NACE/HS/COICOP/FAO ->
+EXIOBASE, aggregations, NSI bridges, and the published `exiobase3p__exiobase3i`
+table) live in the sibling `00-concordances-public` repo. That repo *derives*
+its product-industry concordance from `exiobase_meta.read_pi_concordance()`, so
+the matrix here is the single upstream source and there is deliberately no
+`concordances/` folder in this repo.
 
 ## Install
 
@@ -25,8 +58,8 @@ exiobase-meta read-classification --with-ranges
 
 ## Read Country Axes
 
-Three EXIOBASE country axes are bundled under
-`data/class/exio_country_axes.xlsx`:
+Three EXIOBASE country axes live in
+`class/exio_country_axes.xlsx`:
 
 - **`exiobase3`** (49): 44 EXIOBASE3 countries + 5 RoW buckets
   (WA/WL/WE/WF/WM). The legacy EXIOBASE3 country axis.
@@ -61,7 +94,7 @@ USA  USA
 ```
 
 The 12-region grouping is not hard-coded anywhere. It lives in one
-bundled CSV, `data/class/region12.csv` (columns `region12`, `name`,
+CSV, `class/region12.csv` (columns `region12`, `name`,
 `remind_source`), which is the single source of truth read by both the
 library and `scripts/refresh_country_axes.py`. The actual country to
 region links are made by `country_converter`: the `region12` column is

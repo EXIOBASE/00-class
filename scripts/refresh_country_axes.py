@@ -1,10 +1,16 @@
-"""Rebuild data/class/exio_country_axes.xlsx from the macro_db comparison CSVs.
+"""Rebuild class/exio_country_axes.xlsx from the macro_db comparison CSVs.
 
-The rx1 / rx2 axis definitions live in the ``macro_db`` repo under
-``data/fin/comparisons/`` and are produced by
-``scripts/make_extended_exiobase_list.py``. The legacy EXIOBASE3 axis is
-recovered from the existing ``exio_mr_meta.xlsx`` `pro` sheet's
-``Country`` column harmonised against ``country_converter``.
+``exio_country_axes.xlsx`` is the **canonical** home of the rx1 / rx2 country
+classifications. The rx1 / rx2 *selections* (and their coverage flags) are
+computed by the ``macro_db`` analysis (``scripts/make_extended_exiobase_list.py``,
+output under ``data/fin/comparisons/``); this script consumes that analysis,
+adds the ``region12`` grouping, and publishes the canonical axis here. macro_db's
+runtime then reads the axis back from here via ``exiobase_meta.read_country_axis``
+rather than from its own comparison CSV. The legacy EXIOBASE3 axis order is
+preserved from the existing ``exio_country_axes.xlsx`` `exiobase3` sheet (its
+``desire_order`` column is the single source of truth for the legacy DESIRE
+country order); only the derived columns are re-harmonised against
+``country_converter``.
 
 Also writes the 12-region grouping used by ``build_mr`` (the MRSUT/MRIOT
 aggregator):
@@ -56,17 +62,16 @@ from exiobase_meta.country_axes import (  # noqa: E402
     remind_to_r12,
 )
 
-DEFAULT_MACRO_DB = ROOT.parent / "macro_db"
+DEFAULT_MACRO_DB = ROOT.parent / "02-macro_db"
 # Absolute path comes from config.yaml at the repo root (config.local.yaml
 # overrides per machine); the --check-legacy CLI flag still overrides it.
 _CFG = load_config(repo_root=ROOT)
 DEFAULT_LEGACY_R12 = get_path(_CFG, "paths.legacy_r12_csv")
-OUT_XLSX = ROOT / "src" / "exiobase_meta" / "data" / "class" / "exio_country_axes.xlsx"
-PRO_XLSX = ROOT / "src" / "exiobase_meta" / "data" / "exio_mr_meta.xlsx"
+OUT_XLSX = ROOT / "class" / "exio_country_axes.xlsx"
 
 # The 12 region codes and the coco.REMIND -> region12 relabels are NOT
 # hard-coded here. They are read from the single source of truth,
-# data/class/region12.csv, via region12_codes() and remind_to_r12().
+# class/region12.csv, via region12_codes() and remind_to_r12().
 
 ROW_NAMES = {
     "WA": "RoW Asia and Pacific",
@@ -114,7 +119,7 @@ def coco_remind_lookup() -> dict[str, str]:
     """ISO3 -> EXIOBASE r12 code derived from coco.REMIND.
 
     The REMIND -> region12 relabels (CAZ -> CAU, REF -> RUS) come from
-    data/class/region12.csv, not a hard-coded dict.
+    class/region12.csv, not a hard-coded dict.
     """
     cc = coco.CountryConverter()
     relabel = remind_to_r12()
@@ -135,19 +140,27 @@ def assign_region12(iso3: str, coco_r12: dict[str, str]) -> str:
     return coco_r12.get(iso3, "")
 
 
-def build_exiobase3_axis(pro_xlsx: Path, coco_r12: dict[str, str]) -> pd.DataFrame:
+def build_exiobase3_axis(axis_xlsx: Path, coco_r12: dict[str, str]) -> pd.DataFrame:
     cc = coco.CountryConverter()
-    pro = pd.read_excel(pro_xlsx, sheet_name="pro")
-    # First-occurrence order of `Country` in `pro` preserves the legacy
-    # DESIRE country order (EU members then non-EU then RoW). This is the
-    # positional order embedded in every legacy EXIOBASE .mat / .csv
-    # source file (NAMA, Eurostat SUT, Material, CREEA dom_prod, ...).
-    # Carry it as a `desire_order` column so consumers that need to align
-    # with legacy positional sources can sort by it.
-    desire_seq = pro["Country"].astype(str).drop_duplicates().tolist()
-    desire_rank = {c: i + 1 for i, c in enumerate(desire_seq)}
-    iso2_set = sorted(pro["Country"].astype(str).unique())
-    cont = dict(zip(cc.data["ISO2"], cc.data["continent"]))
+    # The legacy DESIRE country order (EU members then non-EU then RoW, the
+    # positional order embedded in every legacy EXIOBASE .mat / .csv source
+    # file) is the single source of truth held in the `desire_order` column of
+    # the existing `exiobase3` sheet. We preserve that order and country set and
+    # re-derive only the volatile columns (name, iso3, region12) via
+    # country_converter, so the ordering lives in exactly one place.
+    prev = pd.read_excel(axis_xlsx, sheet_name="exiobase3").sort_values("desire_order")
+    order_codes = [
+        (str(r.iso2) if str(r.type) == "country" and str(r.iso2) not in ("", "nan")
+         else str(r.code))
+        for r in prev.itertuples()
+    ]
+    desire_rank = {c: i + 1 for i, c in enumerate(order_codes)}
+    iso2_set = sorted(set(order_codes))
+    # NB: continent is deliberately NOT stored. It is derived metadata, not part
+    # of the country classification, and storing it froze a silent error (coco's
+    # ISO2 column holds regexes like ``^GR$|^EL$``, so a dict-zip lookup of "GR"
+    # returned NaN, leaving Greece / UK with no continent). Derive it on demand
+    # with ``cc.convert(code, src="ISO2", to="continent")`` if ever needed.
     rows: list[dict] = []
     for iso2 in iso2_set:
         if iso2 in ROW_CODES:
@@ -166,7 +179,6 @@ def build_exiobase3_axis(pro_xlsx: Path, coco_r12: dict[str, str]) -> pd.DataFra
             "type": "country",
             "iso3": iso3 if isinstance(iso3, str) else "",
             "iso2": iso2,
-            "continent": cont.get(iso2, ""),
             "region12": r12,
             "members": "",
         })
@@ -180,7 +192,6 @@ def build_exiobase3_axis(pro_xlsx: Path, coco_r12: dict[str, str]) -> pd.DataFra
             "type": "RoW",
             "iso3": "",
             "iso2": "",
-            "continent": "",
             "region12": ROW_R12[code],
             "members": "",
         })
@@ -202,8 +213,12 @@ def add_region12_to_macro_db_axis(
     df: pd.DataFrame,
     coco_r12: dict[str, str],
 ) -> pd.DataFrame:
-    """Add a region12 column to an rx1/rx2 table."""
-    out = df.copy()
+    """Add a region12 column to an rx1/rx2 table.
+
+    Drops ``continent`` (derived metadata that isn't part of the
+    classification; see ``build_exiobase3_axis``).
+    """
+    out = df.copy().drop(columns=["continent"], errors="ignore")
     r12_col: list[str] = []
     for _, row in out.iterrows():
         if str(row.get("type", "")) == "RoW":
@@ -294,8 +309,8 @@ def main() -> None:
         load_macro_db_axis(args.macro_db, "exiobase_rx2"), coco_r12,
     )
 
-    print(f"Building exiobase3 axis from {PRO_XLSX.name}")
-    e3 = build_exiobase3_axis(PRO_XLSX, coco_r12)
+    print(f"Building exiobase3 axis (preserving order from {OUT_XLSX.name})")
+    e3 = build_exiobase3_axis(OUT_XLSX, coco_r12)
 
     n_mis, mismatches = check_against_legacy(e3, args.check_legacy)
     if mismatches:

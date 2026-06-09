@@ -6,7 +6,15 @@ from pathlib import Path
 import pandas as pd
 
 PACKAGE_ROOT = Path(__file__).resolve().parent
-DATA_ROOT = PACKAGE_ROOT / "data"
+
+# Classifications live at the top level of the 00-class repo (``class/``) so a
+# human opening the repo finds them immediately, rather than buried under the
+# package. ``DATA_ROOT`` resolves to that repo root in the
+# normal editable (``pip install -e .``) layout. The packaged ``data/``
+# directory is kept only as a fallback for the unusual case of the package
+# being installed without the surrounding repo.
+REPO_ROOT = PACKAGE_ROOT.parents[1]
+DATA_ROOT = REPO_ROOT if (REPO_ROOT / "class").is_dir() else PACKAGE_ROOT / "data"
 
 
 def sanitize_key(value: str) -> str:
