@@ -1,8 +1,16 @@
-"""Concordance readers (shipped with the package as data).
+"""Product-to-industry structure reader.
 
-The product-to-industry concordance is canonical EXIOBASE classification
-metadata, so it lives here rather than being read from a hardcoded path
-in a consuming repo. See AGENTS.md "Classifications and country axes".
+The binary product-to-industry matrix is the **authoritative EXIOBASE
+product/industry structure** (which industry is the characteristic producer
+of each product), so it is classification metadata and lives under
+``class/`` alongside the other classifications, read via ``DATA_ROOT`` (see
+``io.py``).
+
+This is the canonical source: ``io_utils`` reads it through
+``read_pi_concordance`` and the ``00-concordances-public`` repo *derives* its
+published ``exiobase3p__exiobase3i`` concordance from it. The published
+concordance form (tidy / wide CSV, with names and weights) belongs in that
+concordances repo, not here.
 """
 
 from __future__ import annotations
@@ -27,9 +35,9 @@ def read_pi_concordance(data_root: Path | None = None) -> pd.DataFrame:
     file's native order (product / industry CodeNr order).
     """
     root = data_root or DATA_ROOT
-    path = root / "concordances" / _PI_CONCORDANCE_FILE
+    path = root / "class" / _PI_CONCORDANCE_FILE
     if not path.exists():
-        raise FileNotFoundError(f"p->i concordance not found: {path}")
+        raise FileNotFoundError(f"p->i structure not found: {path}")
     df = pd.read_csv(path, sep="\t", index_col=0)
     df.index.name = "product"
     df.columns.name = "industry"
