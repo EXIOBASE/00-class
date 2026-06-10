@@ -25,15 +25,17 @@ on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `class/` - `exio3class.xlsx`, `exio_country_axes.xlsx`, `region12.csv`,
     and `EXIOBASE20p_EXIOBASE20i_codes.txt` (the product-industry structure
     matrix)
-- Removed the bundled `exio_mr_meta.xlsx` (1.1 MB multi-region SUT metadata).
-  It duplicated information already held elsewhere: its single-region product /
-  industry axes are identical to `exio3class.xlsx`, and the only thing
-  `refresh_country_axes.py` actually used from it was the legacy EXIOBASE3
-  country order, which already lives in the `desire_order` column of the
-  `exiobase3` sheet of `exio_country_axes.xlsx`. The refresh script now
-  preserves the order from that sheet (re-deriving only the volatile columns),
-  so the ordering has exactly one home. The rebuilt `exiobase3` axis is
-  identical to the previous one.
+- Moved `exio_mr_meta.xlsx` (1.1 MB multi-region SUT metadata) to `class/`.
+  This is the meta file downstream IOT builders consume (e.g.
+  `water_extensions`'s `lib/iot_format.py` reads its `pro` / `ind` / `FD`
+  sheets); **downstream `exio_meta_file` paths must point at
+  `00-class/class/exio_mr_meta.xlsx`**. It denormalises the product / industry /
+  final-demand axes across the 49 regions, so it repeats names / codes owned
+  canonically by `exio3class.xlsx` and the `exiobase3` country order. That
+  duplication is now guarded by `tests/test_meta_consistency.py`, which fails
+  if the copy drifts from the canonical sources. `refresh_country_axes.py` no
+  longer reads `exio_mr_meta.xlsx` (it takes the country order from the
+  `desire_order` column of the `exiobase3` sheet instead).
 - Dropped the `continent` column from `exio_country_axes.xlsx` (all sheets) and
   from `refresh_country_axes.py`. It was derived metadata, not part of the
   classification, read by no consumer, and silently wrong: `country_converter`

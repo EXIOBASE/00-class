@@ -20,10 +20,18 @@ EXIOBASE metadata readers with country conversion via `country_converter`.
     - `EXIOBASE20p_EXIOBASE20i_codes.txt` - authoritative product-industry
       structure (the binary 200 x 163 matrix; which industry produces each
       product)
+    - `exio_mr_meta.xlsx` - multi-region SUT metadata (`pro` / `ind` / `FD` /
+      `VA` sheets) consumed by downstream IOT builders (e.g.
+      `water_extensions`). It is a fixed-order, denormalised view that repeats
+      the sector / region names+codes owned by `exio3class.xlsx` and the
+      `exiobase3` country order, so `tests/test_meta_consistency.py` checks it
+      against those canonical sources and fails on any drift. Point downstream
+      `exio_meta_file` settings at this path.
 - Each file is the single source of truth for the order it defines (country
-  order, sector order, region grouping). Names and other derived columns are
-  computed at refresh time (via `country_converter`) rather than stored, so the
-  same fact is never held in two places.
+  order, sector order, region grouping). Where a file (such as `exio_mr_meta.xlsx`)
+  necessarily repeats canonical names/codes for a legacy fixed layout, a test
+  guards it against the source so the two cannot drift. Other derived columns
+  are computed on demand (via `country_converter`) rather than stored.
 - The `exiobase_meta` reader functions resolve these via `DATA_ROOT` (the repo
   root), so consuming repos read them through the package API rather than from
   hardcoded paths.
