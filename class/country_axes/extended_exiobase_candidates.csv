@@ -1,0 +1,251 @@
+ISO3,ISO2,name_short,continent,TIER,n_essential,n_mrio,in_macro_db_historic,in_macro_db_nowcast,in_IEA,in_FAO,in_EXIO3,in_ICIO,in_FIGARO,in_GLORIA,in_GTAP,in_BACI,un_summary_years,imf_weo_years,un_rev4_detail_years,fao_rfb_years,EXIO3,EXIO3_3L,in_current_EXIOBASE3,in_rx1,in_rx2
+AUS,AU,Australia,Oceania,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,AU,AUS,1,1,1
+AUT,AT,Austria,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,41,AT,AUT,1,1,1
+BEL,BE,Belgium,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,22,BE,BEL,1,1,1
+BRA,BR,Brazil,America,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,26,63,BR,BRA,1,1,1
+BGR,BG,Bulgaria,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,BG,BGR,1,1,1
+CAN,CA,Canada,America,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,15,63,CA,CAN,1,1,1
+CHN,CN,China,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,0,63,CN,CHN,1,1,1
+HRV,HR,Croatia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,40,30,32,HR,HRV,1,1,1
+CYP,CY,Cyprus,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,27,CY,CYP,1,1,1
+CZE,CZ,Czechia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,37,29,63,CZ,CZE,1,1,1
+DNK,DK,Denmark,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,DK,DNK,1,1,1
+EST,EE,Estonia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,39,29,32,EE,EST,1,1,1
+FIN,FI,Finland,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,FI,FIN,1,1,1
+FRA,FR,France,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,FR,FRA,1,1,1
+DEU,DE,Germany,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,DE,DEU,1,1,1
+GRC,^GR$|^EL$,Greece,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,GR,GRC,1,1,1
+HUN,HU,Hungary,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,HU,HUN,1,1,1
+IND,IN,India,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,10,63,IN,IND,1,1,1
+IDN,ID,Indonesia,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,0,61,ID,IDN,1,1,1
+IRL,IE,Ireland,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,IE,IRL,1,1,1
+ITA,IT,Italy,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,IT,ITA,1,1,1
+JPN,JP,Japan,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,JP,JPN,1,1,1
+LVA,LV,Latvia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,40,29,20,LV,LVA,1,1,1
+LTU,LT,Lithuania,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,37,29,32,LT,LTU,1,1,1
+LUX,LU,Luxembourg,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,22,LU,LUX,1,1,1
+MLT,MT,Malta,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,37,30,11,MT,MLT,1,1,1
+MEX,MX,Mexico,America,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,MX,MEX,1,1,1
+NLD,NL,Netherlands,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,NL,NLD,1,1,1
+NOR,NO,Norway,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,NO,NOR,1,1,1
+POL,PL,Poland,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,PL,POL,1,1,1
+PRT,PT,Portugal,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,PT,PRT,1,1,1
+ROU,RO,Romania,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,30,63,RO,ROM,1,1,1
+RUS,RU,Russia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,40,3,32,RU,RUS,1,1,1
+SVK,SK,Slovakia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,39,30,31,SK,SVK,1,1,1
+SVN,SI,Slovenia,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,42,40,29,22,SI,SVN,1,1,1
+ZAF,ZA,South Africa,Africa,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,0,63,ZA,ZAF,1,1,1
+KOR,KR,South Korea,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,28,63,KR,KOR,1,1,1
+ESP,ES,Spain,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,ES,ESP,1,1,1
+SWE,SE,Sweden,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,29,63,SE,SWE,1,1,1
+CHE,CH,Switzerland,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,28,51,CH,CHE,1,1,1
+TUR,TR,Türkiye,Asia,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,26,63,TR,TUR,1,1,1
+GBR,^GB$|^UK$,United Kingdom,Europe,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,28,63,GB,GBR,1,1,1
+USA,US,United States,America,TIER_A_full_coverage,3,6,1,1,1,1,1,1,1,1,1,1,62,42,25,63,US,USA,1,1,1
+ARG,AR,Argentina,America,TIER_A_full_coverage,3,5,1,1,1,1,0,1,1,1,1,1,62,42,0,63,,WWL,0,1,1
+ALB,AL,Albania,Europe,TIER_A_full_coverage,3,4,1,1,1,1,0,0,1,1,1,1,62,42,22,58,,WWE,0,1,1
+BGD,BD,Bangladesh,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,9,63,,WWA,0,1,1
+BLR,BY,Belarus,Europe,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,42,40,16,32,,WWE,0,1,1
+KHM,KH,Cambodia,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,0,10,,WWA,0,1,1
+CHL,CL,Chile,America,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,19,63,,WWL,0,1,1
+COL,CO,Colombia,America,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,19,62,,WWL,0,1,1
+CRI,CR,Costa Rica,America,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,30,50,,WWL,0,1,1
+EGY,EG,Egypt,Africa,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,0,63,,WWM,0,1,1
+KAZ,KZ,Kazakhstan,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,42,40,14,32,,WWA,0,1,1
+LAO,LA,Laos,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,0,9,,WWA,0,1,1
+MYS,MY,Malaysia,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,15,57,,WWA,0,1,1
+MAR,MA,Morocco,Africa,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,11,63,,WWF,0,1,1
+MMR,MM,Myanmar,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,34,0,54,,WWA,0,1,1
+NZL,NZ,New Zealand,Oceania,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,28,63,,WWA,0,1,1
+NGA,NG,Nigeria,Africa,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,15,44,,WWF,0,1,1
+PAK,PK,Pakistan,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,36,25,63,,WWA,0,1,1
+PER,PE,Peru,America,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,18,59,,WWL,0,1,1
+PHL,PH,Philippines,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,12,63,,WWA,0,1,1
+SAU,SA,Saudi Arabia,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,1,1,0,1,62,42,0,54,,WWM,0,1,1
+SEN,SN,Senegal,Africa,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,10,57,,WWF,0,1,1
+SGP,SG,Singapore,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,30,18,,WWA,0,1,1
+THA,TH,Thailand,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,0,40,,WWA,0,1,1
+TUN,TN,Tunisia,Africa,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,9,63,,WWF,0,1,1
+UKR,UA,Ukraine,Europe,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,42,41,22,32,,WWE,0,1,1
+VNM,VN,Vietnam,Asia,TIER_A_full_coverage,3,4,1,1,1,1,0,1,0,1,1,1,62,42,0,63,,WWA,0,1,1
+AGO,AO,Angola,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,15,22,,WWF,0,1,1
+ARM,AM,Armenia,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,42,40,14,12,,WWA,0,1,1
+AZE,AZ,Azerbaijan,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,42,40,19,16,,WWA,0,1,1
+BOL,BO,Bolivia,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,37,0,22,,WWL,0,1,1
+BWA,BW,Botswana,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,15,15,,WWF,0,1,1
+BRN,BN,Brunei Darussalam,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,15,22,,WWA,0,1,1
+CMR,CM,Cameroon,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,29,24,,WWF,0,1,1
+CIV,CI,Côte d'Ivoire,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,0,32,,WWF,0,1,1
+ECU,EC,Ecuador,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,30,27,,WWL,0,1,1
+ETH,ET,Ethiopia,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,0,11,,WWF,0,1,1
+GEO,GE,Georgia,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,42,38,15,32,,WWA,0,1,1
+GTM,GT,Guatemala,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,12,30,,WWL,0,1,1
+HKG,HK,Hong Kong,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,0,1,1,62,42,24,9,,WWA,0,1,1
+ISL,IS,Iceland,Europe,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,28,57,,WWE,0,1,1
+IRN,IR,Iran,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,13,61,,WWM,0,1,1
+ISR,IL,Israel,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,29,63,,WWM,0,1,1
+JOR,JO,Jordan,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,15,51,,WWM,0,1,1
+KGZ,KG,Kyrgyzstan,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,42,40,14,15,,WWA,0,1,1
+MDG,MG,Madagascar,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,0,22,,WWF,0,1,1
+MOZ,MZ,Mozambique,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,29,28,,WWF,0,1,1
+NIC,NI,Nicaragua,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,0,22,,WWL,0,1,1
+PAN,PA,Panama,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,7,22,,WWL,0,1,1
+PRY,PY,Paraguay,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,16,11,,WWL,0,1,1
+SRB,RS,Serbia,Europe,TIER_A_full_coverage,3,3,1,1,1,1,0,0,1,1,0,1,62,35,30,18,,WWE,0,1,1
+LKA,LK,Sri Lanka,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,35,14,45,,WWA,0,1,1
+TWN,TW,Taiwan,Asia,TIER_A_full_coverage,3,3,1,1,1,1,1,1,0,0,1,0,51,42,0,0,TW,TWN,1,1,1
+TZA,TZ,Tanzania,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,20,31,,WWF,0,1,1
+UGA,UG,Uganda,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,17,24,,WWF,0,1,1
+ARE,AE,United Arab Emirates,Asia,TIER_A_full_coverage,3,3,1,1,1,1,0,1,0,1,0,1,62,42,15,41,,WWM,0,1,1
+URY,UY,Uruguay,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,8,63,,WWL,0,1,1
+VEN,VE,Venezuela,America,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,38,0,63,,WWL,0,1,1
+ZMB,ZM,Zambia,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,14,42,,WWF,0,1,1
+ZWE,ZW,Zimbabwe,Africa,TIER_A_full_coverage,3,3,1,1,1,1,0,0,0,1,1,1,62,42,0,63,,WWF,0,1,1
+DZA,DZ,Algeria,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,23,63,,WWF,0,1,1
+BHR,BH,Bahrain,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,14,26,,WWM,0,1,1
+BEN,BJ,Benin,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,2,22,,WWF,0,1,1
+BIH,BA,Bosnia and Herzegovina,Europe,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,36,19,22,,WWE,0,1,1
+BFA,BF,Burkina Faso,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,18,33,,WWF,0,1,1
+TCD,TD,Chad,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,2,7,,WWF,0,1,1
+CUB,CU,Cuba,America,TIER_A_full_coverage,3,2,1,0,1,1,0,0,0,1,0,1,62,0,0,63,,WWL,0,1,1
+DOM,DO,Dominican Republic,America,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,13,22,,WWL,0,1,1
+SLV,SV,El Salvador,America,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,20,44,,WWL,0,1,1
+GNQ,GQ,Equatorial Guinea,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,7,,WWF,0,1,1
+ERI,ER,Eritrea,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,28,0,11,,WWF,0,1,1
+GAB,GA,Gabon,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,11,,WWF,0,1,1
+GHA,GH,Ghana,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,11,,WWF,0,1,1
+HTI,HT,Haiti,America,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,7,,WWL,0,1,1
+HND,HN,Honduras,America,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,11,,WWL,0,1,1
+IRQ,IQ,Iraq,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,32,0,53,,WWM,0,1,1
+JAM,JM,Jamaica,America,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,8,,WWL,0,1,1
+KEN,KE,Kenya,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,19,18,,WWF,0,1,1
+KWT,KW,Kuwait,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,57,,WWM,0,1,1
+LBN,LB,Lebanon,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,36,0,60,,WWM,0,1,1
+LBY,LY,Libya,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,42,,WWF,0,1,1
+MLI,ML,Mali,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,22,,WWF,0,1,1
+MRT,MR,Mauritania,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,7,,WWF,0,1,1
+MUS,MU,Mauritius,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,0,1,1,62,42,18,50,,WWF,0,1,1
+MDA,MD,Moldova,Europe,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,40,16,8,,WWE,0,1,1
+MNG,MN,Mongolia,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,24,11,,WWA,0,1,1
+MNE,ME,Montenegro,Europe,TIER_A_full_coverage,3,2,1,1,1,1,0,0,1,0,0,1,42,32,19,11,,WWE,0,1,1
+NAM,,Namibia,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,12,8,,WWF,0,1,1
+NPL,NP,Nepal,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,13,23,,WWA,0,1,1
+NER,NE,Niger,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,22,11,,WWF,0,1,1
+PRK,KP,North Korea,Asia,TIER_A_full_coverage,3,2,1,0,1,1,0,0,0,1,0,1,62,0,0,63,,WWA,0,1,1
+OMN,OM,Oman,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,6,22,,WWM,0,1,1
+QAT,QA,Qatar,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,12,51,,WWM,0,1,1
+RWA,RW,Rwanda,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,1,11,,WWF,0,1,1
+SYR,SY,Syria,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,21,0,56,,WWM,0,1,1
+TJK,TJ,Tajikistan,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,40,0,32,,WWA,0,1,1
+TGO,TG,Togo,Africa,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,62,42,0,15,,WWF,0,1,1
+TKM,TM,Turkmenistan,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,40,0,32,,WWA,0,1,1
+UZB,UZ,Uzbekistan,Asia,TIER_A_full_coverage,3,2,1,1,1,1,0,0,0,1,0,1,42,40,15,32,,WWA,0,1,1
+SWZ,SZ,Eswatini,Africa,TIER_A_full_coverage,3,1,1,1,1,1,0,0,0,0,0,1,62,42,24,12,,WWF,0,1,1
+GUY,GY,Guyana,America,TIER_A_full_coverage,3,1,1,1,1,1,0,0,0,0,0,1,62,42,0,11,,WWL,0,1,1
+PSE,PS,Palestine,Asia,TIER_A_full_coverage,3,1,1,0,1,1,0,0,0,0,0,1,62,0,29,7,,WWM,0,1,1
+SUR,SR,Suriname,America,TIER_A_full_coverage,3,1,1,1,1,1,0,0,0,0,0,1,62,42,0,12,,WWL,0,1,1
+TTO,TT,Trinidad and Tobago,America,TIER_A_full_coverage,3,1,1,1,1,1,0,0,0,0,0,1,62,42,12,63,,WWL,0,1,1
+YEM,YE,Yemen,Asia,TIER_A_full_coverage,3,1,1,1,1,1,0,0,0,0,0,1,62,18,0,11,,WWM,0,1,1
+COD,CD,DR Congo,Africa,TIER_B_partial_coverage,2,3,1,1,0,1,0,1,0,1,0,1,62,42,0,21,,WWF,0,0,1
+MWI,MW,Malawi,Africa,TIER_B_partial_coverage,2,3,1,1,0,1,0,0,0,1,1,1,62,42,0,17,,WWF,0,0,0
+MKD,MK,North Macedonia,Europe,TIER_B_partial_coverage,2,3,1,1,0,1,0,0,1,1,0,1,42,40,23,16,,WWE,0,0,0
+AFG,AF,Afghanistan,Asia,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,24,0,50,,WWA,0,0,0
+BHS,BS,Bahamas,America,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,24,8,,WWL,0,0,0
+BLZ,BZ,Belize,America,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,29,11,,WWL,0,0,0
+BTN,BT,Bhutan,Asia,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,7,20,,WWA,0,0,0
+BDI,BI,Burundi,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,22,,WWF,0,0,0
+CAF,CF,Central African Republic,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,22,,WWF,0,0,0
+COG,CG,Congo Republic,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,8,,WWF,0,0,0
+DJI,DJ,Djibouti,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,7,,WWF,0,0,0
+GMB,GM,Gambia,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,12,22,,WWF,0,0,0
+GIN,GN,Guinea,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,11,,WWF,0,0,0
+LBR,LR,Liberia,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,32,8,7,,WWF,0,0,0
+PNG,PG,Papua New Guinea,Oceania,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,13,11,,WWA,0,0,0
+STP,ST,Sao Tome and Principe,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,1,0,0,0,1,62,42,0,7,,WWF,0,0,1
+SLE,SL,Sierra Leone,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,42,0,7,,WWF,0,0,0
+SOM,SO,Somalia,Africa,TIER_B_partial_coverage,2,2,1,1,0,1,0,0,0,1,0,1,62,21,0,0,,WWF,0,0,0
+ATG,AG,Antigua and Barbuda,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,22,,WWL,0,0,0
+BRB,BB,Barbados,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,22,,WWL,0,0,0
+CPV,CV,Cabo Verde,Africa,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,18,9,,WWF,0,0,0
+COM,KM,Comoros,Africa,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWF,0,0,0
+COK,CK,Cook Islands,Oceania,TIER_B_partial_coverage,2,1,1,0,0,1,0,0,0,0,0,1,62,0,0,17,,WWA,0,0,0
+DMA,DM,Dominica,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,21,,WWL,0,0,0
+FJI,FJ,Fiji,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,10,11,,WWA,0,0,0
+PYF,PF,French Polynesia,Oceania,TIER_B_partial_coverage,2,1,1,0,0,1,0,0,0,0,0,1,62,0,0,8,,WWA,0,0,0
+GRL,GL,Greenland,America,TIER_B_partial_coverage,2,1,1,0,1,0,0,0,0,0,0,1,62,0,19,7,,WWL,0,0,1
+GRD,GD,Grenada,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWL,0,0,0
+GNB,GW,Guinea-Bissau,Africa,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWF,0,0,0
+KIR,KI,Kiribati,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWA,0,0,0
+LSO,LS,Lesotho,Africa,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,17,9,,WWF,0,0,0
+MAC,MO,Macau,Asia,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,31,0,0,,WWA,0,0,0
+MDV,MV,Maldives,Asia,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,22,,WWA,0,0,0
+MHL,MH,Marshall Islands,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,35,0,22,,WWA,0,0,0
+FSM,FM,"Micronesia, Fed. Sts.",Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,37,0,22,,WWA,0,0,0
+NRU,NR,Nauru,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,28,0,11,,WWA,0,0,0
+NCL,NC,New Caledonia,Oceania,TIER_B_partial_coverage,2,1,1,0,0,1,0,0,0,0,0,1,62,0,0,9,,WWA,0,0,0
+WSM,WS,Samoa,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,11,,WWA,0,0,0
+SYC,SC,Seychelles,Africa,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,20,20,,WWF,0,0,0
+SLB,SB,Solomon Islands,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWA,0,0,0
+KNA,KN,St. Kitts and Nevis,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,19,,WWL,0,0,0
+LCA,LC,St. Lucia,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,17,,WWL,0,0,0
+VCT,VC,St. Vincent and the Grenadines,America,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,24,7,,WWL,0,0,0
+SDN,SD,Sudan,Africa,TIER_B_partial_coverage,2,1,1,1,1,0,0,0,0,0,0,1,62,42,0,19,,WWF,0,0,1
+TLS,TL,Timor-Leste,Asia,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,42,32,0,0,,WWA,0,0,0
+TON,TO,Tonga,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,22,,WWA,0,0,0
+TUV,TV,Tuvalu,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,32,0,7,,WWA,0,0,0
+VUT,VU,Vanuatu,Oceania,TIER_B_partial_coverage,2,1,1,1,0,1,0,0,0,0,0,1,62,42,0,7,,WWA,0,0,0
+CUW,CW,Curaçao,America,TIER_B_partial_coverage,2,0,1,0,1,0,0,0,0,0,0,0,27,0,6,0,,WWL,0,0,1
+XKX,XK,Kosovo,Europe,TIER_B_partial_coverage,2,0,1,0,1,0,0,0,0,0,0,0,42,0,0,0,,WWE,0,0,1
+PRI,PR,Puerto Rico,America,TIER_B_partial_coverage,2,0,1,1,0,1,0,0,0,0,0,0,62,42,0,0,,WWL,0,0,0
+SSD,SS,South Sudan,Africa,TIER_B_partial_coverage,2,0,1,1,1,0,0,0,0,0,0,0,24,21,5,7,,WWF,0,0,1
+AND,AD,Andorra,Europe,TIER_C_minimal_coverage,1,1,1,1,0,0,0,0,0,0,0,1,62,32,0,0,,WWE,0,0,0
+AIA,AI,Anguilla,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,0,0,,WWL,0,0,0
+ABW,AW,Aruba,America,TIER_C_minimal_coverage,1,1,1,1,0,0,0,0,0,0,0,1,62,37,8,7,,WWL,0,0,0
+BMU,BM,Bermuda,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,24,10,,WWL,0,0,0
+VGB,VG,British Virgin Islands,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,11,0,,WWL,0,0,0
+CYM,KY,Cayman Islands,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,18,0,,WWL,0,0,0
+GIB,GI,Gibraltar,Europe,TIER_C_minimal_coverage,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,,WWE,0,0,0
+MSR,MS,Montserrat,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,0,0,,WWL,0,0,0
+NIU,NU,Niue,Oceania,TIER_C_minimal_coverage,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+PLW,PW,Palau,Oceania,TIER_C_minimal_coverage,1,1,1,1,0,0,0,0,0,0,0,1,62,32,0,7,,WWA,0,0,0
+SMR,SM,San Marino,Europe,TIER_C_minimal_coverage,1,1,1,1,0,0,0,0,0,0,0,1,62,32,9,0,,WWE,0,0,0
+TCA,TC,Turks and Caicos Islands,America,TIER_C_minimal_coverage,1,1,1,0,0,0,0,0,0,0,0,1,62,0,0,0,,WWL,0,0,0
+FRO,FO,Faroe Islands,Europe,TIER_C_minimal_coverage,1,0,0,0,0,1,0,0,0,0,0,0,0,0,26,7,,WWE,0,0,0
+LIE,LI,Liechtenstein,Europe,TIER_C_minimal_coverage,1,0,1,1,0,0,0,0,0,0,0,0,62,32,7,0,,WWE,0,0,0
+MCO,MC,Monaco,Europe,TIER_C_minimal_coverage,1,0,1,0,0,0,0,0,0,0,0,0,62,0,0,0,,WWE,0,0,0
+SXM,SX,Sint Maarten,America,TIER_C_minimal_coverage,1,0,1,0,0,0,0,0,0,0,0,0,27,0,8,0,,WWL,0,0,0
+ASM,AS,American Samoa,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+IOT,IO,British Indian Ocean Territory,Africa,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+CXR,CX,Christmas Island,Asia,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+CCK,CC,Cocos (Keeling) Islands,Asia,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+FLK,FK,Falkland Islands,America,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWL,0,0,0
+ATF,TF,French Southern Territories,Africa,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWF,0,0,0
+GUM,GU,Guam,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+NFK,NF,Norfolk Island,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+MNP,MP,Northern Mariana Islands,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+PCN,PN,Pitcairn,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+SHN,SH,St. Helena,Africa,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWF,0,0,0
+SPM,PM,St. Pierre and Miquelon,America,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWL,0,0,0
+TKL,TK,Tokelau,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+WLF,WF,Wallis and Futuna Islands,Oceania,absent,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,WWA,0,0,0
+ATA,AQ,Antarctica,Antarctica,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWA,0,0,0
+BES,BQ,"Bonaire, Saint Eustatius and Saba",America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+BVT,BV,Bouvet Island,Antarctica,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWA,0,0,0
+GUF,GF,French Guiana,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+GLP,GP,Guadeloupe,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+GGY,GG,Guernsey,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0
+HMD,HM,Heard and McDonald Islands,Antarctica,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWA,0,0,0
+IMN,IM,Isle of Man,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0
+JEY,JE,Jersey,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0
+MTQ,MQ,Martinique,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+MYT,YT,Mayotte,Africa,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWF,0,0,0
+REU,RE,Réunion,Africa,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWF,0,0,0
+MAF,MF,Saint-Martin,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+SGS,GS,South Georgia and South Sandwich Is.,Antarctica,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWA,0,0,0
+BLM,BL,St. Barths,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+SJM,SJ,Svalbard and Jan Mayen Islands,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0
+UMI,UM,United States Minor Outlying Islands,Oceania,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWA,0,0,0
+VIR,VI,United States Virgin Islands,America,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWL,0,0,0
+VAT,VA,Vatican,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0
+ESH,EH,Western Sahara,Africa,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWF,0,0,0
+ALA,AX,Åland Islands,Europe,absent,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,WWE,0,0,0

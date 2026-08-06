@@ -1,0 +1,251 @@
+ISO3,ISO2,name_short,EXIO3,EXIO3_3L,FAOcode,IEA,OECD,UNmember,EU27,G7,G20,BASIC,BRIC,WIOD,Eora,IMAGE,MESSAGE,REMIND,continent,OECD_ICIO,FIGARO,GTAP11,GLORIA,n_databases
+AUS,AU,Australia,AU,AUS,10,Australia,1971.0,1945,,,G20,,,AUS,AUS,Oceania,PAO,CAZ,Oceania,AUS,AUS,Australia,AUS,10
+AUT,AT,Austria,AT,AUT,11,Austria,1961.0,1955,EU27,,G20,,,AUT,AUT,Western Europe,WEU,EUR,Europe,AUT,AUT,Austria,AUT,10
+BEL,BE,Belgium,BE,BEL,255,Belgium,1961.0,1945,EU27,,G20,,,BEL,BEL,Western Europe,WEU,EUR,Europe,BEL,BEL,Belgium,BEL,10
+CAN,CA,Canada,CA,CAN,33,Canada,1961.0,1945,,G7,G20,,,CAN,CAN,Canada,NAM,CAZ,America,CAN,CAN,Canada,CAN,10
+CZE,CZ,Czechia,CZ,CZE,167,Czech Republic,1995.0,1993,EU27,,G20,,,CZE,CZE,Central Europe,EEU,EUR,Europe,CZE,CZE,Czech Republic,CZE,10
+DNK,DK,Denmark,DK,DNK,54,Denmark,1961.0,1945,EU27,,G20,,,DNK,DNK,Western Europe,WEU,EUR,Europe,DNK,DNK,Denmark,DNK,10
+EST,EE,Estonia,EE,EST,63,Estonia,2010.0,1991,EU27,,G20,,,EST,EST,Central Europe,EEU,EUR,Europe,EST,EST,Estonia,EST,10
+FIN,FI,Finland,FI,FIN,67,Finland,1969.0,1955,EU27,,G20,,,FIN,FIN,Western Europe,WEU,EUR,Europe,FIN,FIN,Finland,FIN,10
+FRA,FR,France,FR,FRA,68,France,1961.0,1945,EU27,G7,G20,,,FRA,FRA,Western Europe,WEU,EUR,Europe,FRA,FRA,France,FRA,10
+DEU,DE,Germany,DE,DEU,79,Germany,1961.0,1973,EU27,G7,G20,,,DEU,DEU,Western Europe,WEU,EUR,Europe,DEU,DEU,Germany,DEU,10
+GRC,^GR$|^EL$,Greece,GR,GRC,84,Greece,1961.0,1945,EU27,,G20,,,GRC,GRC,Western Europe,WEU,EUR,Europe,GRC,GRC,Greece,GRC,10
+HUN,HU,Hungary,HU,HUN,97,Hungary,1996.0,1955,EU27,,G20,,,HUN,HUN,Central Europe,EEU,EUR,Europe,HUN,HUN,Hungary,HUN,10
+IRL,IE,Ireland,IE,IRL,104,Ireland,1961.0,1955,EU27,,G20,,,IRL,IRL,Western Europe,WEU,EUR,Europe,IRL,IRL,Ireland,IRL,10
+ITA,IT,Italy,IT,ITA,106,Italy,1962.0,1955,EU27,G7,G20,,,ITA,ITA,Western Europe,WEU,EUR,Europe,ITA,ITA,Italy,ITA,10
+JPN,JP,Japan,JP,JPN,110,Japan,1964.0,1956,,G7,G20,,,JPN,JPN,Japan,PAO,JPN,Asia,JPN,JPN,Japan,JPN,10
+LVA,LV,Latvia,LV,LVA,119,Latvia,2016.0,1991,EU27,,G20,,,LVA,LVA,Central Europe,EEU,EUR,Europe,LVA,LVA,Latvia,LVA,10
+LTU,LT,Lithuania,LT,LTU,126,Lithuania,2018.0,1991,EU27,,G20,,,LTU,LTU,Central Europe,EEU,EUR,Europe,LTU,LTU,Lithuania,LTU,10
+LUX,LU,Luxembourg,LU,LUX,256,Luxembourg,1961.0,1945,EU27,,G20,,,LUX,LUX,Western Europe,WEU,EUR,Europe,LUX,LUX,Luxembourg,LUX,10
+MEX,MX,Mexico,MX,MEX,138,Mexico,1994.0,1945,,,G20,,,MEX,MEX,Mexico,LAC,LAM,America,MEX,MEX,Mexico,MEX,10
+NLD,NL,Netherlands,NL,NLD,150,Netherlands,1961.0,1945,EU27,,G20,,,NLD,NLD,Western Europe,WEU,EUR,Europe,NLD,NLD,Netherlands,NLD,10
+POL,PL,Poland,PL,POL,173,Poland,1996.0,1945,EU27,,G20,,,POL,POL,Central Europe,EEU,EUR,Europe,POL,POL,Poland,POL,10
+PRT,PT,Portugal,PT,PRT,174,Portugal,1961.0,1955,EU27,,G20,,,PRT,PRT,Western Europe,WEU,EUR,Europe,PRT,PRT,Portugal,PRT,10
+SVK,SK,Slovakia,SK,SVK,199,Slovak Republic,2000.0,1993,EU27,,G20,,,SVK,SVK,Central Europe,EEU,EUR,Europe,SVK,SVK,Slovakia,SVK,10
+SVN,SI,Slovenia,SI,SVN,198,Slovenia,2010.0,1992,EU27,,G20,,,SVN,SVN,Central Europe,EEU,EUR,Europe,SVN,SVN,Slovenia,SVN,10
+KOR,KR,South Korea,KR,KOR,117,Korea,1996.0,1991,,,G20,,,KOR,KOR,Korea region,PAS,OAS,Asia,KOR,KOR,Korea,KOR,10
+ESP,ES,Spain,ES,ESP,203,Spain,1961.0,1955,EU27,,G20,,,ESP,ESP,Western Europe,WEU,EUR,Europe,ESP,ESP,Spain,ESP,10
+SWE,SE,Sweden,SE,SWE,210,Sweden,1961.0,1946,EU27,,G20,,,SWE,SWE,Western Europe,WEU,EUR,Europe,SWE,SWE,Sweden,SWE,10
+TUR,TR,Türkiye,TR,TUR,223,Türkiye,1961.0,1945,,,G20,,,TUR,TUR,Turkey,WEU,NEU,Asia,TUR,TUR,Turkey,TUR,10
+GBR,^GB$|^UK$,United Kingdom,GB,GBR,229,United Kingdom,1961.0,1945,,G7,G20,,,GBR,GBR,Western Europe,WEU,EUR,Europe,GBR,GBR,United Kingdom,GBR,10
+USA,US,United States,US,USA,231,United States,1961.0,1945,,G7,G20,,,USA,USA,USA,NAM,USA,America,USA,USA,United States of America,USA,10
+BRA,BR,Brazil,BR,BRA,21,Brazil,,1945,,,G20,BASIC,BRIC,BRA,BRA,Brazil,LAC,LAM,America,BRA,BRA,Brazil,BRA,9
+BGR,BG,Bulgaria,BG,BGR,27,Bulgaria,,1955,EU27,,G20,,,BGR,BGR,Central Europe,EEU,EUR,Europe,BGR,BGR,Bulgaria,BGR,9
+CHN,CN,China,CN,CHN,351,People's Republic of China,,1945,,,G20,BASIC,BRIC,CHN,CHN,China region,CPA,CHA,Asia,CHN,CHN,China,CHN,9
+CYP,CY,Cyprus,CY,CYP,50,Cyprus,,1960,EU27,,G20,,,CYP,CYP,Central Europe,WEU,EUR,Asia,CYP,CYP,Cyprus,CYP,9
+IND,IN,India,IN,IND,100,India,,1945,,,G20,BASIC,BRIC,IND,IND,India,SAS,IND,Asia,IND,IND,India,IND,9
+IDN,ID,Indonesia,ID,IDN,101,Indonesia,,1950,,,G20,,,IDN,IDN,Indonesia region,PAS,OAS,Asia,IDN,IDN,Indonesia,IDN,9
+MLT,MT,Malta,MT,MLT,134,Malta,,1964,EU27,,G20,,,MLT,MLT,Western Europe,WEU,EUR,Europe,MLT,MLT,Malta,MLT,9
+NOR,NO,Norway,NO,NOR,162,Norway,1961.0,1945,,,,,,,NOR,Western Europe,WEU,NEU,Europe,NOR,NOR,Norway,NOR,9
+ROU,RO,Romania,RO,ROM,183,Romania,,1955,EU27,,G20,,,ROU,ROU,Central Europe,EEU,EUR,Europe,ROU,ROU,Romania,ROU,9
+RUS,RU,Russia,RU,RUS,185,Russian Federation,,1945,,,G20,,BRIC,RUS,RUS,Russia region,FSU,REF,Europe,RUS,RUS,Russian Federation,RUS,9
+CHE,CH,Switzerland,CH,CHE,211,Switzerland,1961.0,2002,,,,,,,CHE,Western Europe,WEU,NEU,Europe,CHE,CHE,Switzerland,CHE,9
+HRV,HR,Croatia,HR,HRV,98,Croatia,,1992,EU27,,G20,,,,HRV,Central Europe,EEU,EUR,Europe,HRV,HRV,Croatia,HRV,8
+ZAF,ZA,South Africa,ZA,ZAF,202,South Africa,,1945,,,G20,BASIC,,,ZAF,South Africa,AFR,SSA,Africa,ZAF,ZAF,South Africa,ZAF,8
+ARG,AR,Argentina,,WWL,9,Argentina,,1945,,,G20,,,,ARG,Rest of South America,LAC,LAM,America,ARG,ARG,Argentina,ARG,7
+CHL,CL,Chile,,WWL,40,Chile,2010.0,1945,,,,,,,CHL,Rest of South America,LAC,LAM,America,CHL,,Chile,CHL,7
+COL,CO,Colombia,,WWL,44,Colombia,2020.0,1945,,,,,,,COL,Rest of South America,LAC,LAM,America,COL,,Colombia,COL,7
+CRI,CR,Costa Rica,,WWL,48,Costa Rica,2021.0,1945,,,,,,,CRI,Central America,LAC,LAM,America,CRI,,Costa Rica,CRI,7
+NZL,NZ,New Zealand,,WWA,156,New Zealand,1973.0,1945,,,,,,,NZL,Oceania,PAO,CAZ,Oceania,NZL,,New Zealand,NZL,7
+TWN,TW,Taiwan,TW,TWN,214,Chinese Taipei,,,,,,,,TWN,TWN,China region,PAS,CHA,Asia,TWN,,Taiwan,,7
+ALB,AL,Albania,,WWE,3,Albania,,1955,,,,,,,ALB,Central Europe,EEU,NEU,Europe,,ALB,Albania,ALB,6
+BGD,BD,Bangladesh,,WWA,16,Bangladesh,,1974,,,,,,,BGD,Rest of South Asia,SAS,OAS,Asia,BGD,,Bangladesh,BGD,6
+BLR,BY,Belarus,,WWE,57,Belarus,,1945,,,,,,,BLR,Ukraine region,FSU,REF,Europe,BLR,,Belarus,BLR,6
+KHM,KH,Cambodia,,WWA,115,Cambodia,,1955,,,,,,,KHM,Southeastern Asia,CPA,OAS,Asia,KHM,,Cambodia,KHM,6
+EGY,EG,Egypt,,WWM,59,Egypt,,1945,,,,,,,EGY,Northern Africa,MEA,MEA,Africa,EGY,,Egypt,EGY,6
+ISL,IS,Iceland,,WWE,99,Iceland,1961.0,1946,,,,,,,ISL,Western Europe,WEU,NEU,Europe,ISL,,,ISL,6
+ISR,IL,Israel,,WWM,105,Israel,2010.0,1949,,,,,,,ISR,Middle East,MEA,MEA,Asia,ISR,,,ISR,6
+KAZ,KZ,Kazakhstan,,WWA,108,Kazakhstan,,1992,,,,,,,KAZ,Central Asia,FSU,REF,Asia,KAZ,,Kazakhstan,KAZ,6
+LAO,LA,Laos,,WWA,120,Lao People's Democratic Republic,,1955,,,,,,,LAO,Southeastern Asia,CPA,OAS,Asia,LAO,,Lao People's Democratic Republic,LAO,6
+MYS,MY,Malaysia,,WWA,131,Malaysia,,1957,,,,,,,MYS,Southeastern Asia,PAS,OAS,Asia,MYS,,Malaysia,MYS,6
+MAR,MA,Morocco,,WWF,143,Morocco,,1956,,,,,,,MAR,Northern Africa,MEA,MEA,Africa,MAR,,Morocco,MAR,6
+MMR,MM,Myanmar,,WWA,28,Myanmar,,1948,,,,,,,MMR,Southeastern Asia,PAS,OAS,Asia,MMR,,Myanmar,MMR,6
+NGA,NG,Nigeria,,WWF,159,Nigeria,,1960,,,,,,,NGA,Western Africa,AFR,SSA,Africa,NGA,,Nigeria,NGA,6
+PAK,PK,Pakistan,,WWA,165,Pakistan,,1947,,,,,,,PAK,Rest of South Asia,SAS,OAS,Asia,PAK,,Pakistan,PAK,6
+PER,PE,Peru,,WWL,170,Peru,,1945,,,,,,,PER,Rest of South America,LAC,LAM,America,PER,,Peru,PER,6
+PHL,PH,Philippines,,WWA,171,Philippines,,1945,,,,,,,PHL,Southeastern Asia,PAS,OAS,Asia,PHL,,Philippines,PHL,6
+SAU,SA,Saudi Arabia,,WWM,194,Saudi Arabia,,1945,,,G20,,,,SAU,Middle East,MEA,MEA,Asia,SAU,SAU,,SAU,6
+SEN,SN,Senegal,,WWF,195,Senegal,,1960,,,,,,,SEN,Western Africa,AFR,SSA,Africa,SEN,,Senegal,SEN,6
+SGP,SG,Singapore,,WWA,200,Singapore,,1965,,,,,,,SGP,Southeastern Asia,PAS,OAS,Asia,SGP,,Singapore,SGP,6
+THA,TH,Thailand,,WWA,216,Thailand,,1946,,,,,,,THA,Southeastern Asia,PAS,OAS,Asia,THA,,Thailand,THA,6
+TUN,TN,Tunisia,,WWF,222,Tunisia,,1956,,,,,,,TUN,Northern Africa,MEA,MEA,Africa,TUN,,Tunisia,TUN,6
+UKR,UA,Ukraine,,WWE,230,Ukraine,,1945,,,,,,,UKR,Ukraine region,FSU,REF,Europe,UKR,,Ukraine,UKR,6
+VNM,VN,Vietnam,,WWA,237,Viet Nam,,1977,,,,,,,VNM,Southeastern Asia,CPA,OAS,Asia,VNM,,Vietnam,VNM,6
+AGO,AO,Angola,,WWF,7,Angola,,1976,,,,,,,AGO,Rest of Southern Africa,AFR,SSA,Africa,AGO,,,AGO,5
+ARM,AM,Armenia,,WWA,1,Armenia,,1992,,,,,,,ARM,Russia region,FSU,REF,Asia,,,Armenia,ARM,5
+AZE,AZ,Azerbaijan,,WWA,52,Azerbaijan,,1992,,,,,,,AZE,Russia region,FSU,REF,Asia,,,Azerbaijan,AZE,5
+BOL,BO,Bolivia,,WWL,19,Plurinational State of Bolivia,,1945,,,,,,,BOL,Rest of South America,LAC,LAM,America,,,Bolivia,BOL,5
+BWA,BW,Botswana,,WWF,20,Botswana,,1966,,,,,,,BWA,Rest of Southern Africa,AFR,SSA,Africa,,,Botswana,BWA,5
+BRN,BN,Brunei Darussalam,,WWA,26,Brunei Darussalam,,1984,,,,,,,BRN,Southeastern Asia,PAS,OAS,Asia,BRN,,,BRN,5
+CMR,CM,Cameroon,,WWF,32,Cameroon,,1960,,,,,,,CMR,Western Africa,AFR,SSA,Africa,CMR,,,CMR,5
+CIV,CI,Côte d'Ivoire,,WWF,107,Côte d'Ivoire,,1960,,,,,,,CIV,Western Africa,AFR,SSA,Africa,CIV,,,CIV,5
+COD,CD,DR Congo,,WWF,250,Democratic Republic of the Congo,,1960,,,,,,,COD,Western Africa,AFR,SSA,Africa,COD,,,COD,5
+ECU,EC,Ecuador,,WWL,58,Ecuador,,1945,,,,,,,ECU,Rest of South America,LAC,LAM,America,,,Ecuador,ECU,5
+ETH,ET,Ethiopia,,WWF,238,Ethiopia,,1945,,,,,,,ETH,Eastern Africa,AFR,SSA,Africa,,,Ethiopia,ETH,5
+GEO,GE,Georgia,,WWA,73,Georgia,,1992,,,,,,,GEO,Russia region,FSU,REF,Asia,,,Georgia,GEO,5
+GTM,GT,Guatemala,,WWL,89,Guatemala,,1945,,,,,,,GTM,Central America,LAC,LAM,America,,,Guatemala,GTM,5
+HKG,HK,Hong Kong,,WWA,96,Hong Kong (China),,,,,,,,,HKG,China region,CPA,CHA,Asia,HKG,,Hong Kong,,5
+IRN,IR,Iran,,WWM,102,Islamic Republic of Iran,,1945,,,,,,,IRN,Middle East,MEA,MEA,Asia,,,Iran,IRN,5
+JOR,JO,Jordan,,WWM,112,Jordan,,1955,,,,,,,JOR,Middle East,MEA,MEA,Asia,JOR,,,JOR,5
+KGZ,KG,Kyrgyzstan,,WWA,113,Kyrgyzstan,,1992,,,,,,,KGZ,Central Asia,FSU,REF,Asia,,,Kyrgyzstan,KGZ,5
+MDG,MG,Madagascar,,WWF,129,Other Africa,,1960,,,,,,,MDG,Eastern Africa,AFR,SSA,Africa,,,Madagascar,MDG,5
+MWI,MW,Malawi,,WWF,130,Other Africa,,1964,,,,,,,MWI,Rest of Southern Africa,AFR,SSA,Africa,,,Malawi,MWI,5
+MOZ,MZ,Mozambique,,WWF,144,Mozambique,,1975,,,,,,,MOZ,Rest of Southern Africa,AFR,SSA,Africa,,,Mozambique,MOZ,5
+NIC,NI,Nicaragua,,WWL,157,Nicaragua,,1945,,,,,,,NIC,Central America,LAC,LAM,America,,,Nicaragua,NIC,5
+MKD,MK,North Macedonia,,WWE,154,Republic of North Macedonia,,1993,,,,,,,MKD,Central Europe,EEU,NEU,Europe,,MKD,,MKD,5
+PAN,PA,Panama,,WWL,166,Panama,,1945,,,,,,,PAN,Central America,LAC,LAM,America,,,Panama,PAN,5
+PRY,PY,Paraguay,,WWL,169,Paraguay,,1945,,,,,,,PRY,Rest of South America,LAC,LAM,America,,,Paraguay,PRY,5
+SRB,RS,Serbia,,WWE,272,Serbia,,2000,,,,,,,SRB,Central Europe,EEU,NEU,Europe,,SRB,,SRB,5
+LKA,LK,Sri Lanka,,WWA,38,Sri Lanka,,1955,,,,,,,LKA,Rest of South Asia,SAS,OAS,Asia,,,Sri Lanka,LKA,5
+TZA,TZ,Tanzania,,WWF,215,United Republic of Tanzania,,1961,,,,,,,TZA,Rest of Southern Africa,AFR,SSA,Africa,,,Tanzania,TZA,5
+UGA,UG,Uganda,,WWF,226,Other Africa,,1962,,,,,,,UGA,Eastern Africa,AFR,SSA,Africa,,,Uganda,UGA,5
+ARE,AE,United Arab Emirates,,WWM,225,United Arab Emirates,,1971,,,,,,,ARE,Middle East,MEA,MEA,Asia,ARE,,,ARE,5
+URY,UY,Uruguay,,WWL,234,Uruguay,,1945,,,,,,,URY,Rest of South America,LAC,LAM,America,,,Uruguay,URY,5
+VEN,VE,Venezuela,,WWL,236,Bolivarian Republic of Venezuela,,1945,,,,,,,VEN,Rest of South America,LAC,LAM,America,,,Venezuela,VEN,5
+ZMB,ZM,Zambia,,WWF,251,Zambia,,1964,,,,,,,ZMB,Rest of Southern Africa,AFR,SSA,Africa,,,Zambia,ZMB,5
+ZWE,ZW,Zimbabwe,,WWF,181,Zimbabwe,,1980,,,,,,,ZWE,Rest of Southern Africa,AFR,SSA,Africa,,,Zimbabwe,ZWE,5
+AFG,AF,Afghanistan,,WWA,2,Other non-OECD Asia,,1946,,,,,,,AFG,Rest of South Asia,SAS,OAS,Asia,,,,AFG,4
+DZA,DZ,Algeria,,WWF,4,Algeria,,1962,,,,,,,DZA,Northern Africa,MEA,MEA,Africa,,,,DZA,4
+BHS,BS,Bahamas,,WWL,12,Other non-OECD Americas,,1973,,,,,,,BHS,Central America,LAC,LAM,America,,,,BHS,4
+BHR,BH,Bahrain,,WWM,13,Bahrain,,1971,,,,,,,BHR,Middle East,MEA,MEA,Asia,,,,BHR,4
+BLZ,BZ,Belize,,WWL,23,Other non-OECD Americas,,1981,,,,,,,BLZ,Central America,LAC,LAM,America,,,,BLZ,4
+BEN,BJ,Benin,,WWF,53,Benin,,1960,,,,,,,BEN,Western Africa,AFR,SSA,Africa,,,,BEN,4
+BTN,BT,Bhutan,,WWA,18,Other non-OECD Asia,,1971,,,,,,,BTN,Rest of South Asia,SAS,OAS,Asia,,,,BTN,4
+BIH,BA,Bosnia and Herzegovina,,WWE,80,Bosnia and Herzegovina,,1992,,,,,,,BIH,Central Europe,EEU,NEU,Europe,,,,BIH,4
+BFA,BF,Burkina Faso,,WWF,233,Other Africa,,1960,,,,,,,BFA,Western Africa,AFR,SSA,Africa,,,,BFA,4
+BDI,BI,Burundi,,WWF,29,Other Africa,,1962,,,,,,,BDI,Eastern Africa,AFR,SSA,Africa,,,,BDI,4
+CAF,CF,Central African Republic,,WWF,37,Other Africa,,1960,,,,,,,CAF,Western Africa,AFR,SSA,Africa,,,,CAF,4
+TCD,TD,Chad,,WWF,39,Other Africa,,1960,,,,,,,TCD,Western Africa,AFR,SSA,Africa,,,,TCD,4
+COG,CG,Congo Republic,,WWF,46,Republic of the Congo,,1960,,,,,,,COG,Western Africa,AFR,SSA,Africa,,,,COG,4
+CUB,CU,Cuba,,WWL,49,Cuba,,1945,,,,,,,CUB,,LAC,LAM,America,,,,CUB,4
+DJI,DJ,Djibouti,,WWF,72,Other Africa,,1977,,,,,,,DJI,Eastern Africa,AFR,SSA,Africa,,,,DJI,4
+DOM,DO,Dominican Republic,,WWL,56,Dominican Republic,,1945,,,,,,,DOM,Central America,LAC,LAM,America,,,,DOM,4
+SLV,SV,El Salvador,,WWL,60,El Salvador,,1945,,,,,,,SLV,Central America,LAC,LAM,America,,,,SLV,4
+GNQ,GQ,Equatorial Guinea,,WWF,61,Equatorial Guinea,,1968,,,,,,,GNQ,Western Africa,AFR,SSA,Africa,,,,GNQ,4
+ERI,ER,Eritrea,,WWF,178,Eritrea,,1993,,,,,,,ERI,Eastern Africa,AFR,SSA,Africa,,,,ERI,4
+GAB,GA,Gabon,,WWF,74,Gabon,,1960,,,,,,,GAB,Western Africa,AFR,SSA,Africa,,,,GAB,4
+GMB,GM,Gambia,,WWF,75,Other Africa,,1965,,,,,,,GMB,Western Africa,AFR,SSA,Africa,,,,GMB,4
+GHA,GH,Ghana,,WWF,81,Ghana,,1957,,,,,,,GHA,Western Africa,AFR,SSA,Africa,,,,GHA,4
+GIN,GN,Guinea,,WWF,90,Other Africa,,1958,,,,,,,GIN,Western Africa,AFR,SSA,Africa,,,,GIN,4
+HTI,HT,Haiti,,WWL,93,Haiti,,1945,,,,,,,HTI,Central America,LAC,LAM,America,,,,HTI,4
+HND,HN,Honduras,,WWL,95,Honduras,,1945,,,,,,,HND,Central America,LAC,LAM,America,,,,HND,4
+IRQ,IQ,Iraq,,WWM,103,Iraq,,1945,,,,,,,IRQ,Middle East,MEA,MEA,Asia,,,,IRQ,4
+JAM,JM,Jamaica,,WWL,109,Jamaica,,1962,,,,,,,JAM,Central America,LAC,LAM,America,,,,JAM,4
+KEN,KE,Kenya,,WWF,114,Kenya,,1963,,,,,,,KEN,Eastern Africa,AFR,SSA,Africa,,,,KEN,4
+KWT,KW,Kuwait,,WWM,118,Kuwait,,1963,,,,,,,KWT,Middle East,MEA,MEA,Asia,,,,KWT,4
+LBN,LB,Lebanon,,WWM,121,Lebanon,,1945,,,,,,,LBN,Middle East,MEA,MEA,Asia,,,,LBN,4
+LBR,LR,Liberia,,WWF,123,Other Africa,,1945,,,,,,,LBR,Western Africa,AFR,SSA,Africa,,,,LBR,4
+LBY,LY,Libya,,WWF,124,Libya,,1955,,,,,,,LBY,Northern Africa,MEA,MEA,Africa,,,,LBY,4
+MLI,ML,Mali,,WWF,133,Other Africa,,1960,,,,,,,MLI,Western Africa,AFR,SSA,Africa,,,,MLI,4
+MRT,MR,Mauritania,,WWF,136,Other Africa,,1961,,,,,,,MRT,Western Africa,AFR,SSA,Africa,,,,MRT,4
+MUS,MU,Mauritius,,WWF,137,Mauritius,,1968,,,,,,,MUS,Eastern Africa,AFR,SSA,Africa,,,Mauritius,,4
+MDA,MD,Moldova,,WWE,146,Republic of Moldova,,1992,,,,,,,MDA,Ukraine region,FSU,REF,Europe,,,,MDA,4
+MNG,MN,Mongolia,,WWA,141,Mongolia,,1961,,,,,,,MNG,China region,CPA,OAS,Asia,,,,MNG,4
+MNE,ME,Montenegro,,WWE,273,Montenegro,,2006,,,,,,,MNE,Central Europe,EEU,NEU,Europe,,MNE,,,4
+NAM,NA,Namibia,,WWF,147,Namibia,,1990,,,,,,,NAM,Rest of Southern Africa,AFR,SSA,Africa,,,,NAM,4
+NPL,NP,Nepal,,WWA,149,Nepal,,1955,,,,,,,NPL,Rest of South Asia,SAS,OAS,Asia,,,,NPL,4
+NER,NE,Niger,,WWF,158,Niger,,1960,,,,,,,NER,Western Africa,AFR,SSA,Africa,,,,NER,4
+PRK,KP,North Korea,,WWA,116,Democratic People's Republic of Korea,,1991,,,,,,,PRK,Korea region,CPA,OAS,Asia,,,,PRK,4
+OMN,OM,Oman,,WWM,221,Oman,,1971,,,,,,,OMN,Middle East,MEA,MEA,Asia,,,,OMN,4
+PNG,PG,Papua New Guinea,,WWA,168,Other non-OECD Asia,,1975,,,,,,,PNG,Indonesia region,PAS,OAS,Oceania,,,,PNG,4
+QAT,QA,Qatar,,WWM,179,Qatar,,1971,,,,,,,QAT,Middle East,MEA,MEA,Asia,,,,QAT,4
+RWA,RW,Rwanda,,WWF,184,Other Africa,,1962,,,,,,,RWA,Eastern Africa,AFR,SSA,Africa,,,,RWA,4
+STP,ST,Sao Tome and Principe,,WWF,193,Other Africa,,1975,,,,,,,STP,Western Africa,AFR,SSA,Africa,STP,,,,4
+SLE,SL,Sierra Leone,,WWF,197,Other Africa,,1961,,,,,,,SLE,Western Africa,AFR,SSA,Africa,,,,SLE,4
+SOM,SO,Somalia,,WWF,201,Other Africa,,1960,,,,,,,SOM,Eastern Africa,AFR,SSA,Africa,,,,SOM,4
+SYR,SY,Syria,,WWM,212,Syrian Arab Republic,,1945,,,,,,,SYR,Middle East,MEA,MEA,Asia,,,,SYR,4
+TJK,TJ,Tajikistan,,WWA,208,Tajikistan,,1992,,,,,,,TJK,Central Asia,FSU,REF,Asia,,,,TJK,4
+TGO,TG,Togo,,WWF,217,Togo,,1960,,,,,,,TGO,Western Africa,AFR,SSA,Africa,,,,TGO,4
+TKM,TM,Turkmenistan,,WWA,213,Turkmenistan,,1992,,,,,,,TKM,Central Asia,FSU,REF,Asia,,,,TKM,4
+UZB,UZ,Uzbekistan,,WWA,235,Uzbekistan,,1992,,,,,,,UZB,Central Asia,FSU,REF,Asia,,,,UZB,4
+ASM,AS,American Samoa,,WWA,5,Other non-OECD Asia,,,,,,,,,ASM,Oceania,PAS,OAS,Oceania,,,,,3
+AIA,AI,Anguilla,,WWL,258,Other non-OECD Americas,,,,,,,,,AIA,Central America,LAC,LAM,America,,,,,3
+ATG,AG,Antigua and Barbuda,,WWL,8,Other non-OECD Americas,,1981,,,,,,,ATG,,LAC,LAM,America,,,,,3
+ABW,AW,Aruba,,WWL,22,Other non-OECD Americas,,,,,,,,,ABW,Central America,LAC,LAM,America,,,,,3
+BRB,BB,Barbados,,WWL,14,Other non-OECD Americas,,1966,,,,,,,BRB,Central America,LAC,LAM,America,,,,,3
+BMU,BM,Bermuda,,WWL,17,Other non-OECD Americas,,,,,,,,,BMU,Central America,LAC,LAM,America,,,,,3
+VGB,VG,British Virgin Islands,,WWL,239,Other non-OECD Americas,,,,,,,,,VGB,Central America,LAC,LAM,America,,,,,3
+CPV,CV,Cabo Verde,,WWF,35,Other Africa,,1975,,,,,,,CPV,Western Africa,AFR,SSA,Africa,,,,,3
+CYM,KY,Cayman Islands,,WWL,36,Other non-OECD Americas,,,,,,,,,CYM,Central America,LAC,LAM,America,,,,,3
+COM,KM,Comoros,,WWF,45,Other Africa,,1975,,,,,,,COM,Eastern Africa,AFR,SSA,Africa,,,,,3
+COK,CK,Cook Islands,,WWA,47,Other non-OECD Asia,,,,,,,,,COK,Oceania,PAS,OAS,Oceania,,,,,3
+DMA,DM,Dominica,,WWL,55,Other non-OECD Americas,,1978,,,,,,,DMA,Central America,LAC,LAM,America,,,,,3
+SWZ,SZ,Eswatini,,WWF,209,Other Africa,,1968,,,,,,,SWZ,Rest of Southern Africa,AFR,SSA,Africa,,,,,3
+FLK,FK,Falkland Islands,,WWL,65,Other non-OECD Americas,,,,,,,,,FLK,Rest of South America,LAC,LAM,America,,,,,3
+FJI,FJ,Fiji,,WWA,66,Other non-OECD Asia,,1970,,,,,,,FJI,Oceania,PAS,OAS,Oceania,,,,,3
+GUF,GF,French Guiana,,WWL,69,Other non-OECD Americas,,,,,,,,,GUF,Rest of South America,LAC,LAM,America,,,,,3
+PYF,PF,French Polynesia,,WWA,70,Other non-OECD Asia,,,,,,,,,PYF,Oceania,PAS,OAS,Oceania,,,,,3
+GIB,GI,Gibraltar,,WWE,82,Gibraltar,,,,,,,,,GIB,Western Europe,WEU,EUR,Europe,,,,,3
+GRL,GL,Greenland,,WWL,85,Other non-OECD Americas,,,,,,,,,GRL,,WEU,NEU,America,,,,,3
+GRD,GD,Grenada,,WWL,86,Other non-OECD Americas,,1974,,,,,,,GRD,Central America,LAC,LAM,America,,,,,3
+GLP,GP,Guadeloupe,,WWL,87,Other non-OECD Americas,,,,,,,,,GLP,Central America,LAC,LAM,America,,,,,3
+GUM,GU,Guam,,WWA,88,Other non-OECD Asia,,,,,,,,,GUM,,NAM,OAS,Oceania,,,,,3
+GNB,GW,Guinea-Bissau,,WWF,175,Other Africa,,1974,,,,,,,GNB,Western Africa,AFR,SSA,Africa,,,,,3
+GUY,GY,Guyana,,WWL,91,Guyana,,1966,,,,,,,GUY,Rest of South America,LAC,LAM,America,,,,,3
+KIR,KI,Kiribati,,WWA,83,Other non-OECD Asia,,1999,,,,,,,KIR,Oceania,PAS,OAS,Oceania,,,,,3
+LSO,LS,Lesotho,,WWF,122,Other Africa,,1966,,,,,,,LSO,Rest of Southern Africa,AFR,SSA,Africa,,,,,3
+MAC,MO,Macau,,WWA,128,Other non-OECD Asia,,,,,,,,,MAC,China region,PAS,CHA,Asia,,,,,3
+MDV,MV,Maldives,,WWA,132,Other non-OECD Asia,,1965,,,,,,,MDV,Rest of South Asia,SAS,OAS,Asia,,,,,3
+MHL,MH,Marshall Islands,,WWA,127,Other non-OECD Asia,,1991,,,,,,,MHL,Oceania,PAS,OAS,Oceania,,,,,3
+MTQ,MQ,Martinique,,WWL,135,Other non-OECD Americas,,,,,,,,,MTQ,Central America,LAC,LAM,America,,,,,3
+MYT,YT,Mayotte,,WWF,270,Other Africa,,,,,,,,,MYT,,AFR,SSA,Africa,,,,,3
+FSM,FM,"Micronesia, Fed. Sts.",,WWA,145,Other non-OECD Asia,,1991,,,,,,,FSM,Oceania,PAS,OAS,Oceania,,,,,3
+MSR,MS,Montserrat,,WWL,142,Other non-OECD Americas,,,,,,,,,MSR,Central America,LAC,LAM,America,,,,,3
+NRU,NR,Nauru,,WWA,148,Other non-OECD Asia,,1999,,,,,,,NRU,Oceania,PAS,OAS,Oceania,,,,,3
+NCL,NC,New Caledonia,,WWA,153,Other non-OECD Asia,,,,,,,,,NCL,Oceania,PAS,OAS,Oceania,,,,,3
+NIU,NU,Niue,,WWA,160,Other non-OECD Asia,,,,,,,,,NIU,Oceania,PAS,OAS,Oceania,,,,,3
+NFK,NF,Norfolk Island,,WWA,161,Other non-OECD Asia,,,,,,,,,NFK,,PAS,OAS,Oceania,,,,,3
+MNP,MP,Northern Mariana Islands,,WWA,163,Other non-OECD Asia,,,,,,,,,MNP,Oceania,PAS,OAS,Oceania,,,,,3
+PLW,PW,Palau,,WWA,180,Other non-OECD Asia,,1994,,,,,,,PLW,Oceania,PAS,OAS,Oceania,,,,,3
+PSE,PS,Palestine,,WWM,299,Other non-OECD Asia,,,,,,,,,PSE,,MEA,MEA,Asia,,,,,3
+PCN,PN,Pitcairn,,WWA,172,Other non-OECD Asia,,,,,,,,,PCN,Oceania,PAS,OAS,Oceania,,,,,3
+REU,RE,Réunion,,WWF,182,Other Africa,,,,,,,,,REU,Eastern Africa,AFR,SSA,Africa,,,,,3
+MAF,MF,Saint-Martin,,WWL,281,Other non-OECD Americas,,,,,,,,,MAF,,,LAM,America,,,,,3
+WSM,WS,Samoa,,WWA,244,Other non-OECD Asia,,1976,,,,,,,WSM,Oceania,PAS,OAS,Oceania,,,,,3
+SYC,SC,Seychelles,,WWF,196,Other Africa,,1976,,,,,,,SYC,Eastern Africa,AFR,SSA,Africa,,,,,3
+SLB,SB,Solomon Islands,,WWA,25,Other non-OECD Asia,,1978,,,,,,,SLB,Oceania,PAS,OAS,Oceania,,,,,3
+SSD,SS,South Sudan,,WWF,277,South Sudan,,2011,,,,,,,SDS,,MEA,SSA,Africa,,,,,3
+BLM,BL,St. Barths,,WWL,282,Other non-OECD Americas,,,,,,,,,BLM,,,LAM,America,,,,,3
+SHN,SH,St. Helena,,WWF,187,Other Africa,,,,,,,,,SHN,Western Africa,AFR,SSA,Africa,,,,,3
+KNA,KN,St. Kitts and Nevis,,WWL,188,Other non-OECD Americas,,1983,,,,,,,KNA,Central America,LAC,LAM,America,,,,,3
+LCA,LC,St. Lucia,,WWL,189,Other non-OECD Americas,,1979,,,,,,,LCA,Central America,LAC,LAM,America,,,,,3
+SPM,PM,St. Pierre and Miquelon,,WWL,190,Other non-OECD Americas,,,,,,,,,SPM,USA,NAM,CAZ,America,,,,,3
+VCT,VC,St. Vincent and the Grenadines,,WWL,191,Other non-OECD Americas,,1980,,,,,,,VCT,Central America,LAC,LAM,America,,,,,3
+SUR,SR,Suriname,,WWL,207,Suriname,,1975,,,,,,,SUR,Rest of South America,LAC,LAM,America,,,,,3
+TLS,TL,Timor-Leste,,WWA,176,Other non-OECD Asia,,2002,,,,,,,TLS,Indonesia region,PAS,OAS,Asia,,,,,3
+TKL,TK,Tokelau,,WWA,218,Other non-OECD Asia,,,,,,,,,TKL,Oceania,PAS,OAS,Oceania,,,,,3
+TON,TO,Tonga,,WWA,219,Other non-OECD Asia,,1999,,,,,,,TON,Oceania,PAS,OAS,Oceania,,,,,3
+TTO,TT,Trinidad and Tobago,,WWL,220,Trinidad and Tobago,,1962,,,,,,,TTO,Central America,LAC,LAM,America,,,,,3
+TCA,TC,Turks and Caicos Islands,,WWL,224,Other non-OECD Americas,,,,,,,,,TCA,Central America,LAC,LAM,America,,,,,3
+TUV,TV,Tuvalu,,WWA,227,Other non-OECD Asia,,2000,,,,,,,TUV,Oceania,PAS,OAS,Oceania,,,,,3
+VIR,VI,United States Virgin Islands,,WWL,240,Other non-OECD Americas,,,,,,,,,VIR,Central America,NAM,LAM,America,,,,,3
+VUT,VU,Vanuatu,,WWA,155,Other non-OECD Asia,,1981,,,,,,,VUT,Oceania,PAS,OAS,Oceania,,,,,3
+WLF,WF,Wallis and Futuna Islands,,WWA,243,Other non-OECD Asia,,,,,,,,,WLF,Oceania,PAS,OAS,Oceania,,,,,3
+ESH,EH,Western Sahara,,WWF,205,Other Africa,,,,,,,,,ESH,Northern Africa,MEA,MEA,Africa,,,,,3
+YEM,YE,Yemen,,WWM,249,Yemen,,1947,,,,,,,YEM,Middle East,MEA,MEA,Asia,,,,,3
+AND,AD,Andorra,,WWE,6,,,1993,,,,,,,AND,Western Europe,WEU,NEU,Europe,,,,,2
+ATA,AQ,Antarctica,,WWA,30,Other non-OECD Asia,,,,,,,,,,,,LAM,Antarctica,,,,,2
+BES,BQ,"Bonaire, Saint Eustatius and Saba",,WWL,278,Other non-OECD Americas,,,,,,,,,,,LAC,LAM,America,,,,,2
+BVT,BV,Bouvet Island,,WWA,31,Other non-OECD Asia,,,,,,,,,,,,LAM,Antarctica,,,,,2
+IOT,IO,British Indian Ocean Territory,,WWA,24,Other non-OECD Asia,,,,,,,,,,,AFR,OAS,Africa,,,,,2
+CXR,CX,Christmas Island,,WWA,42,Other non-OECD Asia,,,,,,,,,,,PAS,OAS,Asia,,,,,2
+CCK,CC,Cocos (Keeling) Islands,,WWA,43,Other non-OECD Asia,,,,,,,,,,,PAS,OAS,Asia,,,,,2
+CUW,CW,Curaçao,,WWL,279,Curaçao/Netherlands Antilles,,,,,,,,,,,LAC,LAM,America,,,,,2
+FRO,FO,Faroe Islands,,WWE,64,,,,,,,,,,FRO,Western Europe,WEU,EUR,Europe,,,,,2
+ATF,TF,French Southern Territories,,WWF,71,Other Africa,,,,,,,,,,,,OAS,Africa,,,,,2
+HMD,HM,Heard and McDonald Islands,,WWA,92,Other non-OECD Asia,,,,,,,,,,,,CAZ,Antarctica,,,,,2
+IMN,IM,Isle of Man,,WWE,264,,,,,,,,,,IMN,,WEU,EUR,Europe,,,,,2
+JEY,JE,Jersey,,WWE,283,,,,,,,,,,JEY,,,EUR,Europe,,,,,2
+XKX,XK,Kosovo,,WWE,,Kosovo,,,,,,,,,KSV,,,,Europe,,,,,2
+LIE,LI,Liechtenstein,,WWE,125,,,1990,,,,,,,LIE,Western Europe,WEU,NEU,Europe,,,,,2
+MCO,MC,Monaco,,WWE,140,,,1993,,,,,,,MCO,Western Europe,WEU,NEU,Europe,,,,,2
+PRI,PR,Puerto Rico,,WWL,177,Other non-OECD Americas,,,,,,,,,,Central America,NAM,LAM,America,,,,,2
+SMR,SM,San Marino,,WWE,192,,,1992,,,,,,,SMR,Western Europe,WEU,NEU,Europe,,,,,2
+SXM,SX,Sint Maarten,,WWL,280,Other non-OECD Americas,,,,,,,,,,,LAC,LAM,America,,,,,2
+SGS,GS,South Georgia and South Sandwich Is.,,WWA,271,Other non-OECD Asia,,,,,,,,,,,,LAM,Antarctica,,,,,2
+SDN,SD,Sudan,,WWF,,Sudan,,1956,,,,,,,SUD,Eastern Africa,MEA,MEA,Africa,,,,,2
+SJM,SJ,Svalbard and Jan Mayen Islands,,WWE,260,,,,,,,,,,SJM,,WEU,NEU,Europe,,,,,2
+UMI,UM,United States Minor Outlying Islands,,WWA,232,Other non-OECD Asia,,,,,,,,,,,,OAS,Oceania,,,,,2
+VAT,VA,Vatican,,WWE,94,,,,,,,,,,VAT,Western Europe,WEU,NEU,Europe,,,,,2
+ALA,AX,Åland Islands,,WWE,284,,,,,,,,,,ALA,,,EUR,Europe,,,,,2
+GGY,GG,Guernsey,,WWE,,,,,,,,,,,GGY,,,EUR,Europe,,,,,1

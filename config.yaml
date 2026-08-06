@@ -14,3 +14,35 @@ paths:
   # country-axis refresh time (scripts/refresh_country_axes.py
   # --check-legacy). Override on the CLI to point elsewhere.
   legacy_r12_csv: ${drive}indecol/Projects/MRIOs/Concordances/EXIO3r12r.csv
+
+  # --- Country-axis derivation (rx1 / rx2) -------------------------------
+  # Outputs of the derivation chain:
+  #   build_country_coverage_matrix.py   -> country_coverage_matrix.csv
+  #   extended_exiobase_country_list.py  -> extended_exiobase_candidates.csv
+  #   make_extended_exiobase_list.py     -> exiobase_rx{1,2}.csv
+  # then refresh_country_axes.py publishes class/exio_country_axes.xlsx.
+  #
+  # NO PATH KEY HERE ON PURPOSE. These are METADATA, not data: they live in
+  # this repo at class/country_axes/, git-versioned, one canonical copy that
+  # every other repo reads from here. The scripts resolve that location
+  # relative to the repo root. They briefly lived in the shared data tree
+  # (data/00-class/) on 2026-08-06 and were brought back the same day; see
+  # 00-workflow/data_layout.yaml "METADATA IS NOT DATA".
+  # Set paths.axis_work_dir only to redirect an out-of-tree experiment.
+
+  # Per-country source-coverage counts contributed by 02-macro_db (UN SNA
+  # Main Aggregates VA, UN Rev 3 / Rev 4 detail, IMF WEO). macro_db owns
+  # this because only its parsers can measure it; we consume the published
+  # table rather than importing macro_db. Produced by
+  # 02-macro_db/scripts/count_data_coverage.py.
+  macro_db_coverage_csv: ${drive}indecol/data/macro_db/EXIOBASE_3_12/fin/comparisons/country_data_coverage.csv
+
+  # --- External comparator / coverage sources ----------------------------
+  # Read directly; none of these need macro_db.
+  icio_dir: ${drive}data/00-sources/oecd_icio/v2025
+  figaro_supply_file: ${drive}data/00-sources/figaro/v2026/raw/matrix_eu-ic-supply_26ed_2022.csv
+  gtap_regions_file: ${drive}indecol/Projects/MRIOs/Classifications/GTAP7113r.txt
+  gloria_country_link_file: ${drive}indecol/Projects/MRIOs/GLORIA_EXIO/Country_codes_link_FAO_MRIO.xlsx
+  baci_file: ${drive}data/00-sources/cepii_baci/BACI_HS96_V202601.zip
+  fao_production_csv: ${drive}indecol/Data/fao/data/Production_Crops_Livestock_E_All_Data_NOFLAG.csv
+  iea_wbal_file: ${drive}data/00-sources/iea/world_energy_balances/v2025/WBAL.zip

@@ -1,16 +1,24 @@
-"""Rebuild class/exio_country_axes.xlsx from the macro_db comparison CSVs.
+"""Publish class/exio_country_axes.xlsx, the canonical EXIOBASE country axes.
 
 ``exio_country_axes.xlsx`` is the **canonical** home of the rx1 / rx2 country
-classifications. The rx1 / rx2 *selections* (and their coverage flags) are
-computed by the ``macro_db`` analysis (``scripts/make_extended_exiobase_list.py``,
-output under ``data/fin/comparisons/``); this script consumes that analysis,
-adds the ``region12`` grouping, and publishes the canonical axis here. macro_db's
-runtime then reads the axis back from here via ``exiobase_meta.read_country_axis``
-rather than from its own comparison CSV. The legacy EXIOBASE3 axis order is
-preserved from the existing ``exio_country_axes.xlsx`` `exiobase3` sheet (its
-``desire_order`` column is the single source of truth for the legacy DESIRE
-country order); only the derived columns are re-harmonised against
-``country_converter``.
+classifications. This is the last step of a four-step chain that, since
+2026-08-06, lives almost entirely in this repo (it used to sit in 02-macro_db;
+see 00-workflow/STATUS.md):
+
+  1. scripts/build_country_coverage_matrix.py   (here)      comparator matrix
+  2. 02-macro_db/scripts/count_data_coverage.py (macro_db)  UN SNA / WEO year
+     counts - stays there because only macro_db's parsers can measure them
+  3. scripts/extended_exiobase_country_list.py  (here)      candidates + tiers
+  4. scripts/make_extended_exiobase_list.py     (here)      rx1 / rx2 selection
+
+This script consumes step 4's CSVs from ``paths.axis_work_dir``, adds the
+``region12`` grouping, and publishes the canonical axis. macro_db's runtime
+then reads the axis back from here via ``exiobase_meta.read_country_axis``,
+so the dependency runs one way only: 00-class -> 02-macro_db. The legacy
+EXIOBASE3 axis order is preserved from the existing ``exio_country_axes.xlsx``
+`exiobase3` sheet (its ``desire_order`` column is the single source of truth
+for the legacy DESIRE country order); only the derived columns are
+re-harmonised against ``country_converter``.
 
 Also writes the 12-region grouping used by ``build_mr`` (the MRSUT/MRIOT
 aggregator):
@@ -34,11 +42,10 @@ aggregator):
 - The wide 49x12 binary matrix is regenerated from the per-axis assignments
   (not loaded from the legacy CSV) and stored as sheet ``r12``.
 
-Run this whenever the macro_db rx1 / rx2 axis is regenerated.
+Run this whenever the rx1 / rx2 axis is regenerated (i.e. after step 4).
 
 Usage:
     python scripts/refresh_country_axes.py
-    python scripts/refresh_country_axes.py --macro-db /path/to/macro_db
     python scripts/refresh_country_axes.py --check-legacy /path/to/EXIO3r12r.csv
 """
 
@@ -56,17 +63,23 @@ ROOT = Path(__file__).resolve().parents[1]
 # Make the in-tree package importable when run as a plain script so the
 # region12 classification has exactly one reader, shared with the library.
 sys.path.insert(0, str(ROOT / "src"))
-from exiobase_meta.country_axes import (  # noqa: E402
+from exiobase_meta.country_axes import (
     read_region12,
     region12_codes,
     remind_to_r12,
 )
+from exiobase_meta.country_names import EXIOBASE_OVERRIDES
 
-DEFAULT_MACRO_DB = ROOT.parent / "02-macro_db"
-# Absolute path comes from config.yaml at the repo root (config.local.yaml
+# Absolute paths come from config.yaml at the repo root (config.local.yaml
 # overrides per machine); the --check-legacy CLI flag still overrides it.
 _CFG = load_config(repo_root=ROOT)
 DEFAULT_LEGACY_R12 = get_path(_CFG, "paths.legacy_r12_csv")
+# Country-axis tables live IN this repo (class/country_axes/): they are
+# METADATA, not data - small, hand-reviewed, and their history is the point,
+# so git owns them and there is exactly one canonical copy. Nothing writes
+# them into the shared data tree. paths.axis_work_dir may override for an
+# out-of-tree experiment; it is unset by default.
+AXIS_WORK_DIR = get_path(_CFG, "paths.axis_work_dir") or (ROOT / "class" / "country_axes")
 OUT_XLSX = ROOT / "class" / "exio_country_axes.xlsx"
 
 # The 12 region codes and the coco.REMIND -> region12 relabels are NOT
@@ -92,10 +105,11 @@ ROW_R12 = {
     "WM": "MEA",  # RoW Middle East
 }
 
-EXIOBASE_OVERRIDES = {
-    "Türkiye": "Turkey",
-    "Eswatini": "Swaziland",
-}
+# EXIOBASE_OVERRIDES is imported from the package (exiobase_meta.country_names),
+# not redeclared here. This script previously carried a 2-entry copy that had
+# drifted from the 6-entry canonical dict, so the exiobase3 sheet would have
+# emitted the wrong name for Laos / Congo / Ivory Coast / Cape Verde had any
+# of them ever entered the EXIOBASE3 axis.
 
 # Manual region12 overrides for ISO3 codes coco.REMIND doesn't know.
 # Keep this list as short as possible.
@@ -200,16 +214,26 @@ def build_exiobase3_axis(axis_xlsx: Path, coco_r12: dict[str, str]) -> pd.DataFr
     return pd.DataFrame(rows)
 
 
-def load_macro_db_axis(macro_db: Path, stem: str) -> pd.DataFrame:
-    path = macro_db / "data" / "fin" / "comparisons" / f"{stem}.csv"
+def load_derived_axis(stem: str) -> pd.DataFrame:
+    """Read one derived axis CSV (``exiobase_rx1`` / ``exiobase_rx2``).
+
+    Since 2026-08-06 the derivation chain lives in this repo and writes to
+    ``paths.axis_work_dir``; it used to live in 02-macro_db and write into
+    that repo's output tree.
+    """
+    path = AXIS_WORK_DIR / f"{stem}.csv"
     if not path.exists():
         raise FileNotFoundError(
-            f"Missing {path}. Run macro_db's scripts/make_extended_exiobase_list.py first."
+            f"Missing {path}. Run the derivation chain first: "
+            "scripts/build_country_coverage_matrix.py, then "
+            "02-macro_db/scripts/count_data_coverage.py, then "
+            "scripts/extended_exiobase_country_list.py, then "
+            "scripts/make_extended_exiobase_list.py."
         )
     return pd.read_csv(path, keep_default_na=False)
 
 
-def add_region12_to_macro_db_axis(
+def add_region12_to_derived_axis(
     df: pd.DataFrame,
     coco_r12: dict[str, str],
 ) -> pd.DataFrame:
@@ -278,10 +302,6 @@ def check_against_legacy(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--macro-db", type=Path, default=DEFAULT_MACRO_DB,
-        help="Path to the macro_db repo (default: ../macro_db)",
-    )
-    parser.add_argument(
         "--check-legacy", type=Path, default=DEFAULT_LEGACY_R12,
         help="Path to legacy EXIO3r12r.csv for sanity check (default: %(default)s)",
     )
@@ -301,13 +321,9 @@ def main() -> None:
     print(f"  {len(coco_r12)} ISO3 -> r12 entries "
           f"(relabels from region12.csv: {relabels})")
 
-    print(f"Reading macro_db comparison CSVs from {args.macro_db}")
-    rx1 = add_region12_to_macro_db_axis(
-        load_macro_db_axis(args.macro_db, "exiobase_rx1"), coco_r12,
-    )
-    rx2 = add_region12_to_macro_db_axis(
-        load_macro_db_axis(args.macro_db, "exiobase_rx2"), coco_r12,
-    )
+    print(f"Reading derived axis CSVs from {AXIS_WORK_DIR}")
+    rx1 = add_region12_to_derived_axis(load_derived_axis("exiobase_rx1"), coco_r12)
+    rx2 = add_region12_to_derived_axis(load_derived_axis("exiobase_rx2"), coco_r12)
 
     print(f"Building exiobase3 axis (preserving order from {OUT_XLSX.name})")
     e3 = build_exiobase3_axis(OUT_XLSX, coco_r12)
@@ -335,7 +351,7 @@ def main() -> None:
         n_row = int((df["type"] == "RoW").sum())
         r12_counts = df.groupby("region12").size().to_dict()
         print(f"  {name}: {len(df)} rows ({n_country} country + {n_row} RoW)")
-        print(f"    region12 distribution: "
+        print("    region12 distribution: "
               + ", ".join(f"{k}={v}" for k, v in sorted(r12_counts.items()) if k))
     print(f"  r12 (wide matrix): {r12_mat.shape}")
 
