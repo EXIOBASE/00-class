@@ -7,6 +7,46 @@ on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- **`exiobase_meta.country_names`: the canonical EXIOBASE country-naming
+  convention** (`EXIOBASE_OVERRIDES`, `COCO_NAME_PRE_CONVERT`, plus
+  `to_exiobase_name` / `to_exiobase_names` helpers), exported from the
+  package root. This repo is the classification authority, but the naming
+  convention had been living in `02-macro_db` and was copy-pasted into two
+  other repos. The copies drifted: this repo's `refresh_country_axes.py` and
+  `03-trade` both carried only 2 of the 6 overrides, so `03-trade` emitted
+  `Laos` / `Congo Republic` / `Côte d'Ivoire` / `Cabo Verde` where macro_db
+  published `Lao PDR` / `Congo` / `Ivory Coast` / `Cape Verde`, and those
+  four countries silently failed to join. All three repos now import the one
+  dict; none redeclare it.
+
+- **The rx1/rx2 country-axis derivation moved here from `02-macro_db`**
+  (2026-08-06). Deriving a country classification is this repo's job, and
+  the previous arrangement also risked inverting the dependency, since
+  macro_db depends on `exiobase_meta` and not the reverse. New scripts:
+  `build_country_coverage_matrix.py` (comparator matrix),
+  `extended_exiobase_country_list.py` (candidates + TIER_A/B/C),
+  `make_extended_exiobase_list.py` (rx1 / rx2 selection). Together with the
+  existing `refresh_country_axes.py` publish step, the chain now lives here
+  end to end apart from one measurement step.
+
+  `02-macro_db/scripts/count_data_coverage.py` stays in macro_db: measuring
+  UN SNA / Rev 3 / Rev 4 / IMF WEO year coverage needs its parsers. It is a
+  declared handoff, read via `paths.macro_db_coverage_csv`.
+
+  The derivation tables (`country_coverage_matrix`,
+  `extended_exiobase_candidates`, `exiobase_rx1`, `exiobase_rx2`) live
+  in-repo at `class/country_axes/`, git-versioned beside the classifications
+  they feed, and the published artefact is `class/exio_country_axes.xlsx`.
+  They spent part of 2026-08-06 in the shared data tree under a
+  `paths.axis_work_dir` key and were brought back the same day: they are
+  metadata, not data, and being a derivation output does not change that
+  (see 00-workflow/data_layout.yaml "METADATA IS NOT DATA"). The scripts
+  resolve the location relative to the repo root; `paths.axis_work_dir` is
+  gone from config.yaml and honoured only as an out-of-tree override.
+  Verified behaviour-preserving: all four intermediate CSVs are
+  byte-identical to macro_db's last build and the published xlsx reproduces
+  exactly.
+
 - `read_pi_concordance()`: reader for the binary product-to-industry matrix
   (200 x 163), the authoritative EXIOBASE product-industry structure.
   `exiobase_meta` is the canonical source; `io_utils` reads it through this

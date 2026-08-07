@@ -11,14 +11,22 @@ from .country_axes import (
 	remind_to_r12,
 )
 from .country_conversion import convert_countries, convert_country
+from .country_names import (
+	COCO_NAME_PRE_CONVERT,
+	EXIOBASE_OVERRIDES,
+	to_exiobase_name,
+	to_exiobase_names,
+)
 
 __all__ = [
 	"AXIS_NAMES",
+	"COCO_NAME_PRE_CONVERT",
+	"EXIOBASE_OVERRIDES",
 	"R12_REGIONS",
 	"ClassificationBundle",
 	"CountryAxis",
-	"convert_country",
 	"convert_countries",
+	"convert_country",
 	"read_all_country_axes",
 	"read_country_axis",
 	"read_exio3_classification",
@@ -27,6 +35,8 @@ __all__ = [
 	"read_region12",
 	"region12_codes",
 	"remind_to_r12",
+	"to_exiobase_name",
+	"to_exiobase_names",
 ]
 
 
