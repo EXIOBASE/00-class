@@ -35,7 +35,7 @@ paths:
   # this because only its parsers can measure it; we consume the published
   # table rather than importing macro_db. Produced by
   # 02-macro_db/scripts/count_data_coverage.py.
-  macro_db_coverage_csv: ${drive}indecol/data/macro_db/EXIOBASE_3_12/fin/comparisons/country_data_coverage.csv
+  macro_db_coverage_csv: ${drive}data/02-macro_db/EXIOBASE_3_12/fin/comparisons/country_data_coverage.csv
 
   # --- External comparator / coverage sources ----------------------------
   # Read directly; none of these need macro_db.
