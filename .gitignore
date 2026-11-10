@@ -28,3 +28,6 @@ config.local.yaml
 .idea/
 .DS_Store
 Thumbs.db
+
+# Detailed classification draft: build log
+work/detailed_v0/build.log

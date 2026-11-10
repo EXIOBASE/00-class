@@ -1,0 +1,1331 @@
+TOTAL	Total - all NACE activities
+TOT	Total (aggregate changing according to the context)
+TOT_X_H491_H492	All NACE activities (except railways)
+NAFT	All NACE activities (except agriculture, fishing and transport) - non AFT
+A-T	All NACE activities (except extra-territorial organisations and bodies)
+A_B	Agriculture, forestry and fishing; mining and quarrying
+A	Agriculture, forestry and fishing
+A01_A03_FOOD	Primary production of food - agriculture, fishing and aquaculture
+A01_A02	Agriculture and forestry
+AFT	Agriculture, fishing and transport (except railways) - AFT
+A01_A02_X_A017	Agriculture and forestry (except hunting)
+A01_IRR	Irrigation in agriculture
+A01	Crop and animal production, hunting and related service activities
+A011	Growing of non-perennial crops
+A0111	Growing of cereals, other than rice, leguminous crops and oil seeds
+A0112	Growing of rice
+A0113	Growing of vegetables and melons, roots and tubers
+A0114	Growing of sugar cane
+A0115	Growing of tobacco
+A0116	Growing of fibre crops
+A0119	Growing of other non-perennial crops
+A012	Growing of perennial crops
+A0121	Growing of grapes
+A0122	Growing of tropical and subtropical fruits
+A0123	Growing of citrus fruits
+A0124	Growing of pome fruits and stone fruits
+A0125	Growing of other tree and bush fruits and nuts
+A0126	Growing of oleaginous fruits
+A0127	Growing of beverage crops
+A0128	Growing of spices, aromatic, drug and pharmaceutical crops
+A0129	Growing of other perennial crops
+A013	Plant propagation
+A0130	Plant propagation
+A014	Animal production
+A0141	Raising of dairy cattle
+A0142	Raising of other cattle and buffaloes
+A0143	Raising of horses and other equines
+A0144	Raising of camels and camelids
+A0145	Raising of sheep and goats
+A0146	Raising of swine and pigs
+A0147	Raising of poultry
+A0148	Raising of other animals
+A015	Mixed farming
+A0150	Mixed farming
+A016	Support activities to agriculture and post-harvest crop activities
+A0161	Support activities for crop production
+A0162	Support activities for animal production
+A0163	Post-harvest crop activities and seed processing for propagation
+A017	Hunting, trapping and related service activities
+A0170	Hunting, trapping and related service activities
+A02	Forestry and logging
+A021	Silviculture and other forestry activities
+A0210	Silviculture and other forestry activities
+A022	Logging
+A0220	Logging
+A023	Gathering of wild growing non-wood products
+A0230	Gathering of wild growing non-wood products
+A024	Support services to forestry
+A0240	Support services to forestry
+A03	Fishing and aquaculture
+A031	Fishing
+A0311	Marine fishing
+A0312	Freshwater fishing
+A032	Aquaculture
+A0321	Marine aquaculture
+A0322	Freshwater aquaculture
+A033	Support activities for fishing and aquaculture
+A0330	Support activities for fishing and aquaculture
+B-T_X_T94	Industry, construction and services (except activities of membership organisations)
+B-T_X_P_T94	Industry, construction and services (except public administration, defence, compulsory social security, activities of membership organisations, activities of households as employers and extra-territorial organisations and bodies)
+B-T_X_P	Industry, construction and services (except public administration, defence, compulsory social security, activities of households as employers and extra-territorial organisations and bodies)
+B-T_X_L642	Industry, construction and services (except activities of holding companies)
+B-T	Industry, construction and services (except activities of households as employers and extraterritorial organisations and bodies)
+B-O_T95	Total business economy; repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles
+B-O_T95_X_L	Total business economy; repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles (except financial and insurance activities)
+B-O	Business economy
+B-O_X_L	Total business economy (except financial and insurance activities)
+B-O_X_L642	Business economy except activities of holding companies
+B-N73_INN	Economic activities covered by the CIS regulation
+B-F	Industry and construction
+B-F_X_C	Industry and construction (except manufacturing)
+B-F_X_D	Industry and construction (except electricity, gas, steam and air conditioning supply)
+B-E36_F	Industry and construction (except sewerage, waste management and remediation activities)
+B-E	Industry (except construction)
+B-E36	Industry (except construction, sewerage, waste management and remediation activities)
+B-E36_X_FOOD	Industry (except construction, sewerage, waste management and remediation activities), except food, beverages and tobacco
+B-D_F	Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply; construction
+B_D-F_XB0721	Mining and quarrying, electricity, gas, water supply, construction (except mining of uranium)
+B_D_E	Mining and quarrying; electricity, gas, steam and air conditioning supply; water supply, sewerage, waste management and remediation activities
+B-D	Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply
+B-D_X_FOOD	Mining and quarrying; manufacturing; electricity, gas, steam and air conditioning supply (except food, beverages and tobacco)
+B_C	Mining and quarrying; manufacturing
+B_C_X_FOOD	Mining and quarrying; manufacturing (except food, beverages and tobacco)
+B_C_X_MIG_NRG	Mining and quarrying; manufacturing (except MIG energy)
+B_C_X_FD_MIG_NRG	Mining and quarrying; manufacturing (except MIG energy), except food, beverages and tobacco
+KIA	Knowledge intensive activities
+KIABI	Knowledge intensive activities - business industries
+MIG_NRG	MIG - energy
+MIG_NRG_X_E	MIG - energy (except section E)
+MIG_NRG_X_D_E	MIG - energy (except sections D and E)
+MIG_ING	MIG - intermediate goods
+MIG_ING_CAG	MIG - intermediate and capital goods
+MIG_CAG	MIG - capital goods
+MIG_CAG_ORD	MIG - capital goods, for new orders
+MIG_COG	MIG - consumer goods
+MIG_COG_X_FOOD	MIG - consumer goods (except food, beverages and tobacco)
+MIG_COG_ORD	MIG - consumer goods, for new orders
+MIG_DCOG	MIG - durable consumer goods
+MIG_DCOG_ORD	MIG - durable consumer goods, for new orders
+MIG_NDCOG	MIG - non-durable consumer goods
+MIG_NDCOG_ORD	MIG - non-durable consumer goods, for new orders
+B	Mining and quarrying
+B05	Mining of coal and lignite
+B051	Mining of hard coal
+B0510	Mining of hard coal
+B052	Mining of lignite
+B0520	Mining of lignite
+B06-B09	Mining and quarrying, except mining of coal and lignite
+B06_B09	Extraction of crude petroleum and natural gas; mining support service activities
+B06	Extraction of crude petroleum and natural gas
+B061	Extraction of crude petroleum
+B0610	Extraction of crude petroleum
+B062	Extraction of natural gas
+B0620	Extraction of natural gas
+B07-B09_X_EPRD	Mining, quarrying and mining support service activities except those related to energy products (uranium and thorium ores, peat, petroleum and natural gas)
+B07_X_B0721	Mining of metal ores except mining of uranium and thorium ores
+B07	Mining of metal ores
+B071	Mining of iron ores
+B0710	Mining of iron ores
+B072	Mining of non-ferrous metal ores
+B0721	Mining of uranium and thorium ores
+B0729	Mining of other non-ferrous metal ores
+B08	Other mining and quarrying
+B081	Quarrying of stone, sand and clay
+B0811	Quarrying of ornamental stone, limestone, gypsum, slate and other stone
+B0812	Operation of gravel and sand pits and mining of clay and kaolin
+B089	Mining and quarrying n.e.c.
+B0891	Mining of chemical and fertiliser minerals
+B0892	Extraction of peat
+B0893	Extraction of salt
+B0899	Other mining and quarrying n.e.c.
+B09	Mining support service activities
+B091	Support activities for petroleum and natural gas extraction
+B0910	Support activities for petroleum and natural gas extraction
+B099	Support activities for other mining and quarrying
+B0990	Support activities for other mining and quarrying
+C-F	Manufacturing, electricity, gas, steam and air conditioning supply; water supply and construction
+C-E	Manufacturing, electricity, gas, steam and air conditioning; water supply, sewerage, waste management and remediation activities
+C_D	Manufacturing; electricity, gas, steam and air conditioning supply
+HTC	High-technology sectors (high-technology manufacturing and knowledge-intensive high technology services)
+C	Manufacturing
+C_CL	Manufacturing - for cooling purposes
+C_HTC_MH	High and medium-high technology manufacturing
+C_HTC_M	Medium-high technology manufacturing
+C_HTC	High technology manufacturing
+C_LTC_LM	Low and medium-low technology manufacturing
+C_LTC_M	Medium-low technology manufacturing
+C_LTC	Low technology manufacturing
+C_ORD	Manufacturing, for new orders
+C_ORD_X_C30	Manufacturing, for new orders (except heavy transport equipment)
+C_X_STEEL	Manufacturing (except steel and building of ships and boats)
+C10-T951_X_L	All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector
+C10-C18	Manufacture of products based on: food, beverages, tobacco, textile, leather, wood, pulp and paper; publishing and printing
+C10-C12	Manufacture of food products; beverages and tobacco products
+C10_C11	Manufacture of food products and beverages
+C10	Manufacture of food products
+C101	Processing and preserving of meat and production of meat products
+C101_PRC	Processing of meat and production of meat products
+C101_PRS	Preserving of meat and production of meat products
+C1011	Processing and preserving of meat, except of poultry meat
+C1012	Processing and preserving of poultry meat
+C1013	Production of meat and poultry meat products
+C102	Processing and preserving of fish, crustaceans and molluscs
+C102_PRC	Processing of fish, crustaceans and molluscs
+C102_PRS	Preserving of fish, crustaceans and molluscs
+C1020	Processing and preserving of fish, crustaceans and molluscs
+C103	Processing and preserving of fruit and vegetables
+C103_PRC	Processing of fruit and vegetables
+C103_PRS	Preserving of fruit and vegetables
+C1031	Processing and preserving of potatoes
+C1032	Manufacture of fruit and vegetable juice
+C1039	Other processing and preserving of fruit and vegetables
+C104	Manufacture of vegetable and animal oils and fats
+C104_PRC	Manufacture of vegetable and animal oils and fats (processing)
+C104_PRS	Manufacture of vegetable and animal oils and fats (preserving)
+C1041	Manufacture of oils and fats
+C1042	Manufacture of margarine and similar edible fats
+C105	Manufacture of dairy products and edible ice
+C105_PRC	Manufacture of dairy products (processing)
+C105_PRS	Manufacture of dairy products (preserving)
+C1051	Manufacture of dairy products
+C1052	Manufacture of ice cream and other edible ice
+C106	Manufacture of grain mill products, starches and starch products
+C106_PRC	Manufacture of grain mill products, starches and starch products (processing)
+C106_PRS	Manufacture of grain mill products, starches and starch products (preserving)
+C1061	Manufacture of grain mill products
+C1062	Manufacture of starches and starch products
+C107	Manufacture of bakery and farinaceous products
+C1071	Manufacture of bread; manufacture of fresh pastry goods and cakes
+C1072	Manufacture of rusks, biscuits, preserved pastries and cakes
+C1073	Manufacture of farinaceous products
+C108	Manufacture of other food products
+C108_PRC	Manufacture of other food products (processing)
+C108_PRS	Manufacture of other food products (preserving)
+C1081	Manufacture of sugar
+C1082	Manufacture of cocoa, chocolate and sugar confectionery
+C1083	Processing of tea and coffee
+C1084	Manufacture of condiments and seasonings
+C1085	Manufacture of prepared meals and dishes
+C1086	Manufacture of homogenised food preparations and dietetic food
+C1089	Manufacture of other food products n.e.c.
+C109	Manufacture of prepared animal feeds
+C109_PRC	Manufacture of prepared animal feeds (processing)
+C109_PRS	Manufacture of prepared animal feeds (preserving)
+C1091	Manufacture of prepared feeds for farm animals
+C1092	Manufacture of prepared pet foods
+C11	Manufacture of beverages
+C110	Manufacture of beverages
+C1101	Distilling, rectifying and blending of spirits
+C1102	Manufacture of wine from grape
+C1103	Manufacture of cider and other fruit fermented beverages
+C1104	Manufacture of other non-distilled fermented beverages
+C1105	Manufacture of beer
+C1106	Manufacture of malt
+C1107	Manufacture of soft drinks and bottled waters
+C12	Manufacture of tobacco products
+C120	Manufacture of tobacco products
+C1200	Manufacture of tobacco products
+C_TXW	Manufacture of textiles, wearing apparel, wood and paper products; printing and reproduction
+C13-C15	Manufacture of textiles, wearing apparel, leather and related products
+C13_C14	Manufacture of textiles and wearing apparel
+C13	Manufacture of textiles
+C131	Preparation and spinning of textile fibres
+C1310	Preparation and spinning of textile fibres
+C132	Weaving of textiles
+C1320	Weaving of textiles
+C133	Finishing of textiles
+C1330	Finishing of textiles
+C139	Manufacture of other textiles
+C1391	Manufacture of knitted and crocheted fabrics
+C1392	Manufacture of household textiles and made-up furnishing articles
+C1393	Manufacture of carpets and rugs
+C1394	Manufacture of cordage, rope, twine and netting
+C1395	Manufacture of non-wovens and non-woven articles
+C1396	Manufacture of other technical and industrial textiles
+C1399	Manufacture of other textiles n.e.c.
+C14	Manufacture of wearing apparel
+C141	Manufacture of knitted and crocheted apparel
+C1410	Manufacture of knitted and crocheted apparel
+C142	Manufacture of other wearing apparel and accessories
+C1421	Manufacture of outerwear
+C1422	Manufacture of underwear
+C1423	Manufacture of workwear
+C1424	Manufacture of leather clothes and fur apparel
+C1429	Manufacture of other wearing apparel and accessories n.e.c.
+C15	Manufacture of leather and related products of other materials
+C151	Tanning, dyeing, dressing of leather and fur; manufacture of luggage, handbags, saddlery and harness
+C1511	Tanning, dressing, dyeing of leather and fur
+C1512	Manufacture of luggage, handbags, saddlery and harness of any material
+C152	Manufacture of footwear
+C1520	Manufacture of footwear
+C16-C18	Manufacture of wood, paper, printing and reproduction
+C16	Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials
+C161	Sawmilling and planing of wood; processing and finishing of wood
+C1611	Sawmilling and planing of wood
+C1612	Processing and finishing of wood
+C162	Manufacture of products of wood, cork, straw and plaiting materials
+C1621	Manufacture of veneer sheets and wood-based panels
+C1622	Manufacture of assembled parquet floors
+C1623	Manufacture of other builders' carpentry and joinery
+C1624	Manufacture of wooden containers
+C1625	Manufacture of doors and windows of wood
+C1626	Manufacture of solid fuels from vegetable biomass
+C1627	Finishing of wooden products
+C1628	Manufacture of other products of wood and articles of cork, straw and plaiting materials
+C17_C19_C20_C22-C24	Manufacture of paper and paper products, coke and refined petroleum products, chemicals and chemical products, rubber and plastic products, other non-metallic mineral products, and basic metals
+C17_C18	Manufacture of paper and paper products; printing and reproduction of recorded media
+C17_X_C1711	Manufacture of paper and paper products except pulp
+C17	Manufacture of paper and paper products
+C171	Manufacture of pulp, paper and paperboard
+C1711	Manufacture of pulp
+C1712	Manufacture of paper and paperboard
+C172	Manufacture of articles of paper and paperboard
+C1721	Manufacture of corrugated paper, paperboard and containers of paper and paperboard
+C1722	Manufacture of household and sanitary goods and of toilet requisites
+C1723	Manufacture of paper stationery
+C1724	Manufacture of wallpaper
+C1725	Manufacture of other articles of paper and paperboard
+C18	Printing and reproduction of recorded media
+C181	Printing and service activities related to printing
+C1811	Printing of newspapers
+C1812	Other printing
+C1813	Pre-press and pre-media services
+C1814	Binding and related services
+C182	Reproduction of recorded media
+C1820	Reproduction of recorded media
+C19-C23	Manufacture of coke, refined petroleum, chemical and basic pharmaceutical products, rubber and plastics, other non-metallic mineral products
+C19-C22	Manufacture of petroleum, chemical, pharmaceutical, rubber and plastic products
+C19-C21	Manufacture of coke and refined petroleum product; chemicals and chemical products; basic pharmaceutical products and pharmaceutical preparations
+C19_C20	Manufacture of coke and refined petroleum products, chemicals and chemical products
+C19	Manufacture of coke and refined petroleum products
+C191	Manufacture of coke oven products
+C1910	Manufacture of coke oven products
+C192	Manufacture of refined petroleum products and fossil fuel products
+C1920	Manufacture of refined petroleum products and fossil fuel products
+C20-C22	Manufacture of chemical, pharmaceutical, rubber and plastic products
+C20_C21	Manufacture of chemicals and chemical products; basic pharmaceutical products and pharmaceutical preparations
+C20	Manufacture of chemicals and chemical products
+C201	Manufacture of basic chemicals, fertilisers and nitrogen compounds, plastics and synthetic rubber in primary forms
+C2011	Manufacture of industrial gases
+C2012	Manufacture of dyes and pigments
+C2013	Manufacture of other inorganic basic chemicals
+C2014	Manufacture of other organic basic chemicals
+C2015	Manufacture of fertilisers and nitrogen compounds
+C2016	Manufacture of plastics in primary forms
+C2017	Manufacture of synthetic rubber in primary forms
+C202	Manufacture of pesticides, disinfectants and other agrochemical products
+C2020	Manufacture of pesticides, disinfectants and other agrochemical products
+C203	Manufacture of paints, varnishes and similar coatings, printing ink and mastics
+C2030	Manufacture of paints, varnishes and similar coatings, printing ink and mastics
+C204	Manufacture of washing, cleaning and polishing preparations
+C2041	Manufacture of soap and detergents, cleaning and polishing preparations
+C2042	Manufacture of perfumes and toilet preparations
+C205	Manufacture of other chemical products
+C2051	Manufacture of liquid biofuels
+C2059	Manufacture of other chemical products n.e.c.
+C206	Manufacture of man-made fibres
+C2060	Manufacture of man-made fibres
+C21-C23	Manufacture of basic pharmaceutical products and pharmaceutical preparations, rubber and plastic products and other non-metallic mineral products
+C21	Manufacture of basic pharmaceutical products and pharmaceutical preparations
+C211	Manufacture of basic pharmaceutical products
+C2110	Manufacture of basic pharmaceutical products
+C212	Manufacture of pharmaceutical preparations
+C2120	Manufacture of pharmaceutical preparations
+C22_C31_C32	Manufacture of rubber, plastic products, furniture and other manufacturing
+C22_C23	Manufacture of rubber and plastic products and other non-metallic mineral products
+C22	Manufacture of rubber and plastic products
+C221	Manufacture of rubber products
+C2211	Manufacture, retreading and rebuilding of rubber tyres and manufacture of tubes
+C2212	Manufacture of other rubber products
+C222	Manufacture of plastics products
+C2221	Manufacture of plastic plates, sheets, tubes and profiles
+C2222	Manufacture of plastic packing goods
+C2223	Manufacture of doors and windows of plastic
+C2224	Manufacture of builders’ ware of plastic
+C2225	Processing and finishing of plastic products
+C2226	Manufacture of other plastic products
+C23_X_C231_C235	Manufacture of other non-metallic mineral products except glass, glass products, cement, lime and plaster
+C23	Manufacture of other non-metallic mineral products
+C231	Manufacture of glass and glass products
+C2311	Manufacture of flat glass
+C2312	Shaping and processing of flat glass
+C2313	Manufacture of hollow glass
+C2314	Manufacture of glass fibres
+C2315	Manufacture and processing of other glass, including technical glassware
+C232	Manufacture of refractory products
+C2320	Manufacture of refractory products
+C233	Manufacture of clay building materials
+C2331	Manufacture of ceramic tiles and flags
+C2332	Manufacture of bricks, tiles and construction products, in baked clay
+C234	Manufacture of other porcelain and ceramic products
+C2341	Manufacture of ceramic household and ornamental articles
+C2342	Manufacture of ceramic sanitary fixtures
+C2343	Manufacture of ceramic insulators and insulating fittings
+C2344	Manufacture of other technical ceramic products
+C2345	Manufacture of other ceramic products
+C235	Manufacture of cement, lime and plaster
+C2351	Manufacture of cement
+C2352	Manufacture of lime and plaster
+C236	Manufacture of articles of concrete, cement and plaster
+C2361	Manufacture of concrete products for construction purposes
+C2362	Manufacture of plaster products for construction purposes
+C2363	Manufacture of ready-mixed concrete
+C2364	Manufacture of mortars
+C2365	Manufacture of fibre cement
+C2366	Manufacture of other articles of concrete, plaster and cement
+C237	Cutting, shaping and finishing of stone
+C2370	Cutting, shaping and finishing of stone
+C239	Manufacture of abrasive products and non-metallic mineral products n.e.c.
+C2391	Manufacture of abrasive products
+C2399	Manufacture of other non-metallic mineral products n.e.c.
+C_MET	Manufacture of metal and machinery products, except electrical equipment
+C24_C25	Manufacture of basic metals and fabricated metal products, except machinery and equipment
+C24	Manufacture of basic metals
+C24_FER	Manufacture of basic iron and steel and of ferro-alloys; of tubes, pipes, hollow profiles, related fittings and other products of first processing of steel; casting of iron and steel
+C244_C2453_C2454_X_C2442	Manufacture of basic precious and other non-ferrous metals, casting of light metals and of other non-ferrous metals except aluminium production
+C241-C243_C2451_C2452	Manufacturing activities related to iron and steel
+C241_C2452	Steel
+C241	Manufacture of basic iron and steel and of ferro-alloys
+C2410	Manufacture of basic iron and steel and of ferro-alloys
+C242	Manufacture of tubes, pipes, hollow profiles and related fittings, of steel
+C2420	Manufacture of tubes, pipes, hollow profiles and related fittings, of steel
+C243	Manufacture of other products of first processing of steel
+C2431	Cold drawing of bars
+C2432	Cold rolling of narrow strip
+C2433	Cold forming or folding
+C2434	Cold drawing of wire
+C24_NFER	Manufacture of basic precious and other non-ferrous metals; casting of light metals and other non-ferrous metals
+C244_C2453_C2454	Manufacture of basic precious and other non-ferrous metals, casting of light metals and of other non-ferrous metals
+C244_X_C2442	Manufacture of basic precious and other non-ferrous metals except aluminium production
+C244	Manufacture of basic precious and other non-ferrous metals
+C2441	Precious metals production
+C2442	Aluminium production
+C2443	Lead, zinc and tin production
+C2444	Copper production
+C2445	Other non-ferrous metal production
+C2446	Processing of nuclear fuel
+C245	Casting of metals
+C2451	Casting of iron
+C2452	Casting of steel
+C2453	Casting of light metals
+C2454	Casting of other non-ferrous metals
+C25-C30	Manufacture of fabricated metal products, computer, electronic and optical products, electrical equipment, machinery, motor vehicles and other transport equipment
+C25-C28	Manufacture of fabricated metal products, computer, electronic and optical products, electrical equipment, machinery and equipment n.e.c.
+C25_X_C253	Manufacture of fabricated metal products, except weapons and ammunition, machinery and equipment
+C25	Manufacture of fabricated metal products, except machinery and equipment
+C251	Manufacture of structural metal products
+C2511	Manufacture of metal structures and parts of structures
+C2512	Manufacture of doors and windows of metal
+C252	Manufacture of tanks, reservoirs and containers of metal
+C2521	Manufacture of central heating radiators, steam generators and boilers
+C2522	Manufacture of other tanks, reservoirs and containers of metal
+C253	Manufacture of weapons and ammunition
+C2530	Manufacture of weapons and ammunition
+C254	Forging and shaping metal and powder metallurgy
+C2540	Forging and shaping metal and powder metallurgy
+C255	Treatment and coating of metals; machining
+C2551	Coating of metals
+C2552	Heat treatment of metals
+C2553	Machining of metals
+C256	Manufacture of cutlery, tools and general hardware
+C2561	Manufacture of cutlery
+C2562	Manufacture of locks and hinges
+C2563	Manufacture of tools
+C259	Manufacture of other fabricated metal products
+C2591	Manufacture of steel drums and similar containers
+C2592	Manufacture of light metal packaging
+C2593	Manufacture of wire products, chain and springs
+C2594	Manufacture of fasteners and screw machine products
+C2599	Manufacture of other fabricated metal products n.e.c.
+C26-C33	Manufacture of computers, electric and optical products, electrical equipment, machinery and equipment n.e.c, motor vehicles, other transport equipment, furniture, other manufacturing, repair and installation of machinery and equipment
+C26-C30	Manufacture of computer, electronic and optical products, electrical equipment, motor vehicles and other transport equipment
+C26-C28	Manufacture of computer, electronic and optical products, electrical equipment, machinery and equipment n.e.c.
+C26_C27	Manufacture of computer, electronic and optical products; manufacture of electrical equipment
+C26	Manufacture of computer, electronic and optical products
+C261	Manufacture of electronic components and boards
+C2611	Manufacture of electronic components
+C2612	Manufacture of loaded electronic boards
+C262	Manufacture of computers and peripheral equipment
+C2620	Manufacture of computers and peripheral equipment
+C263_C264	Manufacture of communication equipment and consumer electronics
+C263	Manufacture of communication equipment
+C2630	Manufacture of communication equipment
+C264	Manufacture of consumer electronics
+C2640	Manufacture of consumer electronics
+C265	Manufacture of measuring testing instruments, clocks and watches
+C2651	Manufacture of instruments and appliances for measuring, testing and navigation
+C2652	Manufacture of watches and clocks
+C266	Manufacture of irradiation, electromedical and electrotherapeutic equipment
+C2660	Manufacture of irradiation, electromedical and electrotherapeutic equipment
+C267	Manufacture of optical instruments, magnetic and optical media and photographic equipment
+C2670	Manufacture of optical instruments, magnetic and optical media and photographic equipment
+C27_C28	Manufacture of electrical equipment, machinery and equipment n.e.c.
+C27	Manufacture of electrical equipment
+C271	Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus
+C2711	Manufacture of electric motors, generators and transformers
+C2712	Manufacture of electricity distribution and control apparatus
+C272	Manufacture of batteries and accumulators
+C2720	Manufacture of batteries and accumulators
+C273	Manufacture of wiring and wiring devices
+C2731	Manufacture of fibre optic cables
+C2732	Manufacture of other electronic and electric wires and cables
+C2733	Manufacture of wiring devices
+C274	Manufacture of lighting equipment
+C2740	Manufacture of lighting equipment
+C275	Manufacture of domestic appliances
+C2751	Manufacture of electric domestic appliances
+C2752	Manufacture of non-electric domestic appliances
+C279	Manufacture of other electrical equipment
+C2790	Manufacture of other electrical equipment
+C28	Manufacture of machinery and equipment n.e.c.
+C281	Manufacture of general-purpose machinery
+C2811	Manufacture of engines and turbines, except aircraft, vehicle and cycle engines
+C2812	Manufacture of fluid power equipment
+C2813	Manufacture of other pumps and compressors
+C2814	Manufacture of other taps and valves
+C2815	Manufacture of bearings, gears, gearing and driving elements
+C282	Manufacture of other general-purpose machinery
+C2821	Manufacture of ovens, furnaces and permanent household heating equipment
+C2822	Manufacture of lifting and handling equipment
+C2823	Manufacture of office machinery and equipment, except computers and peripheral equipment
+C2824	Manufacture of power-driven hand tools
+C2825	Manufacture of non-domestic air conditioning equipment
+C2829	Manufacture of other general-purpose machinery n.e.c.
+C283	Manufacture of agricultural and forestry machinery
+C2830	Manufacture of agricultural and forestry machinery
+C284	Manufacture of metal forming machinery and machine tools
+C2841	Manufacture of metal forming machinery and machine tools for metal work
+C2842	Manufacture of other machine tools
+C289	Manufacture of other special-purpose machinery
+C2891	Manufacture of machinery for metallurgy
+C2892	Manufacture of machinery for mining, quarrying and construction
+C2893	Manufacture of machinery for food, beverage and tobacco processing
+C2894	Manufacture of machinery for textile, apparel and leather production
+C2895	Manufacture of machinery for paper and paperboard production
+C2896	Manufacture of plastics and rubber machinery
+C2897	Manufacture of additive manufacturing machinery
+C2899	Manufacture of other special-purpose machinery n.e.c.
+C29_C30	Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment
+C29	Manufacture of motor vehicles, trailers and semi-trailers
+C291	Manufacture of motor vehicles
+C2910	Manufacture of motor vehicles
+C292	Manufacture of bodies and coachwork for motor vehicles; manufacture of trailers and semi-trailers
+C2920	Manufacture of bodies and coachwork for motor vehicles; manufacture of trailers and semi-trailers
+C293	Manufacture of motor vehicle parts and accessories
+C2931	Manufacture of electrical and electronic equipment for motor vehicles
+C2932	Manufacture of other parts and accessories for motor vehicles
+C30	Manufacture of other transport equipment
+C301	Building of ships and boats
+C3011	Building of civilian ships and floating structures
+C3012	Building of pleasure and sporting boats
+C3013	Building of military ships and vessels
+C302	Manufacture of railway locomotives and rolling stock
+C3020	Manufacture of railway locomotives and rolling stock
+C303	Manufacture of air and spacecraft and related machinery
+C3031	Manufacture of civilian air and spacecraft and related machinery
+C3032	Manufacture of military air and spacecraft and related machinery
+C304_C3318	Manufacture of military fighting vehicles and repair and maintenance of military fighting vehicles, ships, boats, air and spacecraft
+C304	Manufacture of military fighting vehicles
+C3040	Manufacture of military fighting vehicles
+C309	Manufacture of transport equipment n.e.c.
+C3091	Manufacture of motorcycles
+C3092	Manufacture of bicycles and invalid carriages
+C3099	Manufacture of other transport equipment n.e.c.
+C31-C33	Manufacture of furniture; other manufacturing; repair and installation of machinery and equipment
+C31_C32	Manufacture of furniture; other manufacturing
+C31	Manufacture of furniture
+C310	Manufacture of furniture
+C3100	Manufacture of furniture
+C32_X_C325	Other manufacturing except medical and dental instruments and supplies
+C32	Other manufacturing
+C321	Manufacture of jewellery, bijouterie and related articles
+C3211	Striking of coins
+C3212	Manufacture of jewellery and related articles
+C3213	Manufacture of imitation jewellery and related articles
+C322	Manufacture of musical instruments
+C3220	Manufacture of musical instruments
+C323	Manufacture of sports goods
+C3230	Manufacture of sports goods
+C324	Manufacture of games and toys
+C3240	Manufacture of games and toys
+C325	Manufacture of medical and dental instruments and supplies
+C3250	Manufacture of medical and dental instruments and supplies
+C329	Manufacturing n.e.c.
+C3291	Manufacture of brooms and brushes
+C3299	Other manufacturing n.e.c.
+C33	Repair, maintenance and installation of machinery and equipment
+C331	Repair and maintenance of fabricated metal products, machinery and equipment
+C3311	Repair and maintenance of fabricated metal products
+C3312	Repair and maintenance of machinery
+C3313	Repair and maintenance of electronic and optical equipment
+C3314	Repair and maintenance of electrical equipment
+C3315	Repair and maintenance of civilian ships and boats
+C3316	Repair and maintenance of civilian air and spacecraft
+C3317	Repair and maintenance of other civilian transport equipment
+C3318	Repair and maintenance of military fighting vehicles, ships, boats, air and spacecraft
+C3319	Repair and maintenance of other equipment
+C332	Installation of industrial machinery and equipment
+C3320	Installation of industrial machinery and equipment
+C_OTH	Other manufacturing (C15, C23, C27, C31, C32, C33)
+D-F	Electricity, gas, steam and air conditioning supply; water supply and construction
+D_E	Electricity, gas, steam and air conditioning supply; water supply; sewerage, waste management and remediation activities
+D	Electricity, gas, steam and air conditioning supply
+D35_E36	Electricity, gas, steam and air conditioning supply; water collection, treatment and supply
+D35	Electricity, gas, steam and air conditioning supply
+D351	Electric power generation, transmission and distribution
+D3511	Production of electricity from non-renewable sources
+D3512	Production of electricity from renewable sources
+D3513	Transmission of electricity
+D3514	Distribution of electricity
+D3515	Trade of electricity
+D3516	Storage of electricity
+D352	Manufacture of gas, and distribution of gaseous fuels through mains
+D3521	Manufacture of gas
+D3522	Distribution of gaseous fuels through mains
+D3523	Trade of gas through mains
+D3524	Storage of gas as part of network supply services
+D353	Steam and air conditioning supply
+D3530	Steam and air conditioning supply
+D354	Activities of brokers and agents for electric power and natural gas
+D3540	Activities of brokers and agents for electric power and natural gas
+EP_GOV	General government
+E	Water supply; sewerage, waste management and remediation activities
+E36_E37	Water collection, treatment and supply; sewerage
+E36	Water collection, treatment and supply
+E360	Water collection, treatment and supply
+E3600	Water collection, treatment and supply
+E37-E39	Sewerage, waste management, remediation activities
+E37	Sewerage
+E370	Sewerage
+E3700	Sewerage
+E38_E39	Waste collection, treatment and disposal activities; materials recovery; remediation activities and other waste management services
+E38	Waste collection, recovery and disposal activities
+E381	Waste collection
+E3811	Collection of non-hazardous waste
+E3812	Collection of hazardous waste
+E382	Waste recovery
+E3821	Materials recovery
+E3822	Energy recovery
+E3823	Other waste recovery
+E383	Waste disposal without recovery
+E3831	Incineration without energy recovery
+E3832	Landfilling or permanent storage
+E3833	Other waste disposal
+E39	Remediation activities and other waste management service activities
+E390	Remediation activities and other waste management service activities
+E3900	Remediation activities and other waste management service activities
+F	Construction
+F41_F43	Construction of buildings and specialised construction activities
+F41	Construction of residential and non-residential buildings
+F410	Construction of residential and non-residential buildings
+F4100	Construction of residential and non-residential buildings
+F42	Civil engineering
+F421	Construction of roads and railways
+F4211	Construction of roads and motorways
+F4212	Construction of railways and underground railways
+F4213	Construction of bridges and tunnels
+F422	Construction of utility projects
+F4221	Construction of utility projects for fluids
+F4222	Construction of utility projects for electricity and telecommunications
+F429	Construction of other civil engineering projects
+F4291	Construction of water projects
+F4299	Construction of other civil engineering projects n.e.c.
+F43	Specialised construction activities
+F431	Demolition and site preparation
+F4311	Demolition
+F4312	Site preparation
+F4313	Test drilling and boring
+F432	Electrical, plumbing and other construction installation activities
+F4321	Electrical installation
+F4322	Plumbing, heat and air-conditioning installation
+F4323	Installation of insulation
+F4324	Other construction installation
+F433	Building completion and finishing
+F4331	Plastering
+F4332	Joinery installation
+F4333	Floor and wall covering
+F4334	Painting and glazing
+F4335	Other building completion and finishing
+F434	Specialised construction activities in construction of buildings
+F4341	Roofing activities
+F4342	Other specialised construction activities in construction of buildings
+F435	Specialised construction activities in civil engineering
+F4350	Specialised construction activities in civil engineering
+F436	Intermediation service activities for specialised construction services
+F4360	Intermediation service activities for specialised construction services
+F439	Other specialised construction activities
+F4391	Masonry and bricklaying activities
+F4399	Other specialised construction activities n.e.c.
+F_CC1	Buildings
+F_CC11	Residential buildings
+F_CC11_X_CC113	Residential buildings, except residences for communities
+F_CC111	One-dwelling buildings
+F_CC112	Two- and more dwelling buildings
+F_CC113	Residences for communities
+F_CC12	Non-residential buildings
+F_CC12_X_CC122	Non-residential buildings, except office buildings
+F_CC122	Office buildings
+F_CC2	Civil engineering works
+G-V	Services
+G-T_X_T94	Services (except activities of membership organisations)
+G-T_X_P_T94	Services (except public administration, defence, compulsory social security, activities of membership organisations, households as employers and extra-territorial organisations and bodies)
+G-T_X_P	Services (except public administration, defence, compulsory social security, activities of households as employers and extra-territorial organisations and bodies)
+G-O	Services of the business economy
+G-O_X_L	Services of the business economy (except financial and insurance activities)
+G-O_L642	Services of the business economy (except activities of holding companies and financing conduits)
+G-I	Wholesale and retail trade, transport, accommodation and food service activities
+G	Wholesale and retail trade
+G46-T951_X_L	Services, without financial sector
+G46-N73_INN	Services covered by the CIS regulation
+G46_ICT	ICT wholesale
+G46	Wholesale trade
+G461	Wholesale on a fee or contract basis
+G4611	Activities of agents involved in the wholesale of agricultural raw materials, live animals, textile raw materials and semi-finished goods
+G4612	Activities of agents involved in the wholesale of fuels, ores, metals and industrial chemicals
+G4613	Activities of agents involved in the wholesale of timber and building materials
+G4614	Activities of agents involved in the wholesale of machinery, industrial equipment, ships and aircraft
+G4615	Activities of agents involved in the wholesale of furniture, household goods, hardware and ironmongery
+G4616	Activities of agents involved in the wholesale of textiles, clothing, fur, footwear and leather goods
+G4617	Activities of agents involved in the wholesale of food, beverages and tobacco
+G4618	Activities of agents involved in the wholesale of other particular products
+G4619	Activities of agents involved in non-specialised wholesale
+G462	Wholesale of agricultural raw materials and live animals
+G4621	Wholesale of grain, unmanufactured tobacco, seeds and animal feeds
+G4622	Wholesale of flowers and plants
+G4623	Wholesale of live animals
+G4624	Wholesale of hides, skins and leather
+G463	Wholesale of food, beverages and tobacco
+G4631	Wholesale of fruit and vegetables
+G4632	Wholesale of meat, meat products, fish and fish products
+G4633	Wholesale of dairy products, eggs and edible oils and fats
+G4634	Wholesale of beverages
+G4635	Wholesale of tobacco products
+G4636	Wholesale of sugar, chocolate and sugar confectionery
+G4637	Wholesale of coffee, tea, cocoa and spices
+G4638	Wholesale of other food
+G4639	Non-specialised wholesale of food, beverages and tobacco
+G464	Wholesale of household goods
+G4641	Wholesale of textiles
+G4642	Wholesale of clothing and footwear
+G4643	Wholesale of electrical household appliances
+G4644	Wholesale of china and glassware and cleaning materials
+G4645	Wholesale of perfume and cosmetics
+G4646	Wholesale of pharmaceutical and medical goods
+G4647	Wholesale of household, office and shop furniture, carpets and lighting equipment
+G4648	Wholesale of watches and jewellery
+G4649	Wholesale of other household goods
+G465	Wholesale of information and communication equipment
+G4650	Wholesale of information and communication equipment
+G466	Wholesale of other machinery, equipment and supplies
+G4661	Wholesale of agricultural machinery, equipment and supplies
+G4662	Wholesale of machine tools
+G4663	Wholesale of mining, construction and civil engineering machinery
+G4664	Wholesale of other machinery and equipment
+G467	Wholesale of motor vehicles, motorcycles and related parts and accessories
+G4671	Wholesale of motor vehicles
+G4672	Wholesale of motor vehicle parts and accessories
+G4673	Wholesale of motorcycles, motorcycle parts and accessories
+G468	Other specialised wholesale
+G4681	Wholesale of solid, liquid and gaseous fuels and related products
+G4682	Wholesale of metals and metal ores
+G4683	Wholesale of wood, construction materials and sanitary equipment
+G4684	Wholesale of hardware, plumbing and heating equipment and supplies
+G4685	Wholesale of chemical products
+G4686	Wholesale of other intermediate products
+G4687	Wholesale of waste and scrap
+G4689	Other specialised wholesale n.e.c.
+G469	Non-specialised wholesale trade
+G4690	Non-specialised wholesale trade
+G47	Retail trade
+G47_X_G473	Retail trade, except of motor vehicles, motorcyles and fuel
+G47_FOOD	Retail sale of food, beverages and tobacco
+G47_NFOOD	Retail sale of non-food products (including fuel)
+G47_NFOOD_X_G473	Retail sale of non-food products (except fuel)
+G47_NF_CLTH	Retail sale of textiles, clothing, footware and leather goods in specialised stores
+G47_NF_HLTH	Dispensing chemist; retail sale of medical and orthopaedic goods, cosmetic and toilet articles in specialised stores
+G471	Non-specialised retail sale
+G4711	Non-specialised retail sale of predominately food, beverages or tobacco
+G4712	Other non-specialised retail sale
+G472	Retail sale of food, beverages and tobacco
+G4721	Retail sale of fruit and vegetables
+G4722	Retail sale of meat and meat products
+G4723	Retail sale of fish, crustaceans and molluscs
+G4724	Retail sale of bread, cake and confectionery
+G4725	Retail sale of beverages
+G4726	Retail sale of tobacco products
+G4727	Retail sale of other food
+G473	Retail sale of automotive fuel
+G4730	Retail sale of automotive fuel
+G474	Retail sale of information and communication equipment
+G4740	Retail sale of information and communication equipment
+G475	Retail sale of other household equipment
+G4751	Retail sale of textiles
+G4752	Retail sale of hardware, building materials, paints and glass
+G4753	Retail sale of carpets, rugs, wall and floor coverings
+G4754	Retail sale of electrical household appliances
+G4755	Retail sale of furniture, lighting equipment, tableware and other household goods
+G476	Retail sale of cultural and recreational goods
+G4761	Retail sale of books
+G4762	Retail sale of newspapers, and other periodical publications and stationery
+G4763	Retail sale of sporting equipment
+G4764	Retail sale of games and toys
+G4769	Retail sale of cultural and recreational goods n.e.c.
+G477	Retail sale of other goods, except motor vehicles and motorcycles
+G4771	Retail sale of clothing
+G4772	Retail sale of footwear and leather goods
+G4773	Retail sale of pharmaceutical products
+G4774	Retail sale of medical and orthopaedic goods
+G4775	Retail sale of cosmetic and toilet articles
+G4776	Retail sale of flowers, plants, fertilisers, pets and pet food
+G4777	Retail sale of watches and jewellery
+G4778	Retail sale of other new goods
+G4779	Retail sale of second-hand goods
+G478	Retail sale of motor vehicles, motorcycles and related parts and accessories
+G4781	Retail sale of motor vehicles
+G4782	Retail sale of motor vehicle parts and accessories
+G4783	Retail sale of motorcycles, motorcycle parts and accessories
+G479	Intermediation service activities for retail sale
+G4791	Intermediation service activities for non-specialised retail sale
+G4792	Intermediation service activities for specialised retail sale
+TI	Total tourism industries (total)
+TIM	Tourism industries (mainly tourism)
+TIP	Tourism industries (partially tourism)
+TI_TR	Tourism industries - transport (total)
+TI_LTR	Tourism industries - land transport
+TI_WTR	Tourism industries - water transport
+TI_ACCOM	Tourism industries - accommodation
+TI_FOODB	Tourism industries - food and beverage (total)
+TI_COR	Tourism industries - car and other rental (total)
+H-O_X_L	Services of the business economy (except trade and financial and insurance activities)
+H	Transportation and storage
+H_X_H53	Transportation and storage except postal and courier activities
+H_X_H491_H492	Transport (except railways)
+H491_H492	Railways
+H49-H51	Land transport and transport via pipelines; water transport; air transport
+H49-H51_NTRA_X_H495	Land transport (except transport via pipelines), water transport and air transport - non transport activities
+H49	Land transport and transport via pipelines
+H491	Passenger rail transport
+H4911	Passenger heavy rail transport
+H4912	Other passenger rail transport
+H492	Freight rail transport
+H4920	Freight rail transport
+H493_H494	Other passenger land transport; freight transport by road and removal services
+H493	Other passenger land transport
+H4931	Scheduled passenger transport by road
+H4932	Non-scheduled passenger transport by road
+H4933	On-demand passenger transport service activities by vehicle with driver
+H4934	Passenger transport by cableways and ski lifts
+H4939	Other passenger land transport n.e.c.
+H494	Freight transport by road and removal services
+H4941	Freight transport by road
+H4942	Removal services
+H495	Transport via pipeline
+H4950	Transport via pipeline
+H50	Water transport
+H501_H502	Sea and coastal water transport
+H501	Sea and coastal passenger water transport
+H5010	Sea and coastal passenger water transport
+H502	Sea and coastal freight water transport
+H5020	Sea and coastal freight water transport
+H503_H504	Inland passenger and freight water transport
+H503	Inland passenger water transport
+H5030	Inland passenger water transport
+H504	Inland freight water transport
+H5040	Inland freight water transport
+H51_I55_O79	Air transport; accommodation; travel agency, tour operator and other reservation service and related activities
+H51	Air transport
+H511	Passenger air transport
+H5110	Passenger air transport
+H512	Freight air transport and space transport
+H5121	Freight air transport
+H5122	Space transport
+H52_H53	Warehousing and support activities for transportation and postal and courier activities
+H52	Warehousing, storage and support activities for transportation
+H521	Warehousing and storage
+H5210	Warehousing and storage
+H522	Support activities for transportation
+H5221	Service activities incidental to land transportation
+H5222	Service activities incidental to water transportation
+H5223	Service activities incidental to air transportation
+H5224	Cargo handling
+H5225	Logistics service activities
+H5226	Other support activities for transportation
+H523	Intermediation service activities for transportation
+H5231	Intermediation service activities for freight transportation
+H5232	Intermediation service activities for passenger transportation
+H52_STL	Street lighting
+H53	Postal and courier activities
+H531	Postal activities under universal service obligation
+H5310	Postal activities under universal service obligation
+H532	Other postal and courier activities
+H5320	Other postal and courier activities
+H533	Intermediation service activities for postal and courier activities
+H5330	Intermediation service activities for postal and courier activities
+H_OTH	Other transport
+I_M_P-V	Accommodation and food service activities; real estate activities; public administration and defence; compulsory social security; education; human health and social work activities; arts, sports and recreation; other service activities; activities of households as employers and undifferentiated goods - and service-producing activities of households for own use; activities of extraterritorial organisations and bodies
+I	Accommodation and food service activities
+I_X_I559_I562	Hotels; holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks; restaurants and mobile food and beverage service activities
+I55_I56_O-T_FOOD	Restaurants and food services
+I55	Accommodation
+I551-I553	Hotels; holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks
+I551	Hotels and similar accommodation
+I5510	Hotels and similar accommodation
+I552_I553	Holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks
+I552	Holiday and other short-stay accommodation
+I5520	Holiday and other short-stay accommodation
+I553	Camping grounds and recreational vehicle parks
+I5530	Camping grounds and recreational vehicle parks
+I554	Intermediation service activities for accommodation
+I5540	Intermediation service activities for accommodation
+I559	Other accommodation
+I5590	Other accommodation
+I56	Food and beverage service activities
+I561_I563	Restaurants and mobile food and beverage service activities
+I561	Restaurants and mobile food service activities
+I5611	Restaurant activities
+I5612	Mobile food service activities
+I562	Event catering, contract catering service activities and other food service activities
+I5621	Event catering activities
+I5622	Contract catering service activities and other food service activities
+I563	Beverage serving activities
+I5630	Beverage serving activities
+I564	Intermediation service activities for food and beverage services activities
+I5640	Intermediation service activities for food and beverage services activities
+KIS	Total knowledge intensive services
+KIS_HTC	Knowledge-intensive high technology services
+KIS_MKT	Knowledge intensive market services
+KIS_FIN	Knowledge intensive financial services
+KIS_OTH	Other knowledge intensive services
+J_K	Publishing, broadcasting, and content production and distribution activities; telecommunication, computer programming, consulting, computing infrastructure and other information service activities
+J	Publishing, broadcasting, and content production and distribution activities
+J58-J60	Publishing activities; motion picture, video and television programme production, sound recording and music publishing activities; programming, broadcasting, news agency and other content distribution activities
+J58	Publishing activities
+J581	Publishing of books, newspapers and other publishing activities, except software publishing
+J5811	Publishing of books
+J5812	Publishing of newspapers
+J5813	Publishing of journals and periodicals
+J5819	Other publishing activities, except software publishing
+J582	Software publishing
+J5821	Publishing of video games
+J5829	Other software publishing
+J59_J60	Motion picture, video and television programme production, sound recording and music publishing activities; programming, broadcasting, news agency and other content distribution activities
+J59	Motion picture, video and television programme production, sound recording and music publishing activities
+J591	Motion picture, video and television programme activities
+J5911	Motion picture, video and television programme production activities
+J5912	Motion picture, video and television programme post-production activities
+J5913	Motion picture and video distribution activities
+J5914	Motion picture projection activities
+J592	Sound recording and music publishing activities
+J5920	Sound recording and music publishing activities
+J60	Programming, broadcasting, news agency and other content distribution activities
+J601	Radio broadcasting and audio distribution activities
+J6010	Radio broadcasting and audio distribution activities
+J602	Television programming, broadcasting and video distribution activities
+J6020	Television programming, broadcasting and video distribution activities
+J603	News agency and other content distribution activities
+J6031	News agency activities
+J6039	Other content distribution activities
+J6039_K63	Other content distribution activities and computing infrastructure, data processing, hosting and other information service activities
+K	Telecommunication, computer programming, consulting, computing infrastructure and other information service activities
+K61-K63	Telecommunications; computer programming, consultancy and related activities; computing infrastructure, data processing, hosting and other information service activities
+K61	Telecommunication
+K611	Wired, wireless, and satellite telecommunication activities
+K6110	Wired, wireless, and satellite telecommunication activities
+K612	Telecommunication reselling activities and intermediation service activities for telecommunication
+K6120	Telecommunication reselling activities and intermediation service activities for telecommunication
+K619	Other telecommunications activities
+K6190	Other telecommunications activities
+K62_K63	Computer programming, consultancy and related activities; computing infrastructure, data processing, hosting and other information service activities
+K62	Computer programming, consultancy and related activities
+K621	Computer programming activities
+K6210	Computer programming activities
+K622	Computer consultancy and computer facilities management activities
+K6220	Computer consultancy and computer facilities management activities
+K629	Other information technology and computer service activities
+K6290	Other information technology and computer service activities
+K63	Computing infrastructure, data processing, hosting and other information service activities
+K631	Computing infrastructure, data processing, hosting and related activities
+K6310	Computing infrastructure, data processing, hosting and related activities
+K639	Web search portal activities and other information service activities
+K6391	Web search portal activities
+K6392	Other information service activities
+L-O	Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities
+L_M	Financial and insurance activities; real estate activities
+L_M_X_L642	Financial and insurance activities; real estate activities except activities of holding companies
+L_X_L642	Financial and insurance activities except activities of holding companies
+L	Financial and insurance activities
+L64-L66	Knowledge intensive financial services
+L64_L661_L663	Financial service and auxiliary activities, and fund management activities, except insurance and pension funding
+L64_L65	Financial service activities, insurance, reinsurance and pension funding, except compulsory social security
+L64_X_L642	Financial service activities, except insurance, pension funding, activities of holding companies
+L64	Financial service activities, except insurance and pension funding
+L641	Monetary intermediation
+L6411	Central banking
+L6419	Other monetary intermediation
+L642	Activities of holding companies and financing conduits
+L6421	Activities of holding companies
+L6422	Activities of financing conduits
+L643	Activities of trusts, funds and similar financial entities
+L6431	Activities of money market and non-money market investments funds
+L6432	Activities of trust, estate and agency accounts
+L649	Other financial service activities, except insurance and pension funding
+L6491	Financial leasing
+L6492	Other credit granting
+L6499	Other financial service activities, except insurance and pension funding n.e.c.
+L64CRED	Total credit institutions
+L65_L662	Insurance, reinsurance and pension funding and auxiliary activities, except compulsory social security
+L65	Insurance, reinsurance and pension funding, except compulsory social security
+L651	Insurance
+L6511	Life insurance
+L6512	Non-life insurance
+L652	Reinsurance
+L6520	Reinsurance
+L653	Pension funding
+L6530	Pension funding
+L66	Activities auxiliary to financial services and insurance activities
+L661	Activities auxiliary to financial services, except insurance and pension funding
+L6611	Administration of financial markets
+L6612	Security and commodity contracts brokerage
+L6619	Other activities auxiliary to financial services, except insurance and pension funding
+L662	Activities auxiliary to insurance and pension funding
+L6621	Risk and damage evaluation
+L6622	Activities of insurance agents and brokers
+L6629	Activities auxiliary to insurance and pension funding n.e.c.
+L663	Fund management activities
+L6630	Fund management activities
+M_N	Real estate activities; professional, scientific and technical activities
+M	Real estate activities
+M68	Real estate activities
+M681	Real estate activities with own property and development of building projects
+M6811	Buying and selling of own real estate
+M6812	Development of building projects
+M682	Rental and operating of own or leased real estate
+M6820	Rental and operating of own or leased real estate
+M683	Real estate activities on a fee or contract basis
+M6831	Intermediation service activities for real estate activities
+M6832	Other real estate activities on a fee or contract basis
+N_T	Professional, scientific and technical activities; other service activities
+N_O	Professional, scientific and technical activities; administrative and support service activities
+N	Professional, scientific and technical activities
+N_STS	Professional, scientific and technical activities required by STS regulation
+N69_N74	Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis; scientific research and development; advertising and market research; other professional, scientific and technical activities
+N69-N71	Legal and accounting activities; activities of head offices and management consultancy; architectural and engineering activities; technical testing and analysis
+N69_N71	Legal and accounting activities; architectural and engineering activities; technical testing and analysis
+N69_N702	Legal and accounting activities; business and other management consultancy activities
+N69	Legal and accounting activities
+N691	Legal activities
+N6910	Legal activities
+N692	Accounting, bookkeeping and auditing activities; tax consultancy
+N6920	Accounting, bookkeeping and auditing activities; tax consultancy
+N70	Activities of head offices and management consultancy
+N701	Activities of head offices
+N7010	Activities of head offices
+N702	Business and other management consultancy activities
+N7020	Business and other management consultancy activities
+N71-N73	Architectural and engineering activities; technical testing and analysis; scientific research and development; advertising and market research
+N71	Architectural and engineering activities; technical testing and analysis
+N711	Architectural and engineering activities and related technical consultancy
+N7111	Architectural activities
+N7112	Engineering activities and related technical consultancy
+N712	Technical testing and analysis
+N7120	Technical testing and analysis
+N72	Scientific research and development
+N721	Research and experimental development on natural sciences and engineering
+N7210	Research and experimental development on natural sciences and engineering
+N722	Research and experimental development on social sciences and humanities
+N7220	Research and experimental development on social sciences and humanities
+N73-N75	Advertising and market research; other professional, scientific and technical activities; veterinary activities
+N73	Activities of advertising, market research and public relations
+N731	Advertising
+N7311	Activities of advertising agencies
+N7312	Media representation
+N732	Market research and public opinion polling
+N7320	Market research and public opinion polling
+N733	Public relations and communication activities
+N7330	Public relations and communication activities
+N74_N75	Other professional, scientific and technical activities; veterinary activities
+N74	Other professional, scientific and technical activities
+N741	Specialised design activities
+N7411	Industrial product and fashion design activities
+N7412	Graphic design and visual communication activities
+N7413	Interior design activities
+N7414	Other specialised design activities
+N742	Photographic activities
+N7420	Photographic activities
+N743	Translation and interpretation activities
+N7430	Translation and interpretation activities
+N749	Other professional, scientific and technical activities n.e.c.
+N7491	Patent brokering and marketing service activities
+N7499	All other professional, scientific and technical activities n.e.c.
+N75	Veterinary activities
+N750	Veterinary activities
+N7500	Veterinary activities
+O	Administrative and support service activities
+O_STS	Administrative and support service activities required by STS regulation
+O77-O82_X_O79	Activities for rental and leasing, employment, security and investigation, services to buildings and landscape, office administrative, office support and other business support
+O77	Rental and leasing activities
+O771_O7721	Renting and leasing of motor vehicles, recreational and sports goods
+O771	Rental and leasing of motor vehicles
+O7711	Rental and leasing of cars and light motor vehicles
+O7712	Rental and leasing of trucks
+O772	Rental and leasing of personal and household goods
+O7721	Rental and leasing of recreational and sports goods
+O7722	Rental and leasing of other personal and household goods
+O773	Rental and leasing of other machinery, equipment and tangible goods
+O7731	Rental and leasing of agricultural machinery and equipment
+O7732	Rental and leasing of construction and civil engineering machinery and equipment
+O7733	Rental and leasing of office machinery, equipment and computers
+O7734	Rental and leasing of water transport equipment
+O7735	Rental and leasing of air transport equipment
+O7739	Rental and leasing of other machinery, equipment and tangible goods n.e.c.
+O774	Leasing of intellectual property and similar products, except copyrighted works
+O7740	Leasing of intellectual property and similar products, except copyrighted works
+O775	Intermediation service activities for rental and leasing of tangible goods and non-financial intangible assets
+O7751	Intermediation service activities for rental and leasing of cars, motorhomes and trailers
+O7752	Intermediation service activities for rental and leasing of other tangible goods and non-financial intangible assets
+O78-O82	Employment, travel agency, security and investigation, service and landscape, office administrative and support activities
+O78	Employment activities
+O781	Activities of employment placement agencies
+O7810	Activities of employment placement agencies
+O782	Temporary employment agency activities and other human resource provisions
+O7820	Temporary employment agency activities and other human resource provisions
+O79	Travel agency, tour operator and other reservation service and related activities
+O791	Travel agency and tour operator activities
+O7911	Travel agency activities
+O7912	Tour operator activities
+O799	Other reservation service and related activities
+O7990	Other reservation service and related activities
+O80	Investigation and security activities
+O800	Investigation and security activities
+O8001	Investigation and private security activities
+O8009	Security activities n.e.c.
+O81	Services to buildings and landscape activities
+O811	Combined facilities support activities
+O8110	Combined facilities support activities
+O812	Cleaning activities
+O8121	General cleaning of buildings
+O8122	Other building and industrial cleaning activities
+O8123	Other cleaning activities
+O813	Landscape service activities
+O8130	Landscape service activities
+O82	Office administrative, office support and other business support activities
+O821	Office administrative and support activities
+O8210	Office administrative and support activities
+O822	Activities of call centres
+O8220	Activities of call centres
+O823	Organisation of conventions and trade shows
+O8230	Organisation of conventions and trade shows
+O824	Intermediation service activities for business support service activities n.e.c.
+O8240	Intermediation service activities for business support service activities n.e.c.
+O829	Business support service activities n.e.c.
+O8291	Activities of collection agencies and credit bureaus
+O8292	Packaging activities
+O8299	Other business support service activities n.e.c.
+P_V	Public administration; activities of extraterritorial organisations and bodies
+P-V	Public administration and defence; compulsory social security; education; human health and social work activities; arts, sports and recreation; other service activities; activities of households as employers and undifferentiated goods- and service-producing activities of households for own use and activities of extraterritorial organisations and bodies
+P_U_V	Activities
+P-T	Public administration, defence, education, human health and social work activities; arts, sports and recreation; other service activities
+P-S	Public administration, defence, education, human health and social work activities; arts, sports and recreation
+P-R	Public administration and defence; compulsory social security; education; human health and social work activities
+P_Q	Public administration and defence; compulsory social security and education
+P	Public administration and defence; compulsory social security
+P84	Public administration and defence; compulsory social security
+P841	Administration of the State and the economic, social and environmental policies of the community
+P8411	General public administration activities
+P8412	Regulation of health care, education, cultural services and other social services
+P8413	Regulation of and contribution to more efficient operation of businesses
+P842	Provision of services to the community as a whole
+P8421	Foreign affairs
+P8422	Defence activities
+P8423	Justice and judicial activities
+P8424	Public order and safety activities
+P8425	Fire service activities
+P843	Compulsory social security activities
+P8430	Compulsory social security activities
+Q-T	Education; human health and social work activities; arts, sports and recreation; other service activities
+Q-T_X_T94	Education; human health and social work activities; arts, sports and recreation; other service activities, except activities of membership organisations
+Q_R	Education; human health and social work activities
+Q	Education
+Q85	Education
+Q851	Pre-primary education
+Q8510	Pre-primary education
+Q852	Primary education
+Q8520	Primary education
+Q853	Secondary and post-secondary non-tertiary education
+Q8531	General secondary education
+Q8532	Vocational secondary education
+Q8533	Post-secondary non-tertiary education
+Q854	Tertiary education
+Q8540	Tertiary education
+Q855	Other education
+Q8551	Sports and recreation education
+Q8552	Cultural education
+Q8553	Driving school activities
+Q8559	Other education n.e.c.
+Q856	Educational support activities
+Q8561	Intermediation service activities for courses and tutors
+Q8569	Educational support activities n.e.c.
+R	Human health and social work activities
+R86	Human health activities
+R861	Hospital activities
+R8610	Hospital activities
+R862	Medical and dental practice activities
+R8621	General medical practice activities
+R8622	Medical specialists activities
+R8623	Dental practice care activities
+R869	Other human health activities
+R8691	Diagnostic imaging services and medical laboratory activities
+R8692	Patient transportation by ambulance
+R8693	Activities of psychologists and psychotherapists, except medical doctors
+R8694	Nursing and midwifery activities
+R8695	Physiotherapy activities
+R8696	Traditional, complementary and alternative medicine activities
+R8697	Intermediation service activities for medical, dental and other human health services
+R8699	Other human health activities n.e.c.
+R87_R88	Residential care activities and social work activities without accommodation
+R87	Residential care activities
+R871	Residential nursing care activities
+R8710	Residential nursing care activities
+R872	Residential care activities for persons living with or having a diagnosis of a mental illness or substance abuse
+R8720	Residential care activities for persons living with or having a diagnosis of a mental illness or substance abuse
+R873	Residential care activities for older persons or persons with physical disabilities
+R8730	Residential care activities for older persons or persons with physical disabilities
+R879	Other residential care activities
+R8791	Intermediation service activities for residential care activities
+R8799	Other residential care activities n.e.c.
+R88	Social work activities without accommodation
+R881	Social work activities without accommodation for older persons or persons with disabilities
+R8810	Social work activities without accommodation for older persons or persons with disabilities
+R889	Other social work activities without accommodation
+R8891	Child day-care activities
+R8899	Other social work activities without accommodation n.e.c.
+S-V	Arts, sports and recreation; other service activities; activities of households as employers and undifferentiated goods- and service-producing activities of households for own use; activities of extraterritorial organisations and bodies
+S_T	Arts, sports and recreation; other service activities
+S_T_X_T94	Arts, sports and recreation; other service activities (except activities of membership organisations)
+S	Arts, sports and recreation
+S90-S92	Creative, arts and entertainment activities; libraries, archives, museums and other cultural activities; gambling and betting activities
+S90	Arts creation and performing arts activities
+S901	Arts creation activities
+S9011	Literary creation and musical composition activities
+S9012	Visual arts creation activities
+S9013	Other arts creation activities
+S902	Activities of performing arts
+S9020	Activities of performing arts
+S903	Support activities to arts creation and performing arts
+S9031	Operation of arts facilities and sites
+S9039	Other support activities to arts and performing arts
+S91	Libraries, archives, museums and other cultural activities
+S911	Library and archive activities
+S9111	Library activities
+S9112	Archive activities
+S912	Museum, collection, historical site and monument activities
+S9121	Museum and collection activities
+S9122	Historical site and monument activities
+S913	Conservation, restoration and other support activities for cultural heritage
+S9130	Conservation, restoration and other support activities for cultural heritage
+S914	Botanical and zoological garden and nature reserve activities
+S9141	Botanical and zoological garden activities
+S9142	Nature reserve activities
+S92_S93	Gambling and betting activities; sporting and other recreational activities
+S92	Gambling and betting activities
+S920	Gambling and betting activities
+S9200	Gambling and betting activities
+S93	Sports activities and amusement and recreation activities
+S931	Sports activities
+S9311	Operation of sports facilities
+S9312	Activities of sport clubs
+S9313	Activities of fitness centres
+S9319	Sports activities n.e.c.
+S932	Amusement and recreation activities
+S9321	Activities of amusement parks and theme parks
+S9329	Amusement and recreation activities n.e.c.
+T-V	Other service activities; activities of households as employers and extraterritorial organisations and bodies
+T_U	Other service activities, activities of households as employers
+T	Other service activities
+T94	Activities of membership organisations
+T941	Activities of business, employers and professional membership organisations
+T9411	Activities of business and employers membership organisations
+T9412	Activities of professional membership organisations
+T942	Activities of trade unions
+T9420	Activities of trade unions
+T949	Activities of other membership organisations
+T9491	Activities of religious organisations
+T9492	Activities of political organisations
+T9499	Activities of other membership organisations n.e.c.
+T95_T96	Repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles; personal service activities
+T95	Repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles
+T951	Repair and maintenance of computers and communication equipment
+T9510	Repair and maintenance of computers and communication equipment
+T952	Repair and maintenance of personal and household goods
+T9521	Repair and maintenance of consumer electronics
+T9522	Repair and maintenance of household appliances and home and garden equipment
+T9523	Repair and maintenance of footwear and leather goods
+T9524	Repair and maintenance of furniture and home furnishings
+T9525	Repair and maintenance of watches, clocks and jewellery
+T9529	Repair and maintenance of personal and household goods n.e.c.
+T953	Repair and maintenance of motor vehicles and motorcycles
+T9531	Repair and maintenance of motor vehicles
+T9532	Repair and maintenance of motorcycles
+T954	Intermediation service activities for repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles
+T9540	Intermediation service activities for repair and maintenance of computers, personal and household goods, and motor vehicles and motorcycles
+T96	Personal service activities
+T961	Washing and cleaning of textile and fur products
+T9610	Washing and cleaning of textile and fur products
+T962	Hairdressing, beauty treatment, day spa and similar activities
+T9621	Hairdressing and barber activities
+T9622	Beauty care and other beauty treatment activities
+T9623	Day spa, sauna and steam bath activities
+T963	Funeral and related activities
+T9630	Funeral and related activities
+T964	Intermediation service activities for personal services
+T9640	Intermediation service activities for personal services
+T969	Other personal service activities
+T9691	Provision of domestic personal service activities
+T9699	Other personal service activities n.e.c.
+U	Activities of households as employers and undifferentiated goods- and service-producing activities of households for own use
+U97	Activities of households as employers of domestic personnel
+U970	Activities of households as employers of domestic personnel
+U9700	Activities of households as employers of domestic personnel
+U98_V	Undifferentiated goods- and services-producing activities of private households for own use and activities of extraterritorial organisations and bodies
+U98	Undifferentiated goods- and service-producing activities of private households for own use
+U981	Undifferentiated goods-producing activities of private households for own use
+U9810	Undifferentiated goods-producing activities of private households for own use
+U982	Undifferentiated service-producing activities of private households for own use
+U9820	Undifferentiated service-producing activities of private households for own use
+V	Activities of extraterritorial organisations and bodies
+V99	Activities of extraterritorial organisations and bodies
+V990	Activities of extraterritorial organisations and bodies
+V9900	Activities of extraterritorial organisations and bodies
+ICT	Information and Communication Technology - total
+C_ICT	ICT manufacturing
+G-V_ICT	ICT services
+INF	Information sector
+CRA	Computer related services
+CLT	Cultural and creative sectors - total
+CLT_S	Cultural and creative sectors - services
+EP_HH	Households
+EP_NRES	Non-residents
+TOTAL_HH_NRES	All NACE activities plus households, non-residents and not allocated
+TOTAL_HH	All NACE activities plus households
+MU_WST	Municipal waste
+HH_WST	Waste from households
+HH	Total activities by households
+HH_HEAT	Heating/cooling activities by households
+HH_HEAT_OTH	Heating/cooling and other activities by households
+HH_TRA	Transport activities by households
+HH_OTH	Other activities by households
+CH_INV_PA	Changes in inventories and produced assets
+SD_SU	Statistical discrepancy between supply and use of energy for total activities
+ROW_ACT	Economic activities of the rest of the world
+ENV	Environment
+NRG_FLOW	Energy flows over all activities
+DATAC	Data centres activities
+PRV_RE	Private real estate activities
+FDI	All FDI activities
+OTH	Other NACE activities
+NAL	Not allocated
+NAP	Not applicable
+NRP	No response
+NSP	Not specified
+UNK	Unknown NACE activity

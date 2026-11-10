@@ -2,6 +2,30 @@
 
 EXIOBASE metadata readers with country conversion via `country_converter`.
 
+## Work in progress: detailed product and industry classification
+
+A new, much more detailed EXIOBASE classification (NACE Rev 2.1 industries,
+CPA 2.2 products, nesting exactly into EXIOBASE 3) is being drafted. Draft v0
+is not yet a released classification and nothing reads it.
+
+| What | Where |
+|---|---|
+| Plan and decisions | [docs/detailed_classification_plan.md](docs/detailed_classification_plan.md) |
+| Interactive explorer (options A and B) | https://claude.ai/artifact/SJCDVSHpovi1yQxR3E52UF (private; offline copy in `work/detailed_v0/explorer/exiobase_detailed_classification.html`) |
+| Data coverage by country (FAO, production volumes, IEA, SUT/IOT) | https://claude.ai/artifact/SfxaGbzmTNcDTfw8UuALyW (private; data in `work/coverage/coverage_by_country.csv`) |
+| Draft leaves | `work/detailed_v0/industries_v0.csv`, `work/detailed_v0/products_v0.csv`, summary in `work/detailed_v0/summary.md` |
+| Reference classifications (NACE 2.1, CPA 2.2, ISIC 5, CPC 3.0, correspondences) | `work/detailed_v0/refs/` |
+
+Rebuild the draft and the explorer page:
+
+```bash
+cd work/detailed_v0
+python -I scripts/build.py && python -I scripts/options.py && python -I scripts/gen_explorer.py
+```
+
+`scripts/fetch_sources.py` re-downloads the transport, construction and
+data-centre sources used for the tiers into `D:/data/00-sources`.
+
 ## Design
 
 - This repo is the central, human-discoverable home of the EXIOBASE

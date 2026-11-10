@@ -1,0 +1,366 @@
+<title>EXIOBASE Detailed Classification</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a statistical register. Header with counts, toolbar, then tree (left) and a sticky record card (right); stacks on phones. */
+:root {
+  --bg: #f5f7f6; --surface: #ffffff; --ink: #17211f; --muted: #5b6a66; --line: #d9e1de;
+  --accent: #0f5c56; --accent-soft: #e0eeeb; --hit: #fff3c4;
+  --tA: #1d7a4f; --tB: #3a6fb0; --tC: #b07a1d; --tD: #8a8f8d;
+  --split: #7a3fa0;
+  --f-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111816; --surface: #18211f; --ink: #e4ece9; --muted: #98a9a4; --line: #2b3835;
+  --accent: #6cc4b8; --accent-soft: #1e3532; --hit: #4a4220;
+  --tA: #5cc48e; --tB: #79a9e6; --tC: #e0b25a; --tD: #8f9895; --split: #c79be6; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111816; --surface: #18211f; --ink: #e4ece9; --muted: #98a9a4; --line: #2b3835;
+  --accent: #6cc4b8; --accent-soft: #1e3532; --hit: #4a4220;
+  --tA: #5cc48e; --tB: #79a9e6; --tC: #e0b25a; --tD: #8f9895; --split: #c79be6; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14px; }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 40px; max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--f-display); font-weight: 400; font-size: clamp(26px, 4vw, 38px); margin: 0; line-height: 1.1; text-wrap: balance; }
+.lede { margin: 0; max-width: 78ch; line-height: 1.55; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.stat b { font-family: var(--f-display); font-weight: 500; font-size: 22px; color: var(--ink); margin-right: 6px; }
+.stat { color: var(--muted); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 8px; border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.tabs { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tabs button { font: inherit; border: 0; background: transparent; color: var(--ink); padding: 7px 12px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--surface); }
+input[type=search], select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 0; }
+input[type=search] { flex: 1 1 220px; }
+button:focus-visible, input:focus-visible, select:focus-visible, .row:focus-visible, .lnk:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.count { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 18px; align-items: start; }
+@media (max-width: 860px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.tree { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; overflow: hidden; }
+details.grp > summary { list-style: none; cursor: pointer; display: flex; gap: 10px; align-items: baseline; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+details.grp > summary::-webkit-details-marker { display: none; }
+details.grp > summary::before { content: "\25B8"; color: var(--muted); width: 10px; flex: none; transition: transform .15s; }
+details.grp[open] > summary::before { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { details.grp > summary::before { transition: none; } }
+.lvl1 > summary { background: var(--accent-soft); font-weight: 600; }
+.lvl2 > summary { padding-left: 26px; font-weight: 500; }
+.lvl3 > summary { padding-left: 42px; }
+.lvl2 .row { padding-left: 46px; }
+.lvl3 .row { padding-left: 62px; }
+.code { font-family: var(--f-mono); font-size: 12.5px; color: var(--accent); flex: none; min-width: 5.5em; }
+.gname { flex: 1 1 auto; min-width: 0; }
+.n { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; flex: none; }
+.row { display: flex; gap: 10px; align-items: baseline; padding: 6px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+.row:hover { background: var(--accent-soft); }
+.row[aria-current="true"] { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+.row .nm { flex: 1 1 auto; min-width: 0; }
+.badges { display: inline-flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; flex: none; max-width: 45%; }
+.b { font-size: 11px; border-radius: 999px; padding: 1px 7px; border: 1px solid var(--line); white-space: nowrap; color: var(--muted); }
+.b.tier { color: var(--surface); border: 0; font-weight: 600; }
+.tA { background: var(--tA); } .tB { background: var(--tB); } .tC { background: var(--tC); } .tD { background: var(--tD); }
+.b.sp { border-color: var(--split); color: var(--split); }
+.b.ex { font-family: var(--f-mono); }
+.b.amb { border-color: var(--tC); color: var(--tC); }
+mark { background: var(--hit); color: inherit; padding: 0 1px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 64px); display: flex; flex-direction: column; gap: 12px; min-width: 0; max-height: calc(100vh - 90px); overflow: auto; }
+@media (max-width: 860px) { .card { position: static; max-height: none; } }
+.card h2 { font-family: var(--f-display); font-weight: 400; font-size: 22px; margin: 0; line-height: 1.2; text-wrap: balance; }
+.card .bigcode { font-family: var(--f-mono); color: var(--accent); font-size: 15px; }
+dl { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 6px 12px; margin: 0; }
+dt { color: var(--muted); font-size: 12px; padding-top: 1px; }
+dd { margin: 0; overflow-wrap: anywhere; }
+.lnk { color: var(--accent); cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; background: none; border: 0; font: inherit; padding: 0; text-align: left; }
+.lnklist { display: flex; flex-direction: column; gap: 3px; }
+.muted { color: var(--muted); }
+.empty { padding: 24px; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted); align-items: center; }
+details.about { border-top: 1px solid var(--line); padding-top: 12px; }
+details.about summary { cursor: pointer; font-weight: 500; }
+details.about ul { line-height: 1.6; max-width: 85ch; padding-left: 1.2em; }
+.mono { font-family: var(--f-mono); font-size: 12.5px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Draft v0 for review, generated __DATE__</div>
+    <h1>EXIOBASE detailed classification</h1>
+    <p class="lede">Proposed industries labelled by NACE Rev 2.1 class and products by CPA 2.2, with sub-splits where a technology, route or EXIOBASE 3 boundary needs one. Every leaf maps to exactly one EXIOBASE 3 code, so old results can be rebuilt by aggregation. Option A keeps every leaf; option B merges leaves that no data source separates, except in construction, transport and data centres, which keep full detail in both. Select a row to see its codes, its EXIOBASE 3 parent and the data behind it.</p>
+    <div class="stats" id="stats"></div>
+    <div class="legend">
+      <span>Data tier:</span>
+      <span><span class="b tier tA">A</span> global physical data (FAO, IEA, USGS/BGS)</span>
+      <span><span class="b tier tB">B</span> regional data (PRODCOM, Eurostat business statistics, ITF)</span>
+      <span><span class="b tier tC">C</span> SUT data for a few countries</span>
+      <span><span class="b tier tD">D</span> no separating data yet</span>
+      <span><span class="b sp">split</span> sub-split below the NACE/CPA code</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="tabs" role="tablist" aria-label="View">
+      <button role="tab" id="tab-industries" data-view="industries">Industries</button>
+      <button role="tab" id="tab-products" data-view="products">Products</button>
+      <button role="tab" id="tab-exio3" data-view="exio3">Nesting in EXIOBASE 3</button>
+    </div>
+    <select id="f-opt" aria-label="Option">
+      <option value="A">Option A: full detail</option>
+      <option value="B">Option B: merge leaves without data</option>
+    </select>
+    <input type="search" id="q" placeholder="Search code or name, e.g. 24.10, wheat, electricity" aria-label="Search">
+    <select id="f-tier" aria-label="Data tier"><option value="">All tiers</option><option value="A">Tier A</option><option value="B">Tier B</option><option value="C">Tier C</option><option value="D">Tier D</option></select>
+    <select id="f-split" aria-label="Splits"><option value="">All leaves</option><option value="any">Only sub-splits</option><option value="technology">Technology splits</option><option value="route">Route splits</option><option value="product-type">Product-type splits</option><option value="product-stage">Product-stage splits</option><option value="exio3-boundary">EXIOBASE 3 boundary splits</option></select>
+    <select id="f-anchor" aria-label="Data source"><option value="">Any data source</option><option>FAO</option><option>IEA</option><option>PV</option><option>PRODCOM</option><option>SUT-detailed</option><option>SUT-64</option><option>Eurostat-SBS</option><option>ITF</option><option>Eurostat-rail</option><option>WDI-air</option><option>CSO-IE</option></select>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="main">
+    <div class="tree" id="tree" aria-live="polite"></div>
+    <aside class="card" id="card" aria-live="polite"></aside>
+  </div>
+
+  <details class="about" id="about">
+    <summary>How this draft was built, and what is still open</summary>
+    <div id="about-body"></div>
+  </details>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const A_IND = D.industries, A_PRO = D.products;
+  const list0 = (s) => String(s ?? '').split(';').map((x) => x.trim()).filter(Boolean);
+  // Option B: leaves sharing an option_b_code become one merged leaf.
+  function mergeB(rows, kind) {
+    const out = [], groups = new Map();
+    rows.forEach((r) => {
+      const k = r.option_b_code || r.code;
+      if (k === r.code) { out.push(r); return; }
+      if (!groups.has(k)) { const g = { ...r, code: k, name: r.option_b_name, split_reason: '', members: [], cpa_code: '', cpc21: '', principal_products: '', producing_industries: '', data_anchors: '', notes: '' }; groups.set(k, g); out.push(g); }
+      const g = groups.get(k);
+      g.members.push(r.code);
+      g.data_anchors = [...new Set([...list0(g.data_anchors), ...list0(r.data_anchors)])].join(';');
+      if (kind === 'ind') g.principal_products = [...new Set([...list0(g.principal_products), ...list0(r.principal_products)])].join(';');
+      else g.producing_industries = [...new Set([...list0(g.producing_industries), ...list0(r.producing_industries)])].join(';');
+    });
+    groups.forEach((g) => { g.notes = 'Option B merges ' + g.members.length + ' leaves that no data source separates.'; });
+    return out;
+  }
+  const B_IND = mergeB(A_IND, 'ind'), B_PRO = mergeB(A_PRO, 'pro');
+  const mapA = { ind: new Map(A_IND.map((r) => [r.code, r])), pro: new Map(A_PRO.map((r) => [r.code, r])) };
+  const mapB = { ind: new Map(B_IND.map((r) => [r.code, r])), pro: new Map(B_PRO.map((r) => [r.code, r])) };
+  const toB = { ind: new Map(A_IND.map((r) => [r.code, r.option_b_code || r.code])), pro: new Map(A_PRO.map((r) => [r.code, r.option_b_code || r.code])) };
+  const st = { view: 'industries', q: '', tier: '', split: '', anchor: '', sel: null, opt: 'A' };
+  let IND = A_IND, PRO = A_PRO, indBy = mapA.ind, proBy = mapA.pro;
+  function setOpt(o) {
+    st.opt = o;
+    IND = o === 'B' ? B_IND : A_IND; PRO = o === 'B' ? B_PRO : A_PRO;
+    indBy = o === 'B' ? mapB.ind : mapA.ind; proBy = o === 'B' ? mapB.pro : mapA.pro;
+    if (st.sel && o === 'B') st.sel.code = toB[st.sel.kind].get(st.sel.code) || st.sel.code;
+    if (st.sel && o === 'A' && !(st.sel.kind === 'pro' ? proBy : indBy).has(st.sel.code)) st.sel = null;
+  }
+
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const hl = (s) => {
+    const t = esc(s);
+    if (!st.q) return t;
+    const qe = esc(st.q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return t.replace(new RegExp(qe, 'ig'), (m) => '<mark>' + m + '</mark>');
+  };
+  const list = (s) => String(s ?? '').split(';').map((x) => x.trim()).filter(Boolean);
+
+  function renderStats() {
+    const merged = IND.filter((r) => r.members).length;
+    const items = [
+      [IND.length, 'industry leaves'],
+      [PRO.length, 'product leaves'],
+      [IND.filter((r) => r.split_reason).length, 'industry sub-splits'],
+      [IND.filter((r) => r.tier === 'D').length, 'industry leaves in tier D'],
+      [new Set(IND.map((r) => r.exio3_industry_code).filter(Boolean)).size, 'of ' + D.exio3_ind_count + ' EXIOBASE 3 industries reached'],
+    ];
+    if (st.opt === 'B') items.push([merged, 'merged industry leaves']);
+    document.getElementById('stats').innerHTML = items.map(([n, l]) => '<span class="stat"><b>' + n.toLocaleString('en') + '</b>' + esc(l) + '</span>').join('');
+  }
+  document.getElementById('about-body').innerHTML = D.about_html;
+
+  const matches = (r, kind) => {
+    if (st.tier && r.tier !== st.tier) return false;
+    if (st.anchor && !list(r.data_anchors).includes(st.anchor)) return false;
+    if (st.split) {
+      if (kind !== 'ind') { if (st.split === 'any' && !/\.[a-z]$/.test(r.code)) return false; if (st.split !== 'any') return false; }
+      else if (st.split === 'any' ? !r.split_reason : r.split_reason !== st.split) return false;
+    }
+    if (st.q) {
+      const q = st.q.toLowerCase();
+      const hay = [r.code, r.name, r.exio3_industry_code, r.exio3_industry_name, r.exio3_product_code, r.exio3_product_name, r.cpc21, r.isic5_class, r.source_detail].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  };
+
+  const badges = (r, kind) => {
+    let h = '';
+    if (r.split_reason) h += '<span class="b sp">' + esc(r.split_reason) + '</span>';
+    const ex = kind === 'ind' ? r.exio3_industry_code : r.exio3_product_code;
+    if (ex) h += '<span class="b ex">' + esc(ex) + '</span>';
+    else h += '<span class="b amb">no EXIO3 map</span>';
+    if (r.exio3_map_basis === 'ambiguous') h += '<span class="b amb">ambiguous</span>';
+    if (r.tier) h += '<span class="b tier t' + esc(r.tier) + '" title="Data tier ' + esc(r.tier) + '">' + esc(r.tier) + '</span>';
+    return '<span class="badges">' + h + '</span>';
+  };
+  const rowHtml = (r, kind) => '<div class="row" tabindex="0" role="button" data-kind="' + kind + '" data-code="' + esc(r.code) + '"' + (st.sel && st.sel.code === r.code && st.sel.kind === kind ? ' aria-current="true"' : '') + '><span class="code">' + hl(r.code) + '</span><span class="nm">' + hl(r.name) + '</span>' + badges(r, kind) + '</div>';
+
+  // build groups: [{key,label,children:[...]|rows}]
+  const secOf = (div) => D.div_section[div] || '?';
+  function groupsIndustries(rows) {
+    const bySec = new Map();
+    rows.forEach((r) => {
+      const div = String(r.nace21_class || r.code).slice(0, 2);
+      const sec = r.section || secOf(div);
+      if (!bySec.has(sec)) bySec.set(sec, new Map());
+      const m = bySec.get(sec); if (!m.has(div)) m.set(div, []); m.get(div).push(r);
+    });
+    return [...bySec.keys()].sort().map((sec) => ({
+      code: sec, label: D.names[sec] || '', kids: [...bySec.get(sec).keys()].sort().map((div) => ({ code: div, label: D.names[div] || '', rows: bySec.get(sec).get(div).sort((a, b) => a.code.localeCompare(b.code, 'en', { numeric: true })) })),
+    }));
+  }
+  function groupsProducts(rows) {
+    const bySec = new Map();
+    rows.forEach((r) => {
+      const div = String(r.cpa_code || r.code).replace(/^c/, '').slice(0, 2);
+      const sec = secOf(div);
+      if (!bySec.has(sec)) bySec.set(sec, new Map());
+      const m = bySec.get(sec); if (!m.has(div)) m.set(div, []); m.get(div).push(r);
+    });
+    return [...bySec.keys()].sort().map((sec) => ({
+      code: sec, label: D.names[sec] || '', kids: [...bySec.get(sec).keys()].sort().map((div) => ({ code: div, label: D.names[div] || '', rows: bySec.get(sec).get(div).sort((a, b) => a.code.localeCompare(b.code, 'en', { numeric: true })) })),
+    }));
+  }
+  function groupsExio(rows) {
+    const by = new Map();
+    rows.forEach((r) => { const k = r.exio3_industry_code || '(no EXIOBASE 3 map)'; if (!by.has(k)) by.set(k, []); by.get(k).push(r); });
+    const order = D.exio3_ind_order;
+    const keys = [...by.keys()].sort((a, b) => (order[a] ?? 1e9) - (order[b] ?? 1e9));
+    return keys.map((k) => ({ code: k, label: D.exio3_ind_names[k] || '', rows: by.get(k).sort((a, b) => a.code.localeCompare(b.code, 'en', { numeric: true })) }));
+  }
+
+  function render() {
+    document.querySelectorAll('.tabs button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.view === st.view)));
+    const kind = st.view === 'products' ? 'pro' : 'ind';
+    const src = kind === 'pro' ? PRO : IND;
+    const rows = src.filter((r) => matches(r, kind));
+    const filtering = !!(st.q || st.tier || st.split || st.anchor);
+    document.getElementById('count').textContent = rows.length.toLocaleString('en') + ' of ' + src.length.toLocaleString('en') + ' shown';
+    const tree = document.getElementById('tree');
+    if (!rows.length) { tree.innerHTML = '<div class="empty">No leaves match. Clear the search or a filter to see more.</div>'; return; }
+    let h = '';
+    if (st.view === 'exio3') {
+      const gs = groupsExio(rows);
+      const open = filtering || gs.length <= 12;
+      gs.forEach((g) => {
+        h += '<details class="grp lvl1"' + (open ? ' open' : '') + '><summary><span class="code">' + esc(g.code) + '</span><span class="gname">' + esc(g.label) + '</span><span class="n">' + g.rows.length + (g.rows.length === 1 ? ' leaf' : ' leaves') + '</span></summary>';
+        g.rows.forEach((r) => { h += rowHtml(r, 'ind'); });
+        h += '</details>';
+      });
+    } else {
+      const gs = kind === 'pro' ? groupsProducts(rows) : groupsIndustries(rows);
+      gs.forEach((s) => {
+        const sn = s.kids.reduce((a, k) => a + k.rows.length, 0);
+        h += '<details class="grp lvl1"' + (filtering ? ' open' : '') + '><summary><span class="code">' + esc(s.code) + '</span><span class="gname">' + esc(s.label) + '</span><span class="n">' + sn + '</span></summary>';
+        s.kids.forEach((k) => {
+          h += '<details class="grp lvl2"' + (filtering ? ' open' : '') + '><summary><span class="code">' + esc(k.code) + '</span><span class="gname">' + esc(k.label) + '</span><span class="n">' + k.rows.length + '</span></summary>';
+          k.rows.forEach((r) => { h += rowHtml(r, kind); });
+          h += '</details>';
+        });
+        h += '</details>';
+      });
+    }
+    tree.innerHTML = h;
+  }
+
+  const dlRow = (k, v) => (v === undefined || v === null || v === '' ? '' : '<dt>' + esc(k) + '</dt><dd>' + v + '</dd>');
+  const linkList = (codes, kind) => {
+    const by = kind === 'pro' ? proBy : indBy;
+    const items = list(codes).map((c) => { const r = by.get(c); return r ? '<button class="lnk" data-kind="' + kind + '" data-code="' + esc(c) + '"><span class="mono">' + esc(c) + '</span> ' + esc(r.name) + '</button>' : '<span class="mono muted">' + esc(c) + '</span>'; });
+    return items.length ? '<div class="lnklist">' + items.join('') + '</div>' : '';
+  };
+  const tierText = { A: 'A: global physical data', B: 'B: regional data', C: 'C: SUT data for a few countries', D: 'D: no separating data yet' };
+
+  function renderCard() {
+    const card = document.getElementById('card');
+    if (!st.sel) {
+      card.innerHTML = '<div class="eyebrow">Record</div><h2>Select a leaf</h2><p class="muted">Pick any row in the tree to see its NACE, ISIC and CPC codes, which EXIOBASE 3 code it nests in, what it produces or who produces it, and which data sources support it.</p><p class="muted">Try the <b>Nesting in EXIOBASE 3</b> view to see how each old EXIOBASE sector breaks down into the new leaves, for example i40.11.g, electricity by biomass and waste.</p>';
+      return;
+    }
+    const { kind, code } = st.sel;
+    const r = (kind === 'pro' ? proBy : indBy).get(code);
+    if (!r) { card.innerHTML = '<p class="muted">This leaf is not in the current draft.</p>'; return; }
+    let h = '<div class="eyebrow">' + (kind === 'pro' ? 'Product' : 'Industry') + ' leaf</div><div class="bigcode">' + esc(r.code) + '</div><h2>' + esc(r.name) + '</h2><dl>';
+    if (kind === 'ind') {
+      h += dlRow('NACE Rev 2.1', r.nace21_class ? '<span class="mono">' + esc(r.nace21_class) + '</span> ' + esc(r.nace21_name || D.names[r.nace21_class] || '') : '');
+      h += dlRow('ISIC Rev 5', r.isic5_class ? '<span class="mono">' + esc(r.isic5_class) + '</span>' : '');
+      h += dlRow('ISIC Rev 4', r.isic4_classes ? '<span class="mono">' + esc(list(r.isic4_classes).join(', ')) + '</span>' : '');
+      h += dlRow('EXIOBASE 3', r.exio3_industry_code ? '<span class="mono">' + esc(r.exio3_industry_code) + '</span> ' + esc(r.exio3_industry_name) : '<span class="muted">not mapped</span>');
+      h += dlRow('Map basis', esc(r.exio3_map_basis));
+      h += dlRow('Sub-split', r.split_reason ? esc(r.split_reason) : '');
+      h += dlRow('Data tier', esc(tierText[r.tier] || r.tier));
+      h += dlRow('Data sources', esc(list(r.data_anchors).join(', ')));
+      h += dlRow('Produces', linkList(r.principal_products, 'pro'));
+      const sibs = IND.filter((x) => x.exio3_industry_code && x.exio3_industry_code === r.exio3_industry_code && x.code !== r.code);
+      if (sibs.length) h += dlRow('Same EXIO3 parent', linkList(sibs.slice(0, 25).map((x) => x.code).join(';'), 'ind') + (sibs.length > 25 ? '<span class="muted">and ' + (sibs.length - 25) + ' more</span>' : ''));
+    } else {
+      h += dlRow('CPA 2.2', r.cpa_code ? '<span class="mono">' + esc(r.cpa_code) + '</span>' : '');
+      h += dlRow('CPC 2.1', r.cpc21 ? '<span class="mono">' + esc(list(r.cpc21).join(', ')) + '</span>' : '');
+      h += dlRow('CPC 3.0', r.cpc30 ? '<span class="mono">' + esc(r.cpc30) + '</span>' : '');
+      h += dlRow('HS hint', r.hs_hint ? '<span class="mono">' + esc(r.hs_hint) + '</span>' : '');
+      h += dlRow('EXIOBASE 3', r.exio3_product_code ? '<span class="mono">' + esc(r.exio3_product_code) + '</span> ' + esc(r.exio3_product_name) : '<span class="muted">not mapped</span>');
+      h += dlRow('Source detail', esc(r.source_detail));
+      h += dlRow('Data tier', esc(tierText[r.tier] || r.tier));
+      h += dlRow('Data sources', esc(list(r.data_anchors).join(', ')));
+      h += dlRow('Produced by', linkList(r.producing_industries, 'ind'));
+    }
+    if (r.members) h += dlRow('Merged from', '<div class="lnklist">' + r.members.map((c) => { const a = (kind === 'pro' ? mapA.pro : mapA.ind).get(c); return '<button class="lnk" data-kind="' + kind + '" data-code="' + esc(c) + '" data-opt="A"><span class="mono">' + esc(c) + '</span> ' + esc(a ? a.name : '') + '</button>'; }).join('') + '</div>');
+    h += dlRow('Notes', esc(r.notes));
+    h += '</dl>';
+    card.innerHTML = h;
+  }
+
+  function select(kind, code) {
+    st.sel = { kind, code };
+    if (kind === 'pro' && st.view !== 'products') { st.view = 'products'; }
+    if (kind === 'ind' && st.view === 'products') { st.view = 'industries'; }
+    st.q = code; document.getElementById('q').value = code;
+    render(); renderCard();
+    const el = document.querySelector('.row[aria-current="true"]');
+    if (el) el.scrollIntoView({ block: 'nearest' });
+  }
+
+  document.getElementById('tree').addEventListener('click', (e) => {
+    const row = e.target.closest('.row'); if (!row) return;
+    st.sel = { kind: row.dataset.kind, code: row.dataset.code };
+    document.querySelectorAll('.row[aria-current]').forEach((x) => x.removeAttribute('aria-current'));
+    row.setAttribute('aria-current', 'true');
+    renderCard();
+  });
+  document.getElementById('tree').addEventListener('keydown', (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('row')) { e.preventDefault(); e.target.click(); } });
+  document.getElementById('card').addEventListener('click', (e) => {
+    const b = e.target.closest('.lnk'); if (!b) return;
+    let code = b.dataset.code;
+    if (b.dataset.opt === 'A' && st.opt !== 'A') { setOpt('A'); document.getElementById('f-opt').value = 'A'; renderStats(); }
+    else if (st.opt === 'B') code = toB[b.dataset.kind].get(code) || code;
+    select(b.dataset.kind, code);
+  });
+  document.getElementById('f-opt').addEventListener('change', (e) => { setOpt(e.target.value); renderStats(); render(); renderCard(); });
+  document.querySelectorAll('.tabs button').forEach((b) => b.addEventListener('click', () => { st.view = b.dataset.view; try { history.replaceState(null, '', '#' + st.view); } catch (e) {} render(); }));
+  let t; document.getElementById('q').addEventListener('input', (e) => { clearTimeout(t); t = setTimeout(() => { st.q = e.target.value.trim(); render(); }, 150); });
+  [['f-tier', 'tier'], ['f-split', 'split'], ['f-anchor', 'anchor']].forEach(([id, k]) => document.getElementById(id).addEventListener('change', (e) => { st[k] = e.target.value; render(); }));
+  const fromHash = () => { const h = (location.hash || '').slice(1); if (['industries', 'products', 'exio3'].includes(h)) st.view = h; };
+  window.addEventListener('hashchange', () => { fromHash(); render(); });
+  fromHash(); renderStats(); render(); renderCard();
+})();
+</script>

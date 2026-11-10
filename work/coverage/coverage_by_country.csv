@@ -1,0 +1,155 @@
+iso3,name,continent,in_exiobase3,iea,oecd_icio,figaro,fao_items,pv_minerals_metals,pv_prodcom,pv_fertiliser,pv_pairs_total,eurostat_sut64,national_status,national_products,national_industries,national_note
+AUS,Australia,Oceania,1,1,1,1,163,37,0,0,37,0,Detailed table held,914,115,ABS 5215.0.55.001 IO product details 2023-24 (IOPC x IOIG); series from 2016-17
+AUT,Austria,Europe,1,1,1,1,118,14,16,0,29,1,Coarse table held,74,74,"SUT (supply, use) plus IOT product-by-product, CPA 2008 / NACE Rev.2 (74 groups), year not stated in counted file; zip IO-DE-2017.zip suggests 2017; files dated"
+BEL,Belgium,Europe,1,1,1,1,98,17,18,0,34,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+BRA,Brazil,America,1,1,1,1,152,37,0,10,47,0,Detailed table held,127,67,"SUT (Tabelas 1-3 supply and use nivel 67) plus IOT matrices, IBGE national (product codes 5-digit; activity codes 4-digit; nivel 67; CNAE-based), 2015 (also 202"
+BGR,Bulgaria,Europe,1,1,1,1,116,18,17,3,37,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+CAN,Canada,America,1,1,1,1,125,28,0,6,34,0,Detailed table held,473,220,"StatCan SUT 2022, SUPC products x NAICS industries"
+CHN,China,Asia,1,1,1,1,213,39,0,1,40,0,Detailed table held,211,211,"National IOT product-by-product (sector) competitive at producers prices; noncompetitive versions only 42/153 sectors, China national IO sector classification ("
+HRV,Croatia,Europe,1,1,1,1,111,6,20,8,34,1,Coarse table held,65,65,"SUT plus symmetric IOT product-by-product (1700) and imports/domestic, CPA 2008 / NACE Rev.2 (A*64 incl. U), 2010 only"
+CYP,Cyprus,Asia,1,1,1,1,92,8,0,0,8,1,Coarse table held,6,,"SUT summary (aggregated), 2018, CPA aggregate groups (6 product categories), 2018"
+CZE,Czechia,Europe,1,1,1,1,107,11,21,2,33,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+DNK,Denmark,Europe,1,1,1,1,84,4,24,0,28,1,Detailed table held,,117,"Statistics Denmark, industry-by-industry"
+EST,Estonia,Europe,1,1,1,1,72,5,19,1,25,1,Official source identified,,,Local folder holds no economic SUT; Eurostat A*64 series available
+FIN,Finland,Europe,1,1,1,1,81,18,23,0,41,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+FRA,France,Europe,1,1,1,1,139,19,23,0,41,1,Coarse table held,37,37,"SUT (TRP/TEI) plus symmetric IOT A38 (product-by-product), A38 (INSEE NA38/CPA, 37 coded product groups AZ..TZ), 1978-2023 (A38); 1949-2023 (A17/TEE)"
+DEU,Germany,Europe,1,1,1,1,104,17,24,2,43,1,Coarse table held,85,65,"SUT (Aufkommens/Verwendungstabelle) plus IOT product-by-product (81511-01), CPA 2008 (Gueter groups, 85 rows incl. e.g. 05.1/05.2 split) x WZ 2008 Wirtschaftsbe"
+GRC,Greece,Europe,1,1,1,1,133,17,16,8,41,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+HUN,Hungary,Europe,1,1,1,1,123,11,24,15,49,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+IND,India,Asia,1,1,1,1,164,29,0,11,40,0,Detailed table held,140,66,"SUT (supply + use), National product/industry lists (MoSPI SUT; product codes 1-140, industry codes 1-66), 2011-12 to 2021-22 (latest 2021-22)"
+IDN,Indonesia,Asia,1,1,1,1,134,25,0,5,30,0,Detailed table held,185,,"BPS 2016, product-by-product table"
+IRL,Ireland,Europe,1,1,1,1,62,10,13,0,22,1,Coarse table held,62,62,"SUT plus symmetric IOT product-by-product, CPA/NACE Rev.2 (2022 supply 62x62), 2020, 2021, 2022 detailed (2020 is 60x60); 2017-2019 summary only"
+ITA,Italy,Europe,1,1,1,1,141,11,23,14,48,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+JPN,Japan,Asia,1,1,1,1,140,23,0,6,29,0,Detailed table held,445,391,"Basic table 2020; production file has 3,719 commodity rows"
+LVA,Latvia,Europe,1,1,1,1,84,4,7,0,11,1,Official source identified,88,,"CSB SUIOT, 88 products (registry)"
+LTU,Lithuania,Europe,1,1,1,1,105,3,18,12,33,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+LUX,Luxembourg,Europe,1,1,1,1,72,3,0,0,3,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+MLT,Malta,Europe,1,1,1,1,59,1,0,0,1,1,Official source identified,216,,"NSO SUT 2019, 216 products x 95 industries (registry)"
+MEX,Mexico,America,1,1,1,1,189,22,0,2,24,0,Detailed table held,834,834,INEGI MIP 2018 product-by-product at SCIAN Clase; SUT (COU) only at Rama 263x263
+NLD,Netherlands,Europe,1,1,1,1,96,8,14,0,22,1,None found,,,
+NOR,Norway,Europe,1,1,1,1,92,20,10,0,30,0,None found,,,
+POL,Poland,Europe,1,1,1,1,122,20,24,19,63,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+PRT,Portugal,Europe,1,1,1,1,123,15,22,2,38,1,Official source identified,82,,"INE IO 2013, 82 products (registry)"
+ROU,Romania,Europe,1,1,1,1,119,19,24,6,49,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+RUS,Russia,Europe,1,1,1,1,148,34,0,12,46,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+SVK,Slovakia,Europe,1,1,1,1,110,16,22,0,37,1,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+SVN,Slovenia,Europe,1,1,1,1,105,11,6,0,17,1,Official source identified,,,Local folder holds no economic SUT; Eurostat A*64 series available
+ZAF,South Africa,Africa,1,1,1,1,148,24,0,0,24,0,Detailed table held,104,174,"SUT (supply and use tables), CPC v2 (products); SIC 5th edition (industries), 2010 (2019 report states 108 products x 124 industries; 2012 and 2014 IOT reports "
+KOR,South Korea,Asia,1,1,1,1,122,21,0,6,27,0,Detailed table held,380,278,Bank of Korea basic table 2020
+ESP,Spain,Europe,1,1,1,1,145,24,23,0,47,1,Coarse table held,64,65,"SUT (tablas de origen y destino) plus symmetric IOT product-by-product (64x64), CPA 2008 / NACE Rev.2 (64 products x 65 industries), TIO 2016-2022; SUT 2016-202"
+SWE,Sweden,Europe,1,1,1,1,91,17,23,0,39,1,Coarse table held,59,59,"SUT (input matrix product x industry, supply matrix) plus SIOT, CPA/NACE Rev.2 aggregated (A01..T-U, 59 groups), 2008-2016"
+CHE,Switzerland,Europe,1,1,1,1,130,6,0,0,6,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+TWN,Taiwan,Asia,1,1,1,0,126,9,0,5,14,0,Detailed table held,484,163,DGBAS 2021 (484 input rows x 163 columns)
+TUR,Turkey,Asia,1,1,1,1,181,26,0,11,37,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+GBR,United Kingdom,Europe,1,1,1,1,107,16,22,0,37,0,Detailed table held,127,127,"SUT-derived IOT product-by-product (and use bp PxI), CPA/SIC based Input-Output Product Classification incl. non-market and NPISH splits (127 columns/rows), 201"
+USA,United States,America,1,1,1,1,170,29,0,8,37,0,Detailed table held,406,406,BEA detail 2017 (NAICS-based); also 1997 benchmark ~490 industries
+DZA,Algeria,Africa,0,1,0,0,124,14,0,0,14,0,None found,,,
+AGO,Angola,Africa,0,1,1,0,93,6,0,0,6,0,None found,,,
+BEN,Benin,Africa,0,1,0,0,92,3,0,0,3,0,None found,,,
+BWA,Botswana,Africa,0,1,0,0,73,5,0,0,5,0,None found,,,
+BFA,Burkina Faso,Africa,0,1,0,0,98,6,0,0,6,0,None found,,,
+CMR,Cameroon,Africa,0,1,1,0,124,4,0,0,4,0,None found,,,
+TCD,Chad,Africa,0,1,0,0,79,2,0,0,2,0,None found,,,
+COD,DR Congo,Africa,0,0,1,0,100,16,0,0,16,0,None found,,,
+EGY,Egypt,Africa,0,1,1,0,158,14,0,4,18,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+GNQ,Equatorial Guinea,Africa,0,1,0,0,41,1,0,0,1,0,None found,,,
+ERI,Eritrea,Africa,0,1,0,0,66,7,0,0,7,0,None found,,,
+ETH,Ethiopia,Africa,0,1,0,0,138,5,0,0,5,0,None found,,,
+GAB,Gabon,Africa,0,1,0,0,69,4,0,0,4,0,None found,,,
+GHA,Ghana,Africa,0,1,0,0,99,11,0,0,11,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+CIV,Ivory Coast,Africa,0,1,1,0,110,7,0,0,7,0,None found,,,
+KEN,Kenya,Africa,0,1,0,0,159,11,0,0,11,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+LBY,Libya,Africa,0,1,0,0,84,4,0,0,4,0,None found,,,
+MDG,Madagascar,Africa,0,1,0,0,136,12,0,0,12,0,None found,,,
+MLI,Mali,Africa,0,1,0,0,117,4,0,0,4,0,None found,,,
+MRT,Mauritania,Africa,0,1,0,0,64,8,0,0,8,0,None found,,,
+MUS,Mauritius,Africa,0,1,0,0,86,0,0,0,0,0,None found,,,
+MAR,Morocco,Africa,0,1,1,0,169,18,0,0,18,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+MOZ,Mozambique,Africa,0,1,0,0,98,12,0,0,12,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+NAM,Namibia,Africa,0,1,0,0,71,16,0,0,16,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+NER,Niger,Africa,0,1,0,0,104,4,0,0,4,0,None found,,,
+NGA,Nigeria,Africa,0,1,1,0,106,19,0,0,19,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+RWA,Rwanda,Africa,0,1,0,0,90,10,0,0,10,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+STP,Sao Tome and Principe,Africa,0,0,1,0,60,0,0,0,0,0,None found,,,
+SEN,Senegal,Africa,0,1,1,0,102,10,0,1,11,0,None found,,,
+SSD,South Sudan,Africa,0,1,0,0,64,1,0,0,1,0,None found,,,
+SDN,Sudan,Africa,0,1,0,0,101,6,0,0,6,0,None found,,,
+SWZ,Swaziland,Africa,0,1,0,0,75,1,0,0,1,0,None found,,,
+TZA,Tanzania,Africa,0,1,0,0,136,12,0,1,13,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+TGO,Togo,Africa,0,1,0,0,86,4,0,0,4,0,None found,,,
+TUN,Tunisia,Africa,0,1,1,0,148,7,0,0,7,0,Documentation only,,,"SUT/TRE (tableau ressources-emplois) described only, NAT1996 (activities); CTP2002 (products) per presentation text, 2008-2012 (national accounts volume)"
+UGA,Uganda,Africa,0,1,0,0,93,13,0,0,13,0,None found,,,
+ZMB,Zambia,Africa,0,1,0,0,85,16,0,0,16,0,Coarse table held,67,24,"SUT plus product-by-product and industry-by-industry IOT (also domestic/import variants), National product/industry lists, 2010"
+ZWE,Zimbabwe,Africa,0,1,0,0,145,13,0,0,13,0,None found,,,
+ARG,Argentina,America,0,1,1,1,156,18,0,5,23,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+BOL,Bolivia,America,0,1,0,0,135,18,0,2,20,0,Coarse table held,35,35,"Product-by-activity use and supply matrices (MIP / production matrix in thousand bolivianos), National (35 product groups / 35 activity groups; classification n"
+CHL,Chile,America,0,1,1,0,145,20,0,0,20,0,Detailed table held,181,111,Banco Central de Chile MIP 2018 / 2023
+COL,Colombia,America,0,1,1,0,145,17,0,0,17,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+CRI,Costa Rica,America,0,1,1,0,120,4,0,0,4,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+CUB,Cuba,America,0,1,0,0,102,12,0,0,12,0,None found,,,
+CUW,Curaçao,America,0,1,0,0,0,0,0,0,0,0,None found,,,
+DOM,Dominican Republic,America,0,1,0,0,110,11,0,0,11,0,None found,,,
+ECU,Ecuador,America,0,1,0,0,147,7,0,0,7,0,Detailed table held,245,245,"Symmetric IOT product-by-product (derived from supply-use table TOU) per BCE report, CPCN (Ecuador national CPC-based product code e.g. 003001003), 2012 (also 2"
+SLV,El Salvador,America,0,1,0,0,102,4,0,0,4,0,None found,,,
+GRL,Greenland,America,0,1,0,0,0,0,0,0,0,0,None found,,,
+GTM,Guatemala,America,0,1,0,0,125,12,0,0,12,0,None found,,,
+GUY,Guyana,America,0,1,0,0,86,4,0,0,4,0,None found,,,
+HTI,Haiti,America,0,1,0,0,98,2,0,0,2,0,None found,,,
+HND,Honduras,America,0,1,0,0,117,8,0,0,8,0,None found,,,
+JAM,Jamaica,America,0,1,0,0,105,4,0,0,4,0,None found,,,
+NIC,Nicaragua,America,0,1,0,0,95,4,0,0,4,0,None found,,,
+PAN,Panama,America,0,1,0,0,95,5,0,1,6,0,None found,,,
+PRY,Paraguay,America,0,1,0,0,116,4,0,0,4,0,None found,,,
+PER,Peru,America,0,1,1,0,167,23,0,0,23,0,Detailed table held,101,101,"SUT-derived MIP product x activity (101 x 101), INEI national codes (e.g. 001001; 101 product and 101 activity groups), 2007"
+SUR,Suriname,America,0,1,0,0,79,3,0,0,3,0,None found,,,
+TTO,Trinidad and Tobago,America,0,1,0,0,86,3,0,2,5,0,None found,,,
+URY,Uruguay,America,0,1,0,0,110,8,0,0,8,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+VEN,Venezuela,America,0,1,0,0,137,12,0,0,12,0,Detailed table held,180,121,"SUT (production and use by product x activity 180x121) plus 121x121 symmetric matrices (axa and pxp), Clasificacion de Actividades Economicas y Productos del SC"
+ARM,Armenia,Asia,0,1,0,0,91,9,0,0,9,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+AZE,Azerbaijan,Asia,0,1,0,0,122,10,0,0,10,0,Coarse table held,81,19,"SUT plus IOT product-by-product (81x81), CPA 2008 products x NACE Rev.2 sections A-S (19 industries), 2011, 2016, 2021"
+BHR,Bahrain,Asia,0,1,0,0,55,5,0,1,6,0,None found,,,
+BGD,Bangladesh,Asia,0,1,1,0,128,4,0,3,7,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+BRN,Brunei Darussalam,Asia,0,1,1,0,67,2,0,0,2,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+KHM,Cambodia,Asia,0,1,1,0,77,3,0,0,3,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+GEO,Georgia,Asia,0,1,0,0,102,9,0,0,9,0,Coarse table held,38,38,"SUT (supply, use) plus IOT (industry-by-industry, 20 industries counted by header, 2020-2024), NACE Rev.2 A*38 (38 products x 38 industries); also 21x21, SUT 20"
+HKG,Hong Kong,Asia,0,1,1,0,52,2,0,0,2,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+IRN,Iran,Asia,0,1,0,0,165,23,0,0,23,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+IRQ,Iraq,Asia,0,1,0,0,138,5,0,1,6,0,None found,,,
+ISR,Israel,Asia,0,1,1,0,143,5,0,0,5,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+JOR,Jordan,Asia,0,1,1,0,114,5,0,0,5,0,Coarse table held,84,40,"SUT (supply table product x industry; use tables at basic and purchasers prices); also ~40x40 IOT, Product codes CPC-style 4-char (e.g. 0111 Wheat); industry co"
+KAZ,Kazakhstan,Asia,0,1,1,0,147,22,0,10,32,0,Documentation only,,,"Symmetric IOT product-by-product (per quality report), NACE Rev.2 (activities); CPA 2008 / KPVED (products), 2001-2017 (report for 2017)"
+KWT,Kuwait,Asia,0,1,0,0,77,4,0,0,4,0,None found,,,
+KGZ,Kyrgyzstan,Asia,0,1,0,0,139,7,0,0,7,0,None found,,,
+LAO,Lao PDR,Asia,0,1,1,0,84,11,0,0,11,0,None found,,,
+LBN,Lebanon,Asia,0,1,0,0,117,4,0,0,4,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+MYS,Malaysia,Asia,0,1,1,0,118,22,0,2,24,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+MNG,Mongolia,Asia,0,1,0,0,76,15,0,0,15,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+MMR,Myanmar,Asia,0,1,1,0,108,19,0,2,21,0,None found,,,
+NPL,Nepal,Asia,0,1,0,0,117,4,0,0,4,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+PRK,North Korea,Asia,0,1,0,0,80,18,0,0,18,0,None found,,,
+OMN,Oman,Asia,0,1,0,0,76,10,0,1,11,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+PAK,Pakistan,Asia,0,1,1,0,151,17,0,7,24,0,Detailed table held,141,68,"SUT (supply and use at basic/purchasers prices) plus industry-by-industry IOT 2015-16 (Model D), CPC (products, 3-5 digit codes); PSIC / ISIC Rev.4 (industries)"
+PSE,Palestine,Asia,0,1,0,0,106,0,0,0,0,0,None found,,,
+PHL,Philippines,Asia,0,1,1,0,131,18,0,11,29,0,Detailed table held,,240,"PSA 2018, industry-by-industry"
+QAT,Qatar,Asia,0,1,0,0,69,5,0,1,6,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+SAU,Saudi Arabia,Asia,0,1,1,1,95,14,0,6,20,0,Official source identified,299,,"GASTAT SUT 2018-2023, 299 products x 298 activities (registry)"
+SGP,Singapore,Asia,0,1,1,0,49,2,0,0,2,0,Detailed table held,107,107,"SUT (total supply and total use at purchasers prices) plus industry-by-industry IOT, Singapore national commodity/industry list (3-digit codes 001-107), 2010, 2"
+LKA,Sri Lanka,Asia,0,1,0,0,105,9,0,0,9,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+SYR,Syria,Asia,0,1,0,0,146,4,0,0,4,0,None found,,,
+TJK,Tajikistan,Asia,0,1,0,0,97,9,0,0,9,0,None found,,,
+THA,Thailand,Asia,0,1,1,0,148,15,0,14,29,0,Detailed table held,,180,"NESDC 2021, sector-by-sector"
+TKM,Turkmenistan,Asia,0,1,0,0,87,2,0,0,2,0,None found,,,
+ARE,United Arab Emirates,Asia,0,1,1,0,69,7,0,0,7,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+UZB,Uzbekistan,Asia,0,1,0,0,147,18,0,21,39,0,None found,,,
+VNM,Vietnam,Asia,0,1,1,0,109,27,0,3,30,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+YEM,Yemen,Asia,0,1,0,0,101,3,0,0,3,0,None found,,,
+ALB,Albania,Europe,0,1,0,1,123,6,1,0,7,0,Coarse table held,88,88,"SUT (also 64x64 IOT product-by-product in xlsx), CPA/NACE Rev.2 two-digit level (88 products x 88 industries), 2009-2023 (SUT PDFs; IOT xlsx 2015, 2020) (count "
+BLR,Belarus,Europe,0,1,1,0,106,4,0,6,10,0,None found,,,
+BIH,Bosnia and Herzegovina,Europe,0,1,0,0,112,14,11,3,28,0,None found,,,
+ISL,Iceland,Europe,0,1,1,0,52,2,2,0,4,0,Official source identified,,,"Official page identified in SUT registry, not downloaded"
+XKX,Kosovo,Europe,0,1,0,0,0,6,0,0,6,0,None found,,,
+MDA,Moldova,Europe,0,1,0,0,117,4,0,0,4,0,None found,,,
+MNE,Montenegro,Europe,0,1,0,1,82,8,4,0,12,0,None found,,,
+SRB,Serbia,Europe,0,1,0,1,126,14,0,6,20,0,Coarse table held,65,65,"SUT plus symmetric IOT product-by-product (t1700) and industry-by-industry (t1750), CPA 2008 / NACE Rev.2 (A*64 incl. U), SUT 2010-2022; IOT 2010, 2015, 2020"
+UKR,Ukraine,Europe,0,1,1,0,157,18,2,9,29,0,None found,,,
+NZL,New Zealand,Oceania,0,1,1,0,124,11,0,0,11,0,Detailed table held,199,111,Stats NZ IO 2020 (approx. counts)
