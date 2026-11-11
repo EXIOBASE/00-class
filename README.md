@@ -12,7 +12,7 @@ is not yet a released classification and nothing reads it.
 |---|---|
 | Plan and decisions | [docs/detailed_classification_plan.md](docs/detailed_classification_plan.md) |
 | Interactive explorer (options A and B) | https://claude.ai/artifact/SJCDVSHpovi1yQxR3E52UF (private; offline copy in `work/detailed_v0/explorer/exiobase_detailed_classification.html`) |
-| Data coverage by country (FAO, production volumes, IEA, SUT/IOT) | https://claude.ai/artifact/SfxaGbzmTNcDTfw8UuALyW (private; data in `work/coverage/coverage_by_country.csv`) |
+| Classification coverage: which countries hold the data behind each tier (FAO, production volumes, IEA, SUT/IOT) | https://claude.ai/artifact/SfxaGbzmTNcDTfw8UuALyW (private; data in `work/coverage/coverage_by_country.csv`) |
 | Draft leaves | `work/detailed_v0/industries_v0.csv`, `work/detailed_v0/products_v0.csv`, summary in `work/detailed_v0/summary.md` |
 | Reference classifications (NACE 2.1, CPA 2.2, ISIC 5, CPC 3.0, correspondences) | `work/detailed_v0/refs/` |
 

@@ -83,13 +83,16 @@ details.about { border-top: 1px solid var(--line); padding-top: 12px; }
 details.about summary { cursor: pointer; font-weight: 500; }
 details.about ul { line-height: 1.6; max-width: 85ch; padding-left: 1.2em; }
 .mono { font-family: var(--f-mono); font-size: 12.5px; }
+.xlink { margin: 0; font-size: 13px; color: var(--muted); }
+.xlink a { color: var(--fg, inherit); text-underline-offset: 2px; }
 </style>
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Draft v0 for review, generated 2026-11-10</div>
+    <div class="eyebrow">Draft v0 for review, generated 2026-11-11</div>
     <h1>EXIOBASE detailed classification</h1>
     <p class="lede">Proposed industries labelled by NACE Rev 2.1 class and products by CPA 2.2, with sub-splits where a technology, route or EXIOBASE 3 boundary needs one. Every leaf maps to exactly one EXIOBASE 3 code, so old results can be rebuilt by aggregation. Option A keeps every leaf; option B merges leaves that no data source separates, except in construction, transport and data centres, which keep full detail in both. Select a row to see its codes, its EXIOBASE 3 parent and the data behind it.</p>
+    <p class="xlink">Which countries have the data behind each tier: <a href="https://claude.ai/artifact/SfxaGbzmTNcDTfw8UuALyW" target="_blank" rel="noopener">EXIOBASE classification coverage</a> (FAO, production volumes, IEA and SUT/IOT detail by country).</p>
     <div class="stats" id="stats"></div>
     <div class="legend">
       <span>Data tier:</span>
